@@ -1,0 +1,63 @@
+---
+// Assets Imports - info & Icons
+import { include } from '../constants/index'
+import { services } from '../constants/index'
+import { Home, Pizza, Dumbbell } from 'lucide-react'
+
+// Astro Imports - Components
+import TrainingCard from './TrainingCard.astro'
+import Header from './layout/Header.astro'
+---
+
+<section
+  class="flex flex-col items-center justify-center gap-10 bg-primary/10 pt-8 dark:bg-primary/5"
+  id="entrenamientos"
+>
+  <Header title="Nuestros Servicios" subtitle="Descubre la variedad de" />
+  <div
+    class="flex max-w-[1680px] flex-col items-center justify-center gap-10 p-10 md:flex-row md:gap-14"
+  >
+    {
+      services.map(({ title, description, image, info, precio }) => (
+        <TrainingCard {title} {description} {image} {info} {precio} />
+      ))
+    }
+  </div>
+  <hr class="h-2 w-2/3" />
+  <div class="w-full max-w-[1680px] space-y-10 p-10">
+    <h4 class="text-center text-sm uppercase text-accent md:text-lg">
+      Los Entrenamientos tambien incluyen
+    </h4>
+    <div
+      class="flex w-full flex-col items-center justify-center gap-10 md:flex-row"
+    >
+      {
+        include.map(({ title, description }) => {
+          function getIcon() {
+            switch (title) {
+              case 'A Domicilio':
+                return <Home width="30px" height="30px" />
+              case 'Personalizado':
+                return <Dumbbell width="30px" height="30px" />
+              case 'Asesoría Nutricional':
+                return <Pizza width="30px" height="30px" />
+              default:
+                return <div />
+            }
+          }
+
+          return (
+            <div class="flex flex-col items-start gap-3">
+              <div class="flex items-center justify-center gap-3">
+                {getIcon()}
+                <h6 class="text-lg font-bold">{title}</h6>
+              </div>
+              <p class="text-sm text-muted-foreground">{description}</p>
+            </div>
+          )
+        })
+      }
+    </div>
+  </div>
+  <hr class="h-2 w-full" />
+</section>

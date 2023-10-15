@@ -1,0 +1,27 @@
+---
+// Assets Imports - Icons
+import { Check } from 'lucide-react'
+
+// Astro Imports - Globals
+import { Image } from 'astro:assets'
+
+interface Props {
+  title: string
+  description: string
+  image: image
+  info: string[]
+  precio: string
+}
+
+const { title, description, image, info, precio } = Astro.props
+---
+
+<div class="flex w-full flex-col items-center justify-center gap-5">
+  <Image src={image} alt={title} class="object-fill" height="250px" />
+  <div class="space-y-5">
+    <h4 class="text-bold text-2xl font-semibold leading-none tracking-tight">
+      {title}
+    </h4>
+    <p class="text-muted-foreground">{description}</p>
+  </div>
+</div>

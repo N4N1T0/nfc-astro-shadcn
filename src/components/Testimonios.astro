@@ -1,0 +1,46 @@
+---
+// Assets Imports - Info
+import { testimonios } from '../constants/index'
+
+// Atro Imports - Components
+import Header from './layout/Header.astro'
+---
+
+<section
+  class="flex flex-col items-center gap-10 bg-gradient-to-t from-background to-primary/10 pb-10 pt-8 dark:to-primary/5"
+  id="testimonios"
+>
+  <Header title="Nuestos Clientes" subtitle="Conoce un poco de lo que dice" />
+  <div class="grid max-w-[1680px] grid-cols-1 gap-5 px-10 md:grid-cols-3">
+    {
+      testimonios.slice(0, 3).map((testimonio) => (
+        <div class="col-span-1 rounded-lg border bg-card text-card-foreground shadow-sm">
+          <h6 class="p-6 text-2xl font-semibold leading-none tracking-tight">
+            {testimonio.name}
+          </h6>
+          <p class="p-6 pt-0">{testimonio.review}</p>
+        </div>
+      ))
+    }
+  </div>
+  <div class="hidden max-w-[1680px] grid-cols-3 gap-5 px-10 md:grid">
+    {
+      testimonios.slice(3, 6).map((testimonio) => (
+        <div class="col-span-1 rounded-lg border bg-card text-card-foreground shadow-sm">
+          <h6 class="p-6 text-2xl font-semibold leading-none tracking-tight">
+            {testimonio.name}
+          </h6>
+          <p class="p-6 pt-0">{testimonio.review}</p>
+        </div>
+      ))
+    }
+  </div>
+  <div class="mt-5 flex w-full justify-end px-10 text-accent">
+    <a
+      class="transition-colors duration-200 hover:text-accent/80"
+      href="https://www.google.es/maps/place/Nano+Fighters+Club/@36.6994397,-4.4383405,17z/data=!3m1!4b1!4m6!3m5!1s0xd72f90703cb3159:0xef91fba1a80a4a3a!8m2!3d36.6994354!4d-4.4357656!16s%2Fg%2F11sj9ml9pp?hl=es&entry=ttu"
+      rel="noreferrer noopener"
+      target="_blank">ver mas aqui</a
+    >
+  </div>
+</section>

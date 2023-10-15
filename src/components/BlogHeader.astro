@@ -1,0 +1,66 @@
+---
+// Assets Imports - styles
+import { buttonVariants } from './ui/button'
+
+// Imports Astro - Components
+import Header from './layout/Header.astro'
+
+// Import Utils
+import { getCategories } from '../lib/fetchers'
+import { cn } from '../lib/utils'
+
+const categories = await getCategories()
+
+type Props = {
+  title: string
+  subtitle: string
+}
+
+const { title, subtitle } = Astro.props
+const { category } = Astro.params
+---
+
+<header
+  class="flex flex-col items-center justify-between gap-5 py-10 pr-10 md:flex-row"
+>
+  <Header title={title} subtitle={subtitle} />
+  <div class="mx-auto mt-3 w-full px-6 md:mx-0 md:mt-0 md:w-fit md:px-0">
+    {
+      categories?.length ? (
+        <ul class="flex snap-x snap-mandatory items-center space-x-2 overflow-auto pb-2 lg:space-x-2.5">
+          <li class="flex-shrink-0 snap-start">
+            <a
+              href={`/blog`}
+              class={cn(
+                !category ? 'select-none' : '',
+                buttonVariants({
+                  variant: !category ? 'blog' : 'outline',
+                }),
+              )}
+            >
+              All posts
+            </a>
+          </li>
+          {categories.map((item) => (
+            <li class="flex-shrink-0 snap-start">
+              <a
+                href={`/categories/${item}`}
+                class={cn(
+                  'capitalize',
+                  item === category ? 'select-none' : '',
+                  buttonVariants({
+                    variant: item === category ? 'blog' : 'outline',
+                  }),
+                )}
+              >
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div />
+      )
+    }
+  </div>
+</header>

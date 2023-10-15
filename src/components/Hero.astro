@@ -1,0 +1,39 @@
+---
+// Assets Imports - Images
+import boxingGloves from '../assets/boxingGloves.png'
+
+// Astro Imports - Globals
+import { Image } from 'astro:assets'
+
+// React imports - Components
+import { FormDialog } from '../components/react/FormDialog'
+---
+
+<section class="container flex items-center gap-6 pb-8 pt-16 md:pt-0">
+  <div class="flex max-w-[980px] flex-col items-start gap-5">
+    <h1
+      class="text-5xl font-extrabold leading-tight tracking-tighter md:text-9xl"
+    >
+      Nano <span class="text-accent">Fighters</span> Club
+    </h1>
+    <p class="max-w-[700px] text-lg text-muted-foreground">
+      Experimenta la Excelencia en Boxeo y Kickboxing con Entrenamiento
+      Personalizado a Domicilio, Diseñado para Adaptarse a Tu Ritmo y Objetivos,
+      Maximizando Tu Potencial en las Artes Marciales de Combate.
+    </p>
+    <FormDialog client:load text="Contactame" />
+  </div>
+  <div class="gradient hidden aspect-square w-1/2 md:block">
+    <Image src={boxingGloves} alt="Boxing Gloves Hero" />
+  </div>
+</section>
+
+<style>
+  .gradient {
+    background: radial-gradient(
+      300px circle,
+      rgba(220, 9, 9, 0.342),
+      transparent 80%
+    );
+  }
+</style>

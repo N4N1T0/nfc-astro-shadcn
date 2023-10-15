@@ -1,0 +1,31 @@
+---
+// Assets Imports - Info & Icon
+import { faqs } from '../constants/index'
+import { ChevronDown } from 'lucide-react'
+
+// Atro Imports - Components
+import Header from './layout/Header.astro'
+---
+
+<section
+  class="flex flex-col items-center justify-center gap-10 py-10 md:py-16"
+  id="faq"
+>
+  <hr class="h-2 w-full" />
+  <Header title="Preguntas Frequentes" subtitle="Descubre algunas de las" />
+  <div
+    class="flex w-full max-w-[1680px] flex-col items-center justify-center px-10 md:px-20"
+  >
+    {
+      faqs.map((item) => (
+        <details class="w-full border-b" id="details">
+          <summary class="flex flex-1 items-center justify-between py-4 font-medium hover:underline">
+            {item.title}
+            <ChevronDown class="h-4 w-4 shrink-0" />
+          </summary>
+          <div class="py-5">{item.text}</div>
+        </details>
+      ))
+    }
+  </div>
+</section>
