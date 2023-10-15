@@ -18,7 +18,6 @@ export default function jsonLDGenerator({ type, post, url }: {type: string, post
         "author": {
           "@type": "Person",
           "name": "${post.data.author}",
-          "url": "/author/${slugify(post.data.author)}"
         },
         "datePublished": "${post.data.date}"
       }

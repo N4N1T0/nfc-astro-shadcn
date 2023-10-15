@@ -13,12 +13,14 @@ import { SheetNav } from '../react/SheetNav'
   <div
     class="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0"
   >
+    <!-- Logo -->
     <div class="flex gap-6 md:gap-10">
       <a href="/" class="flex items-center space-x-2">
         <span class="inline-block text-2xl font-bold">NFC</span>
       </a>
     </div>
     <div class="flex flex-1 items-center justify-end space-x-4">
+      <!-- Navlinks Lists -->
       <nav class="flex items-center space-x-3">
         <ul
           class="text-text/90 hidden items-center justify-between gap-5 md:flex"
@@ -37,6 +39,7 @@ import { SheetNav } from '../react/SheetNav'
           }
         </ul>
         <div class="block md:hidden">
+          <!-- Mobile Navbar -->
           <SheetNav client:visible />
         </div>
         <div>

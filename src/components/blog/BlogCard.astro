@@ -6,12 +6,15 @@ import type { CollectionEntry } from 'astro:content'
 // Utils Imports
 import { formatDate } from '../../lib/utils'
 
+// Props Types
 type Props = CollectionEntry<'blog'>
 
+// Astro Props
 const { post } = Astro.props
 ---
 
 <article class="group space-y-4">
+  <!-- Images -->
   <a
     href={`/blog/${post.slug}/`}
     class="flex h-52 transition duration-300 group-hover:-translate-y-2 group-hover:shadow-xl"
@@ -26,6 +29,7 @@ const { post } = Astro.props
     />
   </a>
 
+  <!-- Ctegories and Date -->
   <div class="flex items-center justify-between">
     <div class="space-x-3">
       {
@@ -46,6 +50,7 @@ const { post } = Astro.props
     </span>
   </div>
 
+  <!-- Title -->
   <div>
     <a href={`/blog/${post.slug}/`} class="group-hover:underline">
       <h2

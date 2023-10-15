@@ -1,12 +1,12 @@
 ---
 // import Astro - Components
 import BaseLayout from '../../layouts/BaseLayout.astro'
-import BlogCard from '../../components/BlogCard.astro'
-import BlogHeader from '../../components/BlogHeader.astro'
-import { getCollection } from 'astro:content'
+import BlogCard from '../../components/blog/BlogCard.astro'
+import BlogHeader from '../../components/blog/BlogHeader.astro'
 
 // Import Utils
 import { getPostsByCategory, getCategories } from '../../lib/fetchers'
+import { capitalizer } from '../../lib/utils'
 
 export async function getStaticPaths() {
   const categories = await getCategories()
@@ -28,7 +28,7 @@ const posts = await getPostsByCategory(category)
 ---
 
 <BaseLayout
-  title="NFC Blog"
+  title={`NFC Blog - ${capitalizer(category)}`}
   description="Articulos actualizados sobre bienestar, deportes de combate y mucho mas"
 >
   <section class="mx-auto max-w-[1680px]">

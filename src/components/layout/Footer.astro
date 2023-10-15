@@ -1,4 +1,7 @@
 ---
+// Assets Imports - Info
+import { contacts } from '../../constants/index'
+
 // Assets Imoports - Icons & buttons
 import { Instagram, MapPin, Mail, Phone, Rss } from 'lucide-react'
 import { buttonVariants } from '../ui/button'
@@ -13,52 +16,55 @@ import { buttonVariants } from '../ui/button'
     >
       Copyright © 2022 Nano Fighters
     </p>
+
+    <!-- Contact Link List -->
     <ul class="flex gap-2">
-      <li>
-        <a
-          href="http://www.instagram.com/big_nano_coach"
-          target="_blank"
-          rel="noreferrer noopener"
-          class={buttonVariants({ variant: 'ghost', size: 'icon' })}
-          ><Instagram
-            color="hsl(var(--muted-foreground))"
-            client:visible
-          /><span class="sr-only">Instagram Link</span></a
-        >
-      </li>
-      <li>
-        <a
-          href="https://maps.app.goo.gl/gGpA3JwSkiR3H8RK6"
-          target="_blank"
-          rel="noreferrer noopener"
-          class={buttonVariants({ variant: 'ghost', size: 'icon' })}
-          ><MapPin color="hsl(var(--muted-foreground))" client:visible /><span
-            class="sr-only">Google Maps Link</span
-          ></a
-        >
-      </li>
-      <li>
-        <a
-          href="mailto:nanofitnessclub@gamil.com"
-          target="_blank"
-          rel="noreferrer noopener"
-          class={buttonVariants({ variant: 'ghost', size: 'icon' })}
-          ><Mail color="hsl(var(--muted-foreground))" client:visible /><span
-            class="sr-only">Gmail Link</span
-          ></a
-        >
-      </li>
-      <li>
-        <a
-          href="https://wa.me/34647317214"
-          target="_blank"
-          rel="noreferrer noopener"
-          class={buttonVariants({ variant: 'ghost', size: 'icon' })}
-          ><Phone color="hsl(var(--muted-foreground))" client:visible /><span
-            class="sr-only">Telefono Link</span
-          ></a
-        >
-      </li>
+      {
+        contacts.map(({ label, link }) => {
+          // Function to get a Lucide Icon acording to the label
+          function getIcon() {
+            switch (label) {
+              case 'Telefono':
+                return (
+                  <Phone color="hsl(var(--muted-foreground))" client:visible />
+                )
+              case 'Email':
+                return (
+                  <Mail color="hsl(var(--muted-foreground))" client:visible />
+                )
+              case 'Zona':
+                return (
+                  <MapPin color="hsl(var(--muted-foreground))" client:visible />
+                )
+              case 'Instagram':
+                return (
+                  <Instagram
+                    color="hsl(var(--muted-foreground))"
+                    client:visible
+                  />
+                )
+              default:
+                return <div />
+            }
+          }
+
+          return (
+            <li>
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer noopener"
+                class={buttonVariants({ variant: 'ghost', size: 'icon' })}
+              >
+                {getIcon()}
+                <span class="sr-only">{`${label} Link`}</span>
+              </a>
+            </li>
+          )
+        })
+      }
+
+      <!-- RSS Link -->
       <li>
         <a
           href={`${Astro.site}/rss.xml`}

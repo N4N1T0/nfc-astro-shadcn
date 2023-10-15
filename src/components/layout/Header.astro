@@ -1,11 +1,14 @@
 ---
+// Props Types
 type Props = {
   title: string
   subtitle: string
 }
 
+// Astro Props
 const { title, subtitle } = Astro.props
 
+// Splitting the title for the Header
 const sliceTitle = title.split(' ')
 ---
 

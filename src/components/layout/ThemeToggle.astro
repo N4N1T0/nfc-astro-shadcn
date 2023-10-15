@@ -12,6 +12,7 @@ import { Button } from '../ui/button'
   <span class="sr-only">Toggle theme</span>
 </Button>
 
+<!-- Scrpit for the Theme toggle -->
 <script is:inline>
   const theme = (() => {
     if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {

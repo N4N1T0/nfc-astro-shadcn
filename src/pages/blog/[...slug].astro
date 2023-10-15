@@ -33,7 +33,13 @@ if (!slug || !post) {
 }
 ---
 
-<BaseLayout>
+<BaseLayout
+  title={title}
+  description={excerpt}
+  ogImage={image}
+  url={`${Astro.site}/${slug}`}
+  post={post}
+>
   <div class="container relative max-w-[1020px] py-10 pt-10">
     <a
       href="/blog"

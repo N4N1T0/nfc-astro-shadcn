@@ -1,4 +1,7 @@
+// Shadcn Button Import
 import { buttonVariants } from '../ui/button'
+
+// Shadcn Dialog Import
 import {
   Dialog,
   DialogContent,
@@ -7,6 +10,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+
+// Info imports
 import { contacts } from '@/constants'
 
 
