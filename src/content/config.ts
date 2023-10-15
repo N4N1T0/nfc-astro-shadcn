@@ -9,7 +9,8 @@ const blogCollection = defineCollection({ type: 'content',
     author: z.enum(['Adrian "Nano" Alvarez', 'Dayana "Good Day" Abuin']),
     categories: z.array(z.string()),
     keywords: z.array(z.string()),
-    image: image()
+    image: image(),
+    imageAlt: z.string()
   }), });
 
 export const collections = {

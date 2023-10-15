@@ -7,6 +7,7 @@ author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness']
 keywords: ['boxeo', 'historia', 'seguridad', 'grandeza', 'campeonatos', 'perseverancia']
 image: '../../assets/boxer-lede-superJumbo.jpg'
+imageAlt: 'Muhhamad Ali iconica fotografia sobre en el rival'
 ---
 
 Durante siglos, el público de todo el mundo se ha sentido cautivado por el boxeo, también conocido como "la ciencia dulce". El deporte del boxeo ha evolucionado con el tiempo, desde sus antiguos inicios hasta su espectáculo actual, y ha dejado huella tanto en el panorama deportivo como en el cultural. En esta entrada del blog le acompañamos en un apasionante viaje a través de la historia del boxeo, conociendo sus inicios, sus figuras notables, sus combates memorables y su legado perdurable.

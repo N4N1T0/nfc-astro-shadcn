@@ -7,6 +7,7 @@ author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'kickboxing', 'fitness']
 keywords: ['boxeo', 'kickboxing', 'mujeres', 'acondicionamiento', 'rendimiento', 'autodefense']
 image: '../../assets/dylan-nolte-qxYDhV0rBPk-unsplash.jpg'
+imageAlt: 'una mujer vendandose los puños para un combate'
 ---
 
 El boxeo y el kickboxing no son sólo deportes de combate dominados por hombres; se han convertido en actividades populares para las mujeres que buscan potenciarse física y mentalmente. Aunque tradicionalmente estas disciplinas se consideraban exclusivas de los hombres, la tendencia ha cambiado y ahora las mujeres aprovechan los beneficios que ofrecen el boxeo y el kickboxing. En este artículo, exploraremos las ventajas únicas del boxeo y el kickboxing para las mujeres, destacando las transformaciones físicas, mentales y emocionales que pueden ocurrir cuando las mujeres suben al ring.

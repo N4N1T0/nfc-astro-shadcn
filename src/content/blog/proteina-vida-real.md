@@ -7,6 +7,7 @@ author: 'Adrian "Nano" Alvarez'
 categories: ['nutrición', 'fitness', 'sc']
 keywords: ['proteinas', 'mito', 'daño', 'rendimiento', 'agua', 'calcio']
 image: '../../assets/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.jpg'
+imageAlt: 'cortando un filete en corte Nueva York'
 ---
 
 Lo oigo constantemente. De hecho, cuando enseño fisiología del ejercicio, reto a mis alumnos a que localicen un estudio revisado por expertos que demuestre que el consumo excesivo de proteínas daña los riñones en individuos sanos. ¿Qué cree que encontrarán?

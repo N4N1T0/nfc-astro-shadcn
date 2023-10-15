@@ -7,6 +7,7 @@ author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness']
 keywords: ['boxeo', 'deporte', 'desafios', 'mma', 'defensa', 'entrenamientos', 'artes marciales']
 image: '../../assets/johann-walter-bantz-Clv9DfJLwac-unsplash.jpg'
+imageAlt: 'un derechazo en un combate de boxeo'
 ---
 
 **Uno de los deportes más duros y emocionantes del mundo es el boxeo.** La metáfora también se aplica a la vida. El boxeo es el deporte por excelencia cuando se trata de evocar palabras y frases aplicables tanto al deporte como a la vida cotidiana.
