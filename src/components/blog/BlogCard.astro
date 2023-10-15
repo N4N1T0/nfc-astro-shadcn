@@ -4,7 +4,7 @@ import { Image } from 'astro:assets'
 import type { CollectionEntry } from 'astro:content'
 
 // Utils Imports
-import { formatDate } from '../lib/utils'
+import { formatDate } from '../../lib/utils'
 
 type Props = CollectionEntry<'blog'>
 
@@ -49,7 +49,7 @@ const { post } = Astro.props
   <div>
     <a href={`/blog/${post.slug}/`} class="group-hover:underline">
       <h2
-        class="font-heading line-clamp-3 text-xl leading-snug md:text-2xl"
+        class="font-heading text-balance line-clamp-3 text-xl leading-snug md:text-2xl"
         transition:name={'title-' + post.slug}
       >
         {post.data.title}

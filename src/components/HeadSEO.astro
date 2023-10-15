@@ -1,6 +1,10 @@
 ---
 // Atro Imports - Globals
 import { ViewTransitions } from 'astro:transitions'
+import { type CollectionEntry } from 'astro:content'
+
+// Lib Imports
+import jsonLDGenerator from '../lib/jsonLd'
 
 // Style Imports
 import '@/styles/globals.css'
@@ -9,6 +13,8 @@ interface Props {
   title?: string | undefined
   description?: string | undefined
   ogImage?: URL | undefined
+  url?: URL | undefined
+  post?: CollectionEntry<'blog'>
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
@@ -17,34 +23,68 @@ if (Astro.props.ogImage === undefined) {
   Astro.props.ogImage = new URL('og-image.png', canonicalURL)
 }
 
-const { title, description, ogImage } = Astro.props
+const { title, description, ogImage, post, url = Astro.url } = Astro.props
+
+const jsonLD = jsonLDGenerator({
+  type: post ? 'post' : 'website',
+  post: post,
+  url,
+})
 ---
 
+<!-- Basic HTML Meta Tags -->
 <meta charset="utf-8" />
 <meta name="robots" content="index, follow" />
 <meta name="googlebot" content="index, follow" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="generator" content={Astro.generator} />
+<meta name="keywords" content="your, tags" />
+<meta name="description" content="150 words" />
+<meta name="subject" content="your website's subject" />
+<meta name="language" content="ES" />
+<meta name="Classification" content="Business" />
+<meta name="author" content="name, email@hotmail.com" />
+<meta name="designer" content="" />
+<meta name="owner" content="" />
 <link rel="canonical" href={canonicalURL} />
-<link
-  rel="shortcut icon"
-  type="image/svg+xml"
-  href={`${Astro.site}favicon.svg`}
-/>
-<title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<link rel="sitemap" href="/sitemap-index.xml" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="RSS Feed para mi Website"
+  href="rss.xml"
+/>
+<title>{title}</title>
 
-<meta property="og:type" content="website" />
+<!-- Favicon -->
+<link
+  rel="apple-touch-icon-precomposed"
+  href={`${Astro.site}/apple-touch-icon.png`}
+/><!-- iPhone, iPod e Android 2.2+ -->
+<link
+  rel="shortcut icon"
+  type="image/x-icon"
+  href={`${Astro.site}/favicon.ico`}
+/>
+
+<!-- Open Graph -->
+<meta property="og:type" content={post ? 'blog.articule' : 'website'} />
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={ogImage} />
 
+<!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={canonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={ogImage} />
 
+<!-- jsonLD -->
+<Fragment set:html={jsonLD} />
+
+<!-- Astro Page Trasnitions -->
 <ViewTransitions />

@@ -1,7 +1,4 @@
-import Boxeo from '../assets/boxeo.png'
-import Kickboxing from '../assets/kickboxing.png'
-import MuayThai from '../assets/muay.png'
-import Mma from '../assets/mma.png'
+import { Boxeo, Kickboxing, Mma, MuayThai, Dayana, Rachel, Rodrigo, Rogelio, Pablo, Javier } from '../assets/index'
 
 export const services = [
   {
@@ -136,30 +133,64 @@ export const testimonios = [
     name: 'Dayana',
     review:
       'Adrian es un excelente entrenador. Es muy profesional y tiene muchos conocimientos sobre cómo hacer que sus clientes alcancen sus objetivos. Lo recomiendo 100%.',
+    image: Dayana
   },
   {
     name: 'Pablo RR',
     review:
       'Adrián es un gran profesor, me ha enseñado mucho en estos meses que llevamos. Hace un entrenamiento muy enfocado en ti y te ayuda a cumplir tus objetivos. Es muy flexible y siempre está dispuesto a ayudar🙃. Totalmente recomendable💪🏻💪🏻…',
+    image: Pablo
+
   },
   {
     name: 'Rogelio',
     review:
       'Muy buen entrenador, clases excelentes,  se lo recomiendo a todos los q quieran estar en forma y quieran aprender a defenderse',
+    image: Rogelio
+
   },
   {
     name: 'Rachel Castellanos',
     review:
       'Mi entrenador muchas gracias por los cambios que estoy viendo diariamente. Y ante todo por las ganas que me das para seguir esforzándome. 💪💪💪…',
+    image: Rachel
+
   },
   {
     name: 'Rodrigo Manzanares',
     review:
       'El mejor entrenador!! Sabe mucho y se aprende mucho con Adrian. Muy recomendable',
+    image: Rodrigo
+
   },
   {
     name: 'Javier Escribano',
     review:
       'Muy buen entrenador y muy buenas clases con un seguimiento personalizado excelente lo recomiendo totalmente',
+    image: Javier
+
   },
+]
+
+export const contacts = [
+  {
+    label:'Telefono',
+    link: "tel:+34-647-31-72-14",
+    linkLabel: '+34 647 31 72 14'
+  },
+   {
+    label:'Email',
+    link: "mailto:nanofitnessclub@gamil.com",
+    linkLabel: 'nanofitnessclub@gamil.com'
+  },
+   {
+    label:'Zona',
+    link: "https://maps.app.goo.gl/gGpA3JwSkiR3H8RK6",
+    linkLabel: 'San Pedro de Alcantara, Marbella, Nueva Andalucia, Estepona'
+  },
+  {
+    label:'Instagram',
+    link: "http://www.instagram.com/big_nano_coach",
+    linkLabel: '@big_nano_coach'
+  }
 ]

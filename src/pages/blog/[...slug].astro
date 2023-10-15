@@ -6,7 +6,7 @@ import { getCollection, type CollectionEntry } from 'astro:content'
 
 // Utils Imports
 import { formatDate, capitalizer } from '../../lib/utils'
-import { buttonVariants } from '../../components/ui/button'
+import { getRelatedPosts } from '../../lib/fetchers'
 import { ChevronLeft } from 'lucide-react'
 
 export async function getStaticPaths() {
@@ -23,6 +23,7 @@ const post = Astro.props
 const { title, date, excerpt, author, categories, image } = post.data
 const slug = Astro.params.slug
 const { Content } = await post.render()
+const relatedPosts = await getRelatedPosts(categories[0], title)
 
 if (!slug || !post) {
   return new Response(null, {
@@ -33,7 +34,7 @@ if (!slug || !post) {
 ---
 
 <BaseLayout>
-  <div class="container relative max-w-screen-md py-10 pt-10">
+  <div class="container relative max-w-[1020px] py-10 pt-10">
     <a
       href="/blog"
       class="absolute left-[-200px] top-10 hidden text-muted-foreground transition-colors duration-200 hover:text-secondary xl:inline-flex"
@@ -43,7 +44,7 @@ if (!slug || !post) {
        See all posts
     </a>
 
-    <article class="prose dark:prose-invert max-w-none">
+    <article class="prose max-w-none dark:prose-invert">
       {
         categories.map((category) => (
           <a
@@ -79,6 +80,22 @@ if (!slug || !post) {
       <p>{excerpt}</p>
       <hr class="my-6" />
       <Content />
+      <hr class="my-6" />
+      <h6 class="mb-5 text-xl text-accent">Articulos Relacionados</h6>
+      <div
+        class="flex flex-col items-center justify-between gap-5 md:flex-row md:gap-0"
+      >
+        {
+          relatedPosts.slice(0, 2).map((item) => (
+            <a
+              class="text-secondary no-underline transition-colors duration-200 hover:text-secondary/70"
+              href={`/blog/${item.slug}`}
+            >
+              {item.data.title}
+            </a>
+          ))
+        }
+      </div>
     </article>
   </div>
 </BaseLayout>

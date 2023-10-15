@@ -26,3 +26,14 @@ export function extractSegmentURL(path: string) {
 export function capitalizer(text: string) {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
+
+export function slugify(text: string) {
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+}

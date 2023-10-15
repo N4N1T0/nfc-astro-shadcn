@@ -7,6 +7,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import { contacts } from '@/constants'
 
 
 export function FormDialog({ text }: { text: string }) {
@@ -24,18 +25,12 @@ export function FormDialog({ text }: { text: string }) {
             </DialogDescription>
           </DialogHeader>
           <div className='space-y-4 mt-2'>
-            <div>
-              <h6>Telefono</h6>
-              <a href="tel:+34-647-31-72-14" className='text-secondary'>+34 647 31 72 14</a>
-            </div>
-            <div>
-              <h6>Email</h6>
-              <a href="mailto:nanofitnessclub@gamil.com" className='text-secondary'>nanofitnessclub@gamil.com</a>
-            </div>
-            <div>
-              <h6>Zona</h6>
-              <a href="https://maps.app.goo.gl/gGpA3JwSkiR3H8RK6" className='text-secondary'>San Pedro de Alcantara, Marbella, Nueva Andalucia, Estepona</a>
-            </div>
+            {contacts.map((item) => (
+              <div key={item.label}>
+                <h6>{item.label}</h6>
+                <a href={item.link} target='_blank' className='text-secondary hover:text-secondary/70 transition-colors duration-200'>{item.linkLabel}</a>
+              </div>
+            ))}
           </div>
         </DialogContent>
       </Dialog>

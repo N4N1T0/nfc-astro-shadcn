@@ -1,7 +1,7 @@
 ---
-// Assets Imoports - Icons & buttons 
-import { Instagram, MapPin, Mail, Phone } from 'lucide-react'
-import { buttonVariants } from './ui/button'
+// Assets Imoports - Icons & buttons
+import { Instagram, MapPin, Mail, Phone, Rss } from 'lucide-react'
+import { buttonVariants } from '../ui/button'
 ---
 
 <footer class="border-t py-6 md:px-8 md:py-0">
@@ -55,7 +55,18 @@ import { buttonVariants } from './ui/button'
           rel="noreferrer noopener"
           class={buttonVariants({ variant: 'ghost', size: 'icon' })}
           ><Phone color="hsl(var(--muted-foreground))" client:visible /><span
-            class="sr-only">Phone Number Link</span
+            class="sr-only">Telefono Link</span
+          ></a
+        >
+      </li>
+      <li>
+        <a
+          href={`${Astro.site}/rss.xml`}
+          target="_blank"
+          rel="noreferrer noopener"
+          class={buttonVariants({ variant: 'ghost', size: 'icon' })}
+          ><Rss color="hsl(var(--muted-foreground))" client:visible /><span
+            class="sr-only">Rss Link</span
           ></a
         >
       </li>

@@ -25,3 +25,11 @@ export async function getPostsByCategory(category: string) {
 
   return posts;
 }
+
+export async function getRelatedPosts(category: string, title: string) {
+  const posts = (await getCollection("blog"))
+    .filter((post) => post.data.categories.includes(category))
+    .filter((post) => post.data.title !== title)
+
+  return posts
+}

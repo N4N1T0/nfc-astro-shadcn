@@ -28,7 +28,7 @@ export function SheetNav() {
         </SheetHeader>
         <ul className="space-y-10 py-5 text-xl flex justify-center items-center flex-col pt-10">
           {navLinks.map((link) => (
-            <li><a href={link.link} onClick={() => setOpen(false)}>{link.label}</a></li>
+            <li key={link.label}><a href={link.link} onClick={() => setOpen(false)}>{link.label}</a></li>
           ))}
         </ul>
       </SheetContent>

@@ -1,0 +1,24 @@
+---
+// Astro Imports - Globals
+import { Image } from 'astro:assets'
+
+type Props = {
+  name: string
+  image: ImageMetadata
+  review: string
+}
+
+const { name, image, review } = Astro.props
+---
+
+<div
+  class="col-span-1 rounded-lg border bg-card text-card-foreground shadow-sm"
+>
+  <div class="flex items-center justify-between p-6">
+    <h6 class="text-2xl font-semibold leading-none tracking-tight">
+      {name}
+    </h6>
+    <Image src={image} alt={`Foto de perfil de ${name}`} />
+  </div>
+  <p class="p-6 pt-0">{review}</p>
+</div>

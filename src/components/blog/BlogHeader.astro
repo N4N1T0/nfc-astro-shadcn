@@ -1,13 +1,13 @@
 ---
 // Assets Imports - styles
-import { buttonVariants } from './ui/button'
+import { buttonVariants } from '../ui/button'
 
 // Imports Astro - Components
-import Header from './layout/Header.astro'
+import Header from '../layout/Header.astro'
 
 // Import Utils
-import { getCategories } from '../lib/fetchers'
-import { cn } from '../lib/utils'
+import { getCategories } from '../../lib/fetchers'
+import { cn } from '../../lib/utils'
 
 const categories = await getCategories()
 

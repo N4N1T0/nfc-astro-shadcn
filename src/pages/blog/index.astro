@@ -1,13 +1,14 @@
 ---
-// import Astro - Components
+// import Astro - Components & Globals
 import BaseLayout from '../../layouts/BaseLayout.astro'
-import BlogCard from '../../components/BlogCard.astro'
-import BlogHeader from '../../components/BlogHeader.astro'
+import BlogCard from '../../components/blog/BlogCard.astro'
+import BlogHeader from '../../components/blog/BlogHeader.astro'
+import { type CollectionEntry } from 'astro:content'
 
 // Import Utils
 import { getPosts } from '../../lib/fetchers'
 
-const posts = await getPosts()
+const posts: CollectionEntry<'blog'> = await getPosts()
 ---
 
 <BaseLayout
