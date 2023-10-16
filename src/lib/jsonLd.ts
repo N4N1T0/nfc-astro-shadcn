@@ -1,7 +1,6 @@
 import { type CollectionEntry } from 'astro:content'
-import { slugify } from "./utils";
 
-
+// Function to create a JsonLd acording to the type
 export default function jsonLDGenerator({ type, post, url }: {type: string, post: CollectionEntry<'blog'>, url: URL }) {
   if (type === 'post') {
     return `<script type="application/ld+json">

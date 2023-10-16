@@ -12,6 +12,7 @@ import TestimonioCard from './TestimonioCard.astro'
   id="testimonios"
 >
   <Header title="Nuestos Clientes" subtitle="Conoce un poco de lo que dice" />
+  <!-- Main Testimonio List -->
   <div class="grid max-w-[1680px] grid-cols-1 gap-5 px-10 md:grid-cols-3">
     {
       testimonios
@@ -19,6 +20,7 @@ import TestimonioCard from './TestimonioCard.astro'
         .map((testimonio) => <TestimonioCard {...testimonio} />)
     }
   </div>
+  <!-- Secondary Testimonio List, hidden in mobile -->
   <div class="hidden max-w-[1680px] grid-cols-3 gap-5 px-10 md:grid">
     {
       testimonios
@@ -26,6 +28,7 @@ import TestimonioCard from './TestimonioCard.astro'
         .map((testimonio) => <TestimonioCard {...testimonio} />)
     }
   </div>
+  <!-- Google Maps reviwes link -->
   <div class="mt-5 flex w-full animate-pulse justify-end px-10 text-accent">
     <a
       class="transition-colors duration-200 hover:text-accent/80"

@@ -17,6 +17,7 @@ import Header from './layout/Header.astro'
   <div
     class="flex max-w-[1680px] flex-col items-center justify-center gap-10 p-10 md:flex-row md:gap-14"
   >
+  <!-- Services List -->
     {
       services.map(({ title, description, image, info, precio }) => (
         <TrainingCard {title} {description} {image} {info} {precio} />
@@ -31,8 +32,10 @@ import Header from './layout/Header.astro'
     <div
       class="flex w-full flex-col items-center justify-center gap-10 md:flex-row"
     >
+    <!-- Include List -->
       {
         include.map(({ title, description }) => {
+          // Function to get an icon with the title
           function getIcon() {
             switch (title) {
               case 'A Domicilio':

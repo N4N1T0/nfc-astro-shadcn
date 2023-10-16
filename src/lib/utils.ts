@@ -1,14 +1,12 @@
 import { type ClassValue, clsx } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 
+// Function to give more importance to the classes
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function wait(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
+// Function to format the date to spain format
 export function formatDate(date: Date) {
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, '0')
@@ -17,23 +15,7 @@ export function formatDate(date: Date) {
   return `${year}-${month}-${day}`;
 }
 
-export function extractSegmentURL(path: string) {
-  if (!path) return "";
-  if (path === "/") return null;
-  return path.split("/")[1];
-}
-
+// Function capitalize words
 export function capitalizer(text: string) {
   return text.charAt(0).toUpperCase() + text.slice(1);
-}
-
-export function slugify(text: string) {
-  return text
-    .toString()
-    .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[^\w-]+/g, '')
-    .replace(/--+/g, '-')
-    .replace(/^-+/, '')
-    .replace(/-+$/, '');
 }

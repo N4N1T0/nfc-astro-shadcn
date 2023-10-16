@@ -2,12 +2,14 @@
 // Astro Imports - Globals
 import { Image } from 'astro:assets'
 
+// Props type
 type Props = {
   name: string
   image: ImageMetadata
   review: string
 }
 
+// Astro Props
 const { name, image, review } = Astro.props
 ---
 

@@ -1,6 +1,7 @@
 
 import { z, defineCollection } from 'astro:content';
 
+// Typescript for the Blog Content
 const blogCollection = defineCollection({ type: 'content', 
   schema: ({ image }) => z.object({
     title: z.string().max(60, "For optimze SEO, please provide a title with 60 characters or less"),

@@ -2,6 +2,7 @@
 // Astro Imports - Globals
 import { Image } from 'astro:assets'
 
+// Props interface
 interface Props {
   title: string
   description: string
@@ -10,6 +11,7 @@ interface Props {
   precio: string
 }
 
+// Astro Props
 const { title, description, image } = Astro.props
 ---
 

@@ -96,12 +96,12 @@ export const faqs = [
     text: 'Ofrecemos un reembolso del 50% de los paquetes de formación si decide abandonarlos en un plazo determinado. Entendemos que las circunstancias pueden cambiar, y queremos asegurarnos de que usted tiene la flexibilidad para tomar la mejor decisión para usted.',
   },
   {
-    title: '¿Qué tipos de clases hay disponibles?',
-    text: 'Ofrecemos una variedad de clases, incluyendo boxeo, kickboxing, o una combinación de ambos. Si prefieres centrarte en una disciplina o disfrutar de los beneficios de entrenar en ambos estilos, tenemos clases adaptadas para satisfacer tus intereses y objetivos específicos.',
-  },
-  {
     title: 'Necesito traer algún equipo para las sesiones de entrenamiento?',
     text: 'Proporcionamos todo el equipo necesario para las sesiones de entrenamiento, incluyendo guantes, vendas de mano y almohadillas. No necesitas preocuparte por comprar tu propio equipo inicialmente. Sólo tienes que traerte a ti mismo y una actitud positiva.',
+  },
+  {
+    title: 'En que localidad son los entrenamientos',
+    text: 'Proporcionamos entrenamientos a domicilio o en area libre por la localidad de Marbella, San Pedro de Alcantara y Estepona',
   },
 ]
 

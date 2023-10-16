@@ -1,5 +1,6 @@
 import { getCollection } from "astro:content";
 
+// Get all the categories af the Posts
 export async function getCategories() {
   const posts = await getCollection("blog");
 
@@ -10,6 +11,7 @@ export async function getCategories() {
   return categories;
 }
 
+// Get all the posts
 export async function getPosts() {
   const posts = (await getCollection("blog")).sort(
     (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
@@ -18,6 +20,7 @@ export async function getPosts() {
   return posts;
 }
 
+// Get all the posts acording to the category
 export async function getPostsByCategory(category: string) {
   const posts = (await getCollection("blog"))
     .filter((post) => post.data.categories.includes(category))
@@ -26,6 +29,7 @@ export async function getPostsByCategory(category: string) {
   return posts;
 }
 
+// Get all the posts acording to the category except the one in view
 export async function getRelatedPosts(category: string, title: string) {
   const posts = (await getCollection("blog"))
     .filter((post) => post.data.categories.includes(category))
