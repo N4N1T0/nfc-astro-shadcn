@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: dark light;
+}
 
 @layer base {
   :root {
