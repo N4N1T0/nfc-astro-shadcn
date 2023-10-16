@@ -25,6 +25,8 @@ if (!category) {
 }
 
 const posts = await getPostsByCategory(category)
+
+export const prerender = true
 ---
 
 <BaseLayout

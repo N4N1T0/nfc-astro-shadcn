@@ -9,6 +9,8 @@ import { type CollectionEntry } from 'astro:content'
 import { getPosts } from '../../lib/fetchers'
 
 const posts: CollectionEntry<'blog'> = await getPosts()
+
+export const prerender = true
 ---
 
 <BaseLayout
