@@ -53,7 +53,7 @@ const jsonLD = jsonLDGenerator({
 <link rel="canonical" href={canonicalURL} />
 <meta name="title" content={title} />
 <meta name="description" content={description} />
-<link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="sitemap" href={`${Astro.site}sitemap-0.xml`} />
 <link
   rel="alternate"
   type="application/rss+xml"
