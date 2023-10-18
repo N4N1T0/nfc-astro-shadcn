@@ -8,7 +8,7 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  site: process.env.CI ? 'https://nfc-astro-shadcn.vercel.app' : 'http://localhost:4321',
+  site: process.env.CI ? 'https://www.nanofighters.club' : 'http://localhost:4321',
   integrations: [react(), tailwind({
     applyBaseStyles: false
   }), sitemap(), partytown()],
