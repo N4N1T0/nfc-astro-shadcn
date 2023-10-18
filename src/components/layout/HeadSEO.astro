@@ -37,17 +37,36 @@ const jsonLD = jsonLDGenerator({
 })
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FM93CYH0GQ"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+
+  gtag('config', 'G-FM93CYH0GQ')
+</script>
+
 <!-- Basic HTML Meta Tags -->
 <meta charset="utf-8" />
 <meta name="robots" content="index, follow" />
 <meta name="googlebot" content="index, follow" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="generator" content={Astro.generator} />
-<meta name="keywords" content="boxeo en Marbella, boxeo en San Pedro de Alcántara, kickboxing en Marbella, kickboxing en San Pedro de Alcántara, entrenador de boxeo, entrenador de kickboxing, entrenador a domicilio, entrenamiento personalizado, grupos reducidos, escuela cubana de boxeo, entrenemiento en area libre" />
+<meta
+  name="keywords"
+  content="boxeo en Marbella, boxeo en San Pedro de Alcántara, kickboxing en Marbella, kickboxing en San Pedro de Alcántara, entrenador de boxeo, entrenador de kickboxing, entrenador a domicilio, entrenamiento personalizado, grupos reducidos, escuela cubana de boxeo, entrenemiento en area libre"
+/>
 <meta name="subject" content="Combat sports training business" />
 <meta name="language" content="ES" />
 <meta name="Classification" content="Business" />
-<meta name="author" content="Adrian 'Nano' Alvarez, adrian.alvarezalonso1991@gmail.com" />
+<meta
+  name="author"
+  content="Adrian 'Nano' Alvarez, adrian.alvarezalonso1991@gmail.com"
+/>
 <meta name="designer" content="Adrian 'Nano' Alvarez" />
 <meta name="owner" content="Adrian 'Nano' Alvarez" />
 <link rel="canonical" href={canonicalURL} />
@@ -89,6 +108,21 @@ const jsonLD = jsonLDGenerator({
 
 <!-- jsonLD -->
 <Fragment set:html={jsonLD} />
+
+<!-- Google Tag Manager -->
+<script>
+  ;(function (w, d, s, l, i) {
+    w[l] = w[l] || []
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : ''
+    j.async = true
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+    f.parentNode.insertBefore(j, f)
+  })(window, document, 'script', 'dataLayer', 'GTM-WVVRPDML')
+</script>
+<!-- End Google Tag Manager -->
 
 <!-- Astro Page Trasnitions -->
 <ViewTransitions />

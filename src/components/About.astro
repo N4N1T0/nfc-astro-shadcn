@@ -26,13 +26,15 @@ import { Image } from 'astro:assets'
   </div>
   <hr class="h-2 w-full" />
   <div
-    class="flex max-w-[1280px] flex-col items-center justify-center gap-10 py-10 md:flex-row"
+    class="flex max-w-[1280px] flex-col items-center justify-center gap-10 py-10 md:flex-row md:px-0 px-5"
   >
 <!-- Image and Info -->
     <Image
       src={nano}
       alt="Foto de perfil de Big Nano Coach"
-      class="w-[300px] rounded-xl md:w-[400px]"
+      class="rounded-xl"
+      height={400}
+      width={400}
     />
     <div class="px-10 md:p-0">
       <p class="text-xs uppercase text-accent md:text-base">
