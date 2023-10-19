@@ -32,7 +32,7 @@ export function FormDialog({ text }: { text: string }) {
           <div className='space-y-4 mt-2'>
             {contacts.map((item) => (
               <div key={item.label}>
-                <h6>{item.label}</h6>
+                <h4>{item.label}</h4>
                 <a href={item.link} target='_blank' className='text-secondary hover:text-secondary/70 transition-colors duration-200'>{item.linkLabel}</a>
               </div>
             ))}

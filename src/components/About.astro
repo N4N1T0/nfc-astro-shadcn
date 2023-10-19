@@ -14,11 +14,11 @@ import { Image } from 'astro:assets'
   <div
     class="flex w-full max-w-[1680px] animate-marquee items-center justify-between gap-3 px-5 md:animate-none md:gap-0"
   >
-  <!-- Stats List marque in mobile -->
+    <!-- Stats List marque in mobile -->
     {
       stats.map((stat) => (
         <div class="flex w-auto gap-3">
-          <h6 class="text-5xl text-accent">{stat.number}</h6>
+          <h4 class="text-5xl text-accent">{stat.number}</h4>
           <p class="text-text/80 flex-wrap" set:html={stat.text} />
         </div>
       ))
@@ -26,9 +26,9 @@ import { Image } from 'astro:assets'
   </div>
   <hr class="h-2 w-full" />
   <div
-    class="flex max-w-[1280px] flex-col items-center justify-center gap-10 py-10 md:flex-row md:px-0 px-5"
+    class="flex max-w-[1280px] flex-col items-center justify-center gap-10 px-5 py-10 md:flex-row md:px-0"
   >
-<!-- Image and Info -->
+    <!-- Image and Info -->
     <Image
       src={nano}
       alt="Foto de perfil de Big Nano Coach"
@@ -52,9 +52,10 @@ import { Image } from 'astro:assets'
         entrenador de alto rendimiento de la Federación de Judo-Kickboxing, he
         tenido el privilegio de guiar a los atletas hacia el máximo rendimiento.
         En el camino, competí en varios torneos de nivel junior, alimentando mi
-        pasión por el deporte. Con más de una década de experiencia en entrenamiento 
-        personalizado, me dedico a ayudar a las personas a liberar todo su potencial 
-        en los deportes de combate y más allá. entrenando a domicilio o en area libre en hermosa Marbella
+        pasión por el deporte. Con más de una década de experiencia en
+        entrenamiento personalizado, me dedico a ayudar a las personas a liberar
+        todo su potencial en los deportes de combate y más allá. entrenando a
+        domicilio o en area libre en hermosa Marbella
       </p>
     </div>
   </div>

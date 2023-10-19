@@ -11,7 +11,12 @@ export default defineConfig({
   site: process.env.CI ? 'https://www.nanofighters.club' : 'http://localhost:4321',
   integrations: [react(), tailwind({
     applyBaseStyles: false
-  }), sitemap(), partytown()],
+  }), sitemap(), partytown({
+    config: {
+        forward: ["dataLayer.push"],
+        debug: false
+      },
+  })],
   output: "server",
   adapter: vercel()
 });
