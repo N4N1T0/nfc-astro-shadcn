@@ -1,0 +1,126 @@
+---
+// Astro Imports - Layout & Globals
+import { Image } from 'astro:assets'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { getCollection, type CollectionEntry } from 'astro:content'
+
+// Utils Imports
+import { formatDate, capitalizer } from '../../lib/utils'
+import { getRelatedPosts } from '../../lib/fetchers'
+import { ChevronLeft } from 'lucide-react'
+
+// Function to create the path for all the blogs
+export async function getStaticPaths() {
+  const posts = await getCollection('blog')
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }))
+}
+
+// Props types
+type Props = CollectionEntry<'blog'>
+
+// Astro Props
+const post = Astro.props
+const { title, date, excerpt, author, categories, image } = post.data
+
+// Astro Params
+const slug = Astro.params.slug
+
+// Special function to render the content of the MD
+const { Content } = await post.render()
+
+// Get realated Posts
+const relatedPosts = await getRelatedPosts(categories[0], title)
+
+// Redirect in case the path dosent exits
+if (!slug || !post) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not found',
+  })
+}
+
+// create static page instead of SSR
+export const prerender = true
+---
+
+<BaseLayout
+  title={title}
+  description={excerpt}
+  ogImage={image}
+  url={`${Astro.site}/${slug}`}
+  post={post}
+>
+  <div class="container relative max-w-[1020px] py-10 pt-10">
+    <a
+      href="/blog"
+      class="absolute left-[-200px] top-10 hidden text-muted-foreground transition-colors duration-200 hover:text-secondary xl:inline-flex"
+      transition:animate="slide"
+    >
+      <ChevronLeft height="20px" />
+       See all posts
+    </a>
+
+    <!-- Category List -->
+    <article class="prose max-w-none dark:prose-invert">
+      {
+        categories.map((category) => (
+          <a
+            class="mr-3 rounded-lg bg-accent px-3 py-1 text-xs text-white no-underline transition-colors duration-200 hover:bg-accent/50 md:text-sm"
+            href={`/categories/${category}`}
+          >
+            {capitalizer(category)}
+          </a>
+        ))
+      }
+      <!-- Image -->
+      <Image
+        class="my-6 overflow-hidden rounded-xl"
+        width={1020}
+        height={510}
+        src={image}
+        alt={title}
+        transition:name={'img-' + slug}
+      />
+      <!-- Date and Author -->
+      <div class="flex items-center justify-between">
+        <span
+          class="font-medium text-muted-foreground"
+          transition:name={'date-' + slug}
+        >
+          {formatDate(date)}
+        </span>
+        <span class="font-medium text-muted-foreground">
+          {author}
+        </span>
+      </div>
+      <!-- Title and description -->
+      <h1 class="font-heading my-4 text-4xl" transition:name={'title-' + slug}>
+        {title}
+      </h1>
+      <p>{excerpt}</p>
+      <hr class="my-6" />
+      <!-- Content -->
+      <Content />
+      <hr class="my-6" />
+      <h4 class="mb-5 text-xl text-accent">Articulos Relacionados</h4>
+      <!-- related posts -->
+      <div
+        class="flex flex-col items-center justify-between gap-5 md:flex-row md:gap-0"
+      >
+        {
+          relatedPosts.slice(0, 2).map((item) => (
+            <a
+              class="text-secondary no-underline transition-colors duration-200 hover:text-secondary/70"
+              href={`/blog/${item.slug}`}
+            >
+              {item.data.title}
+            </a>
+          ))
+        }
+      </div>
+    </article>
+  </div>
+</BaseLayout>

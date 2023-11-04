@@ -1,12 +1,15 @@
 ---
+// Translation Imports
+import { getLangFromUrl } from '../../i18n/utils'
+
 // Assets Imports - Info
 import { navLinks } from '../../constants/index'
 
-// Astro Imports - Components
-import ThemeToggle from './ThemeToggle.astro'
-
 // React Imports - Components
 import { SheetNav } from '../react/SheetNav'
+import { PopoverLang } from '../react/PopoverLang'
+
+const lang: 'es' | 'en' = getLangFromUrl(Astro.url)
 ---
 
 <header class="sticky top-0 z-40 w-full border-b bg-background">
@@ -32,7 +35,7 @@ import { SheetNav } from '../react/SheetNav'
                   class="transition-colors duration-200 hover:text-secondary"
                   href={link.link}
                 >
-                  {link.label}
+                  {link.label[lang]}
                 </a>
               </li>
             ))
@@ -40,10 +43,11 @@ import { SheetNav } from '../react/SheetNav'
         </ul>
         <div class="block md:hidden">
           <!-- Mobile Navbar -->
-          <SheetNav client:visible />
+          <SheetNav client:visible lang={lang} />
         </div>
         <div>
-          <ThemeToggle />
+          <PopoverLang client:load lang={lang} />
+          <div></div>
         </div>
       </nav>
     </div>

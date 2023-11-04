@@ -1,4 +1,7 @@
 ---
+// Translation Imports
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
 // Assets Imports - Images
 import boxingGloves from '../assets/boxingGloves.png'
 
@@ -7,6 +10,9 @@ import { Image } from 'astro:assets'
 
 // React imports - Components
 import { FormDialog } from '../components/react/FormDialog'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section class="container flex items-center gap-6 pb-8 pt-16 md:pt-0">
@@ -17,11 +23,9 @@ import { FormDialog } from '../components/react/FormDialog'
       Nano <span class="text-accent">Fighters</span> Club
     </h1>
     <p class="max-w-[700px] text-lg text-muted-foreground">
-      Experimenta la Excelencia en Boxeo y Kickboxing con Entrenamiento
-      Personalizado a Domicilio en Marbella, Diseñado para Adaptarse a Tu Ritmo y Objetivos,
-      Maximizando Tu Potencial en las Artes Marciales de Combate.
+      {t('hero-description')}
     </p>
-    <FormDialog client:load text="Contactame" />
+    <FormDialog client:load text={t('dialog-text')} lang={lang} />
   </div>
   <div class="gradient hidden aspect-square w-1/2 md:block">
     <Image
