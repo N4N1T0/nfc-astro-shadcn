@@ -271,6 +271,7 @@ export const testimonios = [
   },
 ]
 
+// Translation Completed
 export const contacts = [
   {
     label: {

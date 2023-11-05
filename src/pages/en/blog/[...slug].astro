@@ -1,17 +1,19 @@
 ---
 // Astro Imports - Layout & Globals
 import { Image } from 'astro:assets'
-import BaseLayout from '../../layouts/BaseLayout.astro'
+import BaseLayout from '../../../layouts/BaseLayout.astro'
 import { getCollection, type CollectionEntry } from 'astro:content'
 
 // Utils Imports
-import { formatDate, capitalizer } from '../../lib/utils'
-import { getRelatedPosts } from '../../lib/fetchers'
+import { formatDate, capitalizer } from '../../../lib/utils'
+import { getRelatedPosts } from '../../../lib/fetchers'
 import { ChevronLeft } from 'lucide-react'
 
 // Function to create the path for all the blogs
 export async function getStaticPaths() {
-  const posts = await getCollection('blog')
+  const posts = await getCollection('blog', ({ id }) => {
+    return id.startsWith('en/')
+  })
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: post,
@@ -55,7 +57,7 @@ export const prerender = true
 >
   <div class="container relative max-w-[1020px] py-10 pt-10">
     <a
-      href="/blog"
+      href="/en/blog"
       class="absolute left-[-200px] top-10 hidden text-muted-foreground transition-colors duration-200 hover:text-secondary xl:inline-flex"
       transition:animate="slide"
     >
@@ -64,12 +66,14 @@ export const prerender = true
     </a>
 
     <!-- Category List -->
-    <article class="prose max-w-none dark:prose-invert">
+    <article
+      class="prose max-w-none prose-headings:text-white prose-p:text-white/70 prose-strong:text-white prose-ul:text-white/50"
+    >
       {
         categories.map((category) => (
           <a
             class="mr-3 rounded-lg bg-accent px-3 py-1 text-xs text-white no-underline transition-colors duration-200 hover:bg-accent/50 md:text-sm"
-            href={`/categories/${category}`}
+            href={`/en/categories/${category}`}
           >
             {capitalizer(category)}
           </a>
@@ -114,7 +118,7 @@ export const prerender = true
           relatedPosts.slice(0, 2).map((item) => (
             <a
               class="text-secondary no-underline transition-colors duration-200 hover:text-secondary/70"
-              href={`/blog/${item.slug}`}
+              href={`/en/blog/${item.slug}`}
             >
               {item.data.title}
             </a>

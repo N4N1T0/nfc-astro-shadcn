@@ -6,7 +6,7 @@ excerpt: 'Uno de los deportes más duros y emocionantes del mundo es el boxeo. L
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness']
 keywords: ['boxeo', 'deporte', 'desafios', 'mma', 'defensa', 'entrenamientos', 'artes marciales']
-image: '../../assets/johann-walter-bantz-Clv9DfJLwac-unsplash.jpg'
+image: '../../../assets/johann-walter-bantz-Clv9DfJLwac-unsplash.jpg'
 imageAlt: 'un derechazo en un combate de boxeo'
 ---
 

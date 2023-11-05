@@ -6,7 +6,7 @@ excerpt: 'Descubre los beneficios transformadores del boxeo y el kickboxing para
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'kickboxing', 'fitness']
 keywords: ['boxeo', 'kickboxing', 'mujeres', 'acondicionamiento', 'rendimiento', 'autodefense']
-image: '../../assets/dylan-nolte-qxYDhV0rBPk-unsplash.jpg'
+image: '../../../assets/dylan-nolte-qxYDhV0rBPk-unsplash.jpg'
 imageAlt: 'una mujer vendandose los puños para un combate'
 ---
 

@@ -6,7 +6,7 @@ excerpt: '¿Qué significa tener piernas y glúteos fuertes? Pues implica algo m
 author: 'Adrian "Nano" Alvarez'
 categories: ['sc', 'fitness', 'kickboxing']
 keywords: ['fuerza', 'sentadillas', 'estabilidad', 'gluteos', 'piernas', 'explosividad']
-image: '../../assets/sven-mieke-optBC2FxCfc-unsplash.jpg'
+image: '../../../assets/sven-mieke-optBC2FxCfc-unsplash.jpg'
 imageAlt: 'una mujer realizando una sentadilla'
 ---
 

@@ -33,7 +33,7 @@ const lang: 'es' | 'en' = getLangFromUrl(Astro.url)
               <li>
                 <a
                   class="transition-colors duration-200 hover:text-secondary"
-                  href={link.link}
+                  href={`/${lang}${link.link}`}
                 >
                   {link.label[lang]}
                 </a>
@@ -46,7 +46,7 @@ const lang: 'es' | 'en' = getLangFromUrl(Astro.url)
           <SheetNav client:visible lang={lang} />
         </div>
         <div>
-          <PopoverLang client:load lang={lang} />
+          <PopoverLang client:load lang={lang} url={Astro.url} />
           <div></div>
         </div>
       </nav>

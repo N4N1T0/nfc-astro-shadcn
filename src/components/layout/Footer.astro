@@ -5,6 +5,10 @@ import { contacts } from '../../constants/index'
 // Assets Imoports - Icons & buttons
 import { Instagram, MapPin, Mail, Phone, Rss } from 'lucide-react'
 import { buttonVariants } from '../ui/button'
+
+// Translation Imports
+import { getLangFromUrl } from '../../i18n/utils'
+const lang = getLangFromUrl(Astro.url)
 ---
 
 <footer class="border-t py-6 md:px-8 md:py-0">
@@ -23,8 +27,12 @@ import { buttonVariants } from '../ui/button'
         contacts.map(({ label, link }) => {
           // Function to get a Lucide Icon acording to the label
           function getIcon() {
-            switch (label) {
+            switch (label[lang]) {
               case 'Telefono':
+                return (
+                  <Phone color="hsl(var(--muted-foreground))" client:visible />
+                )
+              case 'Cellphone':
                 return (
                   <Phone color="hsl(var(--muted-foreground))" client:visible />
                 )
@@ -32,7 +40,15 @@ import { buttonVariants } from '../ui/button'
                 return (
                   <Mail color="hsl(var(--muted-foreground))" client:visible />
                 )
+              case 'Mail':
+                return (
+                  <Mail color="hsl(var(--muted-foreground))" client:visible />
+                )
               case 'Zona':
+                return (
+                  <MapPin color="hsl(var(--muted-foreground))" client:visible />
+                )
+              case 'Location':
                 return (
                   <MapPin color="hsl(var(--muted-foreground))" client:visible />
                 )

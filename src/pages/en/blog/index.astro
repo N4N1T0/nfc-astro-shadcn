@@ -1,15 +1,19 @@
 ---
 // import Astro - Components & Globals
-import BaseLayout from '../../layouts/BaseLayout.astro'
-import BlogCard from '../../components/blog/BlogCard.astro'
-import BlogHeader from '../../components/blog/BlogHeader.astro'
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import BlogCard from '../../../components/blog/BlogCard.astro'
+import BlogHeader from '../../../components/blog/BlogHeader.astro'
 import { type CollectionEntry } from 'astro:content'
 
 // Import Utils
-import { getPosts } from '../../lib/fetchers'
+import { getPosts } from '../../../lib/fetchers'
+
+// Translation Imports
+import { getLangFromUrl } from '../../../i18n/utils'
+const lang = getLangFromUrl(Astro.url)
 
 // Get all Posts
-const posts: CollectionEntry<'blog'> = await getPosts()
+const posts: CollectionEntry<'blog'> = await getPosts(lang)
 
 // create static page instead of SSR
 export const prerender = true

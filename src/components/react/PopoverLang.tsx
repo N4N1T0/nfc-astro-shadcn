@@ -4,8 +4,9 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import { Button } from "../ui/button"
+import { toggleUrl } from "@/lib/utils"
 
-export function PopoverLang({ lang }: { lang: 'es' | 'en' }) {
+export function PopoverLang({ lang, url }: { lang: 'es' | 'en', url: URL }) {
   return (
     <Popover>
       <PopoverTrigger asChild>
@@ -13,7 +14,7 @@ export function PopoverLang({ lang }: { lang: 'es' | 'en' }) {
           variant="outline"
           role="combobox"
         >
-          {lang}
+          {lang === 'en' ? 'English' : 'Español'}
         </Button></PopoverTrigger>
       <PopoverContent className="w-fit">
         <ul>

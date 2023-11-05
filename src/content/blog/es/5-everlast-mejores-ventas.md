@@ -1,12 +1,12 @@
 ---
 title: 'Top 5 Best Sellers Everlast'
 date: 2023-06-20
-slug: '5-everlast-best-seller'
+slug: '5-everlast-mejores-ventas'
 excerpt: 'Descubre los 5 mejores productos de Everlast para deportes y fitness. Equípate con lo mejor en guantes de boxeo, accesorios y más. ¡Logra tu máximo rendimiento!'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness', 'kickboxing']
 keywords: ["Everlast", "Best Sellers", "Deportes", "Fitness", "Equipos Deportivos", "Guantes de Boxeo", "Productos Populares", "Rendimiento Deportivo", "Equipamiento Fitness", "Accesorios Deportivos"]
-image: '../../assets/sylwester-walczak-XFhaYR1kbCc-unsplash.jpg'
+image: '../../../assets/sylwester-walczak-XFhaYR1kbCc-unsplash.jpg'
 imageAlt: 'Guantes Everlast en el ring con un reflejo de la bandera cubana'
 ---
 

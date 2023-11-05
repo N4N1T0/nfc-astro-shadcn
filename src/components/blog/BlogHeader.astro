@@ -1,4 +1,8 @@
 ---
+// Translation Imports
+import { getLangFromUrl } from '../../i18n/utils'
+const lang = getLangFromUrl(Astro.url)
+
 // Assets Imports - styles
 import { buttonVariants } from '../ui/button'
 
@@ -10,7 +14,7 @@ import { getCategories } from '../../lib/fetchers'
 import { cn } from '../../lib/utils'
 
 // Categories Fetch
-const categories = await getCategories()
+const categories = await getCategories(lang)
 
 // Props Types
 type Props = {
@@ -36,7 +40,7 @@ const { category } = Astro.params
         <ul class="flex snap-x snap-mandatory items-center space-x-2 overflow-auto pb-2 lg:space-x-2.5">
           <li class="flex-shrink-0 snap-start">
             <a
-              href={`/blog`}
+              href={`/${lang}/blog`}
               class={cn(
                 !category ? 'select-none' : '',
                 buttonVariants({
@@ -50,7 +54,7 @@ const { category } = Astro.params
           {categories.map((item) => (
             <li class="flex-shrink-0 snap-start">
               <a
-                href={`/categories/${item}`}
+                href={`/${lang}/categories/${item}`}
                 class={cn(
                   'capitalize',
                   item === category ? 'select-none' : '',

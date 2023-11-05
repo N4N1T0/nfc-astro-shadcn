@@ -1,16 +1,16 @@
 ---
 // import Astro - Components
-import BaseLayout from '../../layouts/BaseLayout.astro'
-import BlogCard from '../../components/blog/BlogCard.astro'
-import BlogHeader from '../../components/blog/BlogHeader.astro'
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import BlogCard from '../../../components/blog/BlogCard.astro'
+import BlogHeader from '../../../components/blog/BlogHeader.astro'
 
 // Import Utils
-import { getPostsByCategory, getCategories } from '../../lib/fetchers'
-import { capitalizer } from '../../lib/utils'
+import { getPostsByCategory, getCategories } from '../../../lib/fetchers'
+import { capitalizer } from '../../../lib/utils'
 
 // Function to create the path for all the categories of the blog
 export async function getStaticPaths() {
-  const categories = await getCategories()
+  const categories = await getCategories('es')
   return categories.map((category) => ({
     params: { category: category },
   }))
@@ -28,7 +28,7 @@ if (!category) {
 }
 
 // Get Posts by categories
-const posts = await getPostsByCategory(category)
+const posts = await getPostsByCategory(category, 'es')
 
 // create static page instead of SSR
 export const prerender = true
