@@ -7,8 +7,6 @@ export async function getCategories(lang: string) {
   const categories = [
     ...new Set(posts.map((post) => post.data.categories).flat())
   ];
-
-  console.log(categories)
   return categories;
 }
 

@@ -47,6 +47,7 @@ const { category } = Astro.params
                   variant: !category ? 'blog' : 'outline',
                 }),
               )}
+              aria-label="All Posts Link"
             >
               All posts
             </a>
@@ -62,6 +63,7 @@ const { category } = Astro.params
                     variant: item === category ? 'blog' : 'outline',
                   }),
                 )}
+                aria-label={`Categorie-${item}`}
               >
                 {item}
               </a>

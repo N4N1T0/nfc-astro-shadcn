@@ -22,6 +22,7 @@ const lang = getLangFromUrl(Astro.url)
   <a
     href={`/${lang}/blog/${post.slug}/`}
     class="flex h-52 transition duration-300 group-hover:-translate-y-2 group-hover:shadow-xl"
+    aria-label={`Post-${post.data.title}`}
   >
     <Image
       class="h-full w-full overflow-hidden rounded-xl object-cover"
