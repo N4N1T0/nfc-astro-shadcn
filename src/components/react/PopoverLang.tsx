@@ -4,7 +4,6 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import { Button } from "../ui/button"
-import { toggleUrl } from "@/lib/utils"
 
 export function PopoverLang({ lang, url }: { lang: 'es' | 'en', url: URL }) {
   return (
@@ -13,6 +12,7 @@ export function PopoverLang({ lang, url }: { lang: 'es' | 'en', url: URL }) {
         <Button
           variant="outline"
           role="combobox"
+          aria-labelledby="Language toggle"
         >
           {lang === 'en' ? 'English' : 'Español'}
         </Button></PopoverTrigger>

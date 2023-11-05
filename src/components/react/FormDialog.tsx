@@ -25,7 +25,7 @@ export function FormDialog({ text, lang }: { text: string, lang: 'es' | 'en' }) 
     <div className='w-[fit-content] mt-3'>
       <Dialog>
         <DialogTrigger asChild>
-          <div className={`${buttonVariants()} cursor-pointer`}>{text}</div>
+          <div className={`${buttonVariants()} cursor-pointer`} aria-label={text}>{text}</div>
         </DialogTrigger>
         <DialogContent className='w-auto pt-16 md:pt-10'>
           <DialogHeader>
