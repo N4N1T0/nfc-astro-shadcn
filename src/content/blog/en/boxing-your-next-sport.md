@@ -5,7 +5,28 @@ slug: 'boxing-your-next-sport'
 excerpt: 'One of the toughest and most exciting sports in the world is boxing. The metaphor also applies to life.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness']
-keywords: ['boxing', 'sport', 'challenges', 'MMA', 'defense', 'training', 'martial arts']
+keywords: [
+  'boxing',
+  'sport',
+  'challenges',
+  'MMA',
+  'defense',
+  'training',
+  'martial arts',
+  'combat sports',
+  'fighting techniques',
+  'self-defense',
+  'fitness regimen',
+  'sparring',
+  'boxing gym',
+  'mixed martial arts',
+  'fight preparation',
+  'fight strategy',
+  'physical conditioning',
+  'combat training',
+  'combat athletes',
+  'striking techniques'
+]
 image: '../../../assets/johann-walter-bantz-Clv9DfJLwac-unsplash.jpg'
 imageAlt: 'a right hook in a boxing match'
 ---

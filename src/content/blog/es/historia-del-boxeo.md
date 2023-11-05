@@ -5,7 +5,28 @@ slug: 'historia-del-boxeo'
 excerpt: 'Descubra la cautivadora historia del boxeo, desde sus orígenes ancestrales hasta sus legendarios púgiles'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness']
-keywords: ['boxeo', 'historia', 'seguridad', 'grandeza', 'campeonatos', 'perseverancia']
+keywords: [
+  'boxeo',
+  'historia',
+  'seguridad',
+  'grandeza',
+  'campeonatos',
+  'perseverancia',
+  'historia del boxeo',
+  'medidas de seguridad en el boxeo',
+  'leyendas del boxeo',
+  'campeonatos de boxeo',
+  'logros en el boxeo',
+  'perseverancia en el boxeo',
+  'boxeadores legendarios',
+  'técnicas de seguridad en el ring',
+  'historia de los campeonatos de boxeo',
+  'logros en la historia del boxeo',
+  'leyendas del boxeo mundial',
+  'grandes campeonatos de boxeo',
+  'perseverancia en el deporte de combate',
+  'historia de la grandeza en el boxeo'
+]
 image: '../../../assets/boxer-lede-superJumbo.jpg'
 imageAlt: 'Muhhamad Ali iconica fotografia sobre en el rival'
 ---

@@ -5,7 +5,28 @@ slug: '5-levantamientos-tren-inferior'
 excerpt: '¿Qué significa tener piernas y glúteos fuertes? Pues implica algo más que ser capaz de mover mucho peso.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['sc', 'fitness', 'kickboxing']
-keywords: ['fuerza', 'sentadillas', 'estabilidad', 'gluteos', 'piernas', 'explosividad']
+keywords: [
+  'fuerza',
+  'sentadillas',
+  'estabilidad',
+  'gluteos',
+  'piernas',
+  'explosividad',
+  'entrenamiento de fuerza',
+  'ejercicios de sentadillas',
+  'mejora de la estabilidad',
+  'desarrollo de glúteos',
+  'fortalecimiento de piernas',
+  'aumento de explosividad',
+  'rutinas de entrenamiento',
+  'entrenamiento de resistencia',
+  'entrenamiento de piernas',
+  'condición física',
+  'entrenamiento funcional',
+  'desarrollo de potencia',
+  'rendimiento deportivo',
+  'mejora de la agilidad'
+]
 image: '../../../assets/sven-mieke-optBC2FxCfc-unsplash.jpg'
 imageAlt: 'una mujer realizando una sentadilla'
 ---

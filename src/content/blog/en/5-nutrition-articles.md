@@ -5,7 +5,28 @@ slug: '5-nutrition-articles'
 excerpt: 'These are the top 10 nutrition posts of 2023, selected by industry professionals.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['nutrition', 'fitness']
-keywords: ['articles', 'nutrition', 'fats', '2023', 'health']
+keywords: [
+  'articles',
+  'nutrition',
+  'fats',
+  '2023',
+  'health',
+  'diet',
+  'healthy eating',
+  'nutrients',
+  'wellness',
+  'weight management',
+  'food choices',
+  'balanced diet',
+  'vitamins',
+  'minerals',
+  'nutritional guidelines',
+  'nutritional science',
+  'dietary recommendations',
+  'meal planning',
+  'nutritional benefits',
+  'health and wellness'
+]
 image: '../../../assets/dan-gold-4_jhDO54BYg-unsplash.jpg'
 imageAlt: 'a table full of healthy food'
 ---

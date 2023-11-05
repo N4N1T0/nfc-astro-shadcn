@@ -5,7 +5,28 @@ slug: 'protein-in-real-life'
 excerpt: 'Have you been accused of consuming too much protein? Lets debunk the myth.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['nutrition', 'fitness', 'sc']
-keywords: ['protein', 'myth', 'damage', 'performance', 'water', 'calcium']
+keywords: [
+  'protein',
+  'myth',
+  'damage',
+  'performance',
+  'water',
+  'calcium',
+  'nutritional myths',
+  'muscle damage',
+  'athletic performance',
+  'hydration',
+  'calcium intake',
+  'dietary protein',
+  'nutrition facts',
+  'protein sources',
+  'hydration strategies',
+  'calcium-rich foods',
+  'nutrition advice',
+  'recovery strategies',
+  'protein supplements',
+  'optimal hydration'
+]
 image: '../../../assets/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.jpg'
 imageAlt: 'Slicing a New York strip steak'
 ---

@@ -5,7 +5,28 @@ slug: 'history-of-boxing'
 excerpt: 'Discover the captivating history of boxing, from its ancient origins to its legendary pugilists.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness']
-keywords: ['boxing', 'history', 'safety', 'greatness', 'championships', 'perseverance']
+keywords: [
+  'boxing',
+  'history',
+  'safety',
+  'greatness',
+  'championships',
+  'perseverance',
+  'boxers',
+  'boxing legends',
+  'boxing champions',
+  'boxing heritage',
+  'boxing techniques',
+  'boxing records',
+  'boxing rules',
+  'boxing safety measures',
+  'boxing traditions',
+  'boxing heritage',
+  'boxing titles',
+  'boxing milestones',
+  'boxing achievements',
+  'boxing culture'
+]
 image: '../../../assets/boxer-lede-superJumbo.jpg'
 imageAlt: 'Iconic picture of Muhammad Ali towering over a rival'
 ---

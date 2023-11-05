@@ -5,7 +5,28 @@ slug: 'proteina-vida-real'
 excerpt: '¿Alguien te ha acusado de consumir demasiadas proteínas?'
 author: 'Adrian "Nano" Alvarez'
 categories: ['nutrición', 'fitness', 'sc']
-keywords: ['proteinas', 'mito', 'daño', 'rendimiento', 'agua', 'calcio']
+keywords: [
+  'proteinas',
+  'mito',
+  'daño',
+  'rendimiento',
+  'agua',
+  'calcio',
+  'nutrición de proteínas',
+  'mitos sobre la alimentación',
+  'daño muscular',
+  'rendimiento deportivo',
+  'importancia del agua',
+  'consumo de calcio',
+  'fuentes de proteínas',
+  'mitos nutricionales',
+  'prevención de daño muscular',
+  'mejora del rendimiento físico',
+  'hidratación adecuada',
+  'necesidades de calcio',
+  'proteínas en la dieta',
+  'desmitificación de la nutrición'
+]
 image: '../../../assets/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.jpg'
 imageAlt: 'cortando un filete en corte Nueva York'
 ---

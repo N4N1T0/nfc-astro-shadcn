@@ -5,7 +5,28 @@ slug: 'women-training-benefits-boxing-kickboxing'
 excerpt: 'Discover the transformative benefits of boxing and kickboxing for women.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'kickboxing', 'fitness']
-keywords: ['boxing', 'kickboxing', 'women', 'conditioning', 'performance', 'self-defense']
+keywords: [
+  'protein',
+  'myth',
+  'damage',
+  'performance',
+  'water',
+  'calcium',
+  'nutritional myths',
+  'muscle damage',
+  'athletic performance',
+  'hydration',
+  'calcium intake',
+  'dietary protein',
+  'nutrition facts',
+  'protein sources',
+  'hydration strategies',
+  'calcium-rich foods',
+  'nutrition advice',
+  'recovery strategies',
+  'protein supplements',
+  'optimal hydration'
+]
 image: '../../../assets/dylan-nolte-qxYDhV0rBPk-unsplash.jpg'
 imageAlt: 'A woman wrapping her fists for a fight'
 ---

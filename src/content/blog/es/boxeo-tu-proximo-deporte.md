@@ -5,7 +5,28 @@ slug: 'boxeo-tu-proximo-deporte'
 excerpt: 'Uno de los deportes más duros y emocionantes del mundo es el boxeo. La metáfora también se aplica a la vida.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness']
-keywords: ['boxeo', 'deporte', 'desafios', 'mma', 'defensa', 'entrenamientos', 'artes marciales']
+keywords: [
+  'boxeo',
+  'deporte',
+  'desafios',
+  'mma',
+  'defensa',
+  'entrenamientos',
+  'artes marciales',
+  'deportes de combate',
+  'técnicas de lucha',
+  'autodefensa',
+  'condición física',
+  'entrenamiento de boxeo',
+  'entrenamiento de MMA',
+  'entrenamiento de defensa personal',
+  'estrategias de combate',
+  'entrenamiento de agilidad',
+  'desarrollo de habilidades de lucha',
+  'acondicionamiento físico',
+  'tácticas de combate',
+  'arte marcial tradicional'
+]
 image: '../../../assets/johann-walter-bantz-Clv9DfJLwac-unsplash.jpg'
 imageAlt: 'un derechazo en un combate de boxeo'
 ---
