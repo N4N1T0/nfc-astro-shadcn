@@ -6,8 +6,15 @@ import { Image } from 'astro:assets'
 type Props = {
   name: string
   image: ImageMetadata
-  review: string
+  review: {
+    es: string
+    en: string
+  }
 }
+
+// Translation Imports
+import { getLangFromUrl } from '../i18n/utils'
+const lang = getLangFromUrl(Astro.url)
 
 // Astro Props
 const { name, image, review } = Astro.props
@@ -22,5 +29,5 @@ const { name, image, review } = Astro.props
     </h4>
     <Image src={image} alt={`Foto de perfil de ${name}`} />
   </div>
-  <p class="p-6 pt-0">{review}</p>
+  <p class="p-6 pt-0">{review[lang]}</p>
 </div>

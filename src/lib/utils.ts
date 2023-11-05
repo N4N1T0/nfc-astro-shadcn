@@ -19,3 +19,9 @@ export function formatDate(date: Date) {
 export function capitalizer(text: string) {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
+
+export function toggleUrl(lang: string, url: URL) {
+ const urlSplit = url.pathname.split('/').slice();
+  urlSplit[1] = lang;
+  return urlSplit.join('/');
+}

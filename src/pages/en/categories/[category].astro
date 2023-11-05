@@ -1,0 +1,50 @@
+---
+// import Astro - Components
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import BlogCard from '../../../components/blog/BlogCard.astro'
+import BlogHeader from '../../../components/blog/BlogHeader.astro'
+
+// Import Utils
+import { getPostsByCategory, getCategories } from '../../../lib/fetchers'
+import { capitalizer } from '../../../lib/utils'
+
+// Function to create the path for all the categories of the blog
+export async function getStaticPaths() {
+  const categories = await getCategories('en')
+  return categories.map((category) => ({
+    params: { category: category },
+  }))
+}
+
+// Astro params
+const { category } = Astro.params
+
+// Redirect in case the path dosent exits
+if (!category) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not found',
+  })
+}
+
+// Get Posts by categories
+const posts = await getPostsByCategory(category, 'en')
+
+// create static page instead of SSR
+export const prerender = true
+---
+
+<BaseLayout
+  title={`NFC Blog - ${capitalizer(category)}`}
+  description="Articulos actualizados sobre bienestar, deportes de combate y mucho mas"
+>
+  <section class="mx-auto max-w-[1680px]">
+    <BlogHeader title="NFC Blog" subtitle="Deleitate con los articulos de" />
+    <!-- Posts Card List -->
+    <div
+      class="lg:gap mb-5 grid grid-cols-1 gap-x-6 gap-y-9 px-10 md:grid-cols-2 md:gap-y-11 md:px-0 lg:grid-cols-3 lg:gap-x-8"
+    >
+      {posts.map((post) => <BlogCard post={post} />)}
+    </div>
+  </section>
+</BaseLayout>

@@ -5,6 +5,11 @@ import { stats } from '../constants/index'
 
 // Astro Imports - Globals
 import { Image } from 'astro:assets'
+
+// Translation Imports
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section
@@ -19,7 +24,7 @@ import { Image } from 'astro:assets'
       stats.map((stat) => (
         <div class="flex w-auto gap-3">
           <h4 class="text-5xl text-accent">{stat.number}</h4>
-          <p class="text-text/80 flex-wrap" set:html={stat.text} />
+          <p class="text-text/80 flex-wrap" set:html={stat.text[lang]} />
         </div>
       ))
     }
@@ -38,7 +43,7 @@ import { Image } from 'astro:assets'
     />
     <div class="px-10 md:p-0">
       <p class="text-xs uppercase text-accent md:text-base">
-        conoce a nuestro entrenador
+        {t('about-title')}
       </p>
       <h4
         class="mt-2 text-3xl font-bold leading-tight tracking-tighter md:text-5xl"
@@ -46,16 +51,7 @@ import { Image } from 'astro:assets'
         Adrian <span class="text-muted-foreground">"Nano"</span> Alvarez
       </h4>
       <p class="text-text/80 mt-2 text-sm md:mt-5 md:text-base">
-        Originario de Cuba, mi trayectoria en los deportes de combate comenzó a
-        una edad temprana. Empecé a boxear a los 10 años, a practicar kickboxing
-        a los 18 y finalmente me adentré en las MMA a los 22 años. Como
-        entrenador de alto rendimiento de la Federación de Judo-Kickboxing, he
-        tenido el privilegio de guiar a los atletas hacia el máximo rendimiento.
-        En el camino, competí en varios torneos de nivel junior, alimentando mi
-        pasión por el deporte. Con más de una década de experiencia en
-        entrenamiento personalizado, me dedico a ayudar a las personas a liberar
-        todo su potencial en los deportes de combate y más allá. entrenando a
-        domicilio o en area libre en hermosa Marbella
+        {t('about-info')}
       </p>
     </div>
   </div>

@@ -5,6 +5,10 @@ import { ChevronDown } from 'lucide-react'
 
 // Atro Imports - Components
 import Header from './layout/Header.astro'
+
+// Translation Imports
+import { getLangFromUrl } from '../i18n/utils'
+const lang = getLangFromUrl(Astro.url)
 ---
 
 <section
@@ -16,15 +20,15 @@ import Header from './layout/Header.astro'
   <div
     class="flex w-full max-w-[1680px] flex-col items-center justify-center px-10 md:px-20"
   >
-  <!-- Frequently Asked Questions Lists -->
+    <!-- Frequently Asked Questions Lists -->
     {
       faqs.map((item) => (
         <details class="w-full border-b" id="details">
           <summary class="flex flex-1 items-center justify-between py-4 font-medium hover:underline">
-            {item.title}
+            {item.title[lang]}
             <ChevronDown className="h-4 w-4 shrink-0" />
           </summary>
-          <div class="py-5">{item.text}</div>
+          <div class="py-5">{item.text[lang]}</div>
         </details>
       ))
     }

@@ -14,8 +14,13 @@ import {
 // Info imports
 import { contacts } from '@/constants'
 
+// Translation Imports
+import { useTranslations } from '../../i18n/utils'
 
-export function FormDialog({ text }: { text: string }) {
+
+export function FormDialog({ text, lang }: { text: string, lang: 'es' | 'en' }) {
+  const t = useTranslations(lang)
+
   return (
     <div className='w-[fit-content] mt-3'>
       <Dialog>
@@ -24,15 +29,15 @@ export function FormDialog({ text }: { text: string }) {
         </DialogTrigger>
         <DialogContent className='w-auto pt-16 md:pt-10'>
           <DialogHeader>
-            <DialogTitle>Metodos de Contacto</DialogTitle>
+            <DialogTitle>{t('dialog-title')}</DialogTitle>
             <DialogDescription>
-              debajo tienes como contactarme elije la que mas comodo te sea!
+              {t('dialog-description')}
             </DialogDescription>
           </DialogHeader>
           <div className='space-y-4 mt-2'>
             {contacts.map((item) => (
-              <div key={item.label}>
-                <h4>{item.label}</h4>
+              <div key={item.label[lang]}>
+                <h4>{item.label[lang]}</h4>
                 <a href={item.link} target='_blank' className='text-secondary hover:text-secondary/70 transition-colors duration-200'>{item.linkLabel}</a>
               </div>
             ))}

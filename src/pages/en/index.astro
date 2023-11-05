@@ -1,0 +1,23 @@
+---
+// Astro Imports - Components
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Hero from '../../components/Hero.astro'
+import About from '../../components/About.astro'
+import Entrenamientos from '../../components/Entrenamientos.astro'
+import Testimonios from '../../components/Testimonios.astro'
+import Faqs from '../../components/Faqs.astro'
+
+// create static page instead of SSR
+export const prerender = true
+---
+
+<BaseLayout
+  title="Nano Fighters Club"
+  description="Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training, Designed to Fit Your Pace and Goals, Maximizing Your Potential in Combat Martial Arts."
+>
+  <Hero />
+  <About />
+  <Entrenamientos />
+  <Testimonios />
+  <Faqs />
+</BaseLayout>

@@ -1,19 +1,20 @@
 import { getCollection } from "astro:content";
 
 // Get all the categories af the Posts
-export async function getCategories() {
-  const posts = await getCollection("blog");
+export async function getCategories(lang: string) {
+  const posts = await getCollection("blog", ({ id }) => { return id.startsWith(lang) });
 
   const categories = [
     ...new Set(posts.map((post) => post.data.categories).flat())
   ];
 
+  console.log(categories)
   return categories;
 }
 
 // Get all the posts
-export async function getPosts() {
-  const posts = (await getCollection("blog")).sort(
+export async function getPosts(lang: string) {
+  const posts = (await getCollection("blog", ({ id }) => { return id.startsWith(lang) })).sort(
     (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
   );
 
@@ -21,8 +22,8 @@ export async function getPosts() {
 }
 
 // Get all the posts acording to the category
-export async function getPostsByCategory(category: string) {
-  const posts = (await getCollection("blog"))
+export async function getPostsByCategory(category: string, lang: string) {
+  const posts = (await getCollection("blog", ({ id }) => { return id.startsWith(lang) }))
     .filter((post) => post.data.categories.includes(category))
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 

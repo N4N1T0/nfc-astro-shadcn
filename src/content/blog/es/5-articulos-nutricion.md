@@ -6,7 +6,7 @@ excerpt: 'Estos son los 10 mejores posts sobre nutrición de 2023, seleccionados
 author: 'Adrian "Nano" Alvarez'
 categories: ['nutrición', 'fitness']
 keywords: ['articulos', 'nutrición', 'grasas', '2023', 'salud']
-image: '../../assets/dan-gold-4_jhDO54BYg-unsplash.jpg'
+image: '../../../assets/dan-gold-4_jhDO54BYg-unsplash.jpg'
 imageAlt: 'una mesa llena de comida saludable'
 ---
 

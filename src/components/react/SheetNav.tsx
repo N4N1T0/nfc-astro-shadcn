@@ -10,9 +10,12 @@ import * as React from "react";
 import { Menu } from 'lucide-react'
 import { Button } from '../ui/button'
 import { navLinks } from '../../constants/index'
+import { useTranslations } from '../../i18n/utils'
 
-export function SheetNav() {
+
+export function SheetNav({ lang }: { lang: 'es' | 'en' }) {
   const [open, setOpen] = React.useState(false);
+  const t = useTranslations(lang)
 
   return (
     <Sheet>
@@ -21,14 +24,14 @@ export function SheetNav() {
       </SheetTrigger>
       <SheetContent side="left" className="p-14">
         <SheetHeader>
-          <SheetTitle className="text-xl">En nuestra Pagina</SheetTitle>
+          <SheetTitle className="text-xl">{t('sheetNav-title')}</SheetTitle>
           <SheetDescription>
-            Links de ayuda
+            {t('sheetNav-description')}
           </SheetDescription>
         </SheetHeader>
         <ul className="space-y-10 py-5 text-xl flex justify-center items-center flex-col pt-10">
           {navLinks.map((link) => (
-            <li key={link.label}><a href={link.link} onClick={() => setOpen(false)}>{link.label}</a></li>
+            <li key={link.label[lang]}><a href={`/${lang}/${link.link}`} onClick={() => setOpen(false)}>{link.label[lang]}</a></li>
           ))}
         </ul>
       </SheetContent>
