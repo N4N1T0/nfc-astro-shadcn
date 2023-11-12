@@ -83,21 +83,30 @@ export const stats = [
 // Translation Completed
 export const include = [
   {
-    title: 'A Domicilio',
+    title: {
+      es: 'A Domicilio',
+      en: 'At Home'
+    },
     description: {
       es: 'Nuestro entrenador personalizado te brinda sesiones de entrenamiento en la comodidad de tu hogar.',
       en: 'Our personalized trainer provides training sessions in the comfort of your home.'
     }
   },
   {
-    title: 'Personalizado',
+    title: {
+      es: 'Personalizado',
+      en: 'Personalized'
+    },
     description: {
       es: 'Diseñamos un plan de entrenamiento exclusivamente para ti, teniendo en cuenta tus objetivos, nivel de condición física y preferencias.',
       en: 'We design a training plan exclusively for you, taking into account your goals, fitness level, and preferences.'
     }
   },
   {
-    title: 'Asesoría Nutricional',
+    title: {
+      es: 'Asesoría Nutricional',
+      en: 'Nutritional Counseling'
+    },
     description: {
       es:'Nuestro expertos en nutrición te ofrece orientación y apoyo continuo para desarrollar hábitos alimenticios saludables.',
       en: 'Our nutrition experts provide you with ongoing guidance and support to develop healthy eating habits.'

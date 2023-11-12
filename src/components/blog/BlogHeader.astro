@@ -28,13 +28,13 @@ const { category } = Astro.params
 ---
 
 <header
-  class="flex flex-col items-center justify-between gap-5 py-10 pr-10 md:flex-row"
+  class="flex flex-col items-center justify-between gap-5 py-10 md:flex-row"
 >
   <!-- Header -->
   <Header title={title} subtitle={subtitle} />
 
   <!-- Categories List -->
-  <div class="mx-auto mt-3 w-full px-6 md:mx-0 md:mt-0 md:w-fit md:px-0">
+  <div class="mx-auto mt-3 w-full px-3 md:mx-0 md:mt-0 md:w-fit md:px-0">
     {
       categories?.length ? (
         <ul class="flex snap-x snap-mandatory items-center space-x-2 overflow-auto pb-2 lg:space-x-2.5">

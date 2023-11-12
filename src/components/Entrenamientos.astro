@@ -11,13 +11,14 @@ import Header from './layout/Header.astro'
 // Translation Imports
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section
   class="flex flex-col items-center justify-center gap-10 bg-primary/10 pt-8 dark:bg-primary/5"
   id="entrenamientos"
 >
-  <Header title="Nuestros Servicios" subtitle="Descubre la variedad de" />
+  <Header title={t('services-title')} subtitle={t('services-subtitle')} />
   <div
     class="flex max-w-[1680px] flex-col items-center justify-center gap-10 p-10 md:flex-row md:gap-14"
   >
@@ -31,7 +32,7 @@ const lang = getLangFromUrl(Astro.url)
   <hr class="h-2 w-2/3" />
   <div class="w-full max-w-[1680px] space-y-10 p-10">
     <h4 class="text-center text-sm uppercase text-accent md:text-lg">
-      Los Entrenamientos tambien incluyen
+      {t('training-title')}
     </h4>
     <div
       class="flex w-full flex-col items-center justify-center gap-10 md:flex-row"
@@ -40,13 +41,19 @@ const lang = getLangFromUrl(Astro.url)
       {
         include.map(({ title, description }) => {
           // Function to get an icon with the title
-          function getIcon() {
-            switch (title) {
+          function getIcon(training) {
+            switch (training) {
               case 'A Domicilio':
+                return <Home width="30px" height="30px" />
+              case 'At Home':
                 return <Home width="30px" height="30px" />
               case 'Personalizado':
                 return <Dumbbell width="30px" height="30px" />
+              case 'Personalized':
+                return <Dumbbell width="30px" height="30px" />
               case 'Asesoría Nutricional':
+                return <Pizza width="30px" height="30px" />
+              case 'Nutritional Counseling':
                 return <Pizza width="30px" height="30px" />
               default:
                 return <div />
@@ -56,8 +63,8 @@ const lang = getLangFromUrl(Astro.url)
           return (
             <div class="flex flex-col items-start gap-3">
               <div class="flex items-center justify-center gap-3">
-                {getIcon()}
-                <h4 class="text-lg font-bold">{title}</h4>
+                {getIcon(title[lang])}
+                <h4 class="text-lg font-bold">{title[lang]}</h4>
               </div>
               <p class="text-sm text-muted-foreground">{description[lang]}</p>
             </div>
