@@ -5,28 +5,6 @@ slug: 'boxeo-tu-proximo-deporte'
 excerpt: 'Uno de los deportes más duros y emocionantes del mundo es el boxeo. La metáfora también se aplica a la vida.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness']
-keywords: [
-  'boxeo',
-  'deporte',
-  'desafios',
-  'mma',
-  'defensa',
-  'entrenamientos',
-  'artes marciales',
-  'deportes de combate',
-  'técnicas de lucha',
-  'autodefensa',
-  'condición física',
-  'entrenamiento de boxeo',
-  'entrenamiento de MMA',
-  'entrenamiento de defensa personal',
-  'estrategias de combate',
-  'entrenamiento de agilidad',
-  'desarrollo de habilidades de lucha',
-  'acondicionamiento físico',
-  'tácticas de combate',
-  'arte marcial tradicional'
-]
 image: '../../../assets/johann-walter-bantz-Clv9DfJLwac-unsplash.jpg'
 imageAlt: 'un derechazo en un combate de boxeo'
 ---
@@ -35,7 +13,7 @@ imageAlt: 'un derechazo en un combate de boxeo'
 
 Probablemente conozcas las expresiones "contra las cuerdas", "tirar la toalla", "tirar el sombrero al ring", "por debajo del cinturón", "llegar hasta el final" y "aguantar los golpes". Los modismos del boxeo se han convertido en referencias culturales comunes a los retos del campo de juego, la sala de juntas y la vida cotidiana.
 
-### Ventajas del boxeo
+## Ventajas del boxeo
 
 Pero el boxeo es algo más que el conjunto de sus memorables eslóganes y vívidas metáforas. **El boxeo es un deporte, un arte marcial y un entrenamiento de primera categoría.**
 
@@ -59,7 +37,7 @@ Puesto que hacerlo va en contra de nuestra predisposición inherente a luchar o 
 
 - **El boxeo mejora la aptitud mental.** El "boxeo ajedrecístico" es uno de los deportes más extraños que se han desarrollado recientemente. ¿Qué relación puede haber entre el ajedrez y un deporte de barrio como el fútbol? En realidad, tiene mucho sentido. El éxito en el cuadrilátero depende de conocer al adversario y crear un plan, igual que en el ajedrez. ¿Comunica tu adversario sus golpes? ¿El movimiento de tu adversario en el ring sigue siempre la misma trayectoria? Cuando tu adversario lanza su mano izquierda, ¿también lanza su mano derecha? El boxeo mejorará tanto tu resistencia y destreza físicas como tu capacidad mental.
 
-### Qué hacer primero
+## Qué hacer primero
 
 Aquí tienes algunos consejos para empezar antes de inscribirte en el gimnasio de artes marciales o boxeo de tu barrio:
 
@@ -75,7 +53,7 @@ Además, muchos programas de franquicias, como Title Boxing y 9Round, ofrecen cu
 
 No puedes aprender a boxear ni a protegerte si no aprendes a aceptar los golpes. Dicho esto, no todo el mundo aprecia o está dispuesto a recibir golpes, así que es tu decisión si sólo quieres ponerte unos guantes y hacer ejercicio.
 
-### Enamórate del boxeo
+## Enamórate del boxeo
 
 La dulce ciencia del boxeo tiene muchos aspectos atractivos, **como la disciplina, la concentración mental y física, incluso el ritual y el ritmo.**
 

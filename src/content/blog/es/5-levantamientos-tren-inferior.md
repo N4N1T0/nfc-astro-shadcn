@@ -5,28 +5,6 @@ slug: '5-levantamientos-tren-inferior'
 excerpt: '¿Qué significa tener piernas y glúteos fuertes? Pues implica algo más que ser capaz de mover mucho peso.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['sc', 'fitness', 'kickboxing']
-keywords: [
-  'fuerza',
-  'sentadillas',
-  'estabilidad',
-  'gluteos',
-  'piernas',
-  'explosividad',
-  'entrenamiento de fuerza',
-  'ejercicios de sentadillas',
-  'mejora de la estabilidad',
-  'desarrollo de glúteos',
-  'fortalecimiento de piernas',
-  'aumento de explosividad',
-  'rutinas de entrenamiento',
-  'entrenamiento de resistencia',
-  'entrenamiento de piernas',
-  'condición física',
-  'entrenamiento funcional',
-  'desarrollo de potencia',
-  'rendimiento deportivo',
-  'mejora de la agilidad'
-]
 image: '../../../assets/sven-mieke-optBC2FxCfc-unsplash.jpg'
 imageAlt: 'una mujer realizando una sentadilla'
 ---
@@ -37,7 +15,7 @@ Mantener el control, la fuerza y la destreza en todos los planos de movimiento e
 
 Los siguientes son cinco ejercicios atléticos y funcionales que resultan eficaces:
 
-### 1. Desplantes hacia atras con peso
+## 1. Desplantes hacia atras con peso
 a pesar del hecho de que la moda de los glúteos las ha hecho ciertamente populares. ¿Por qué? Porque es extremadamente difícil realizar búlgaras cargadas con mucho peso.
 
 Requieren mucha más estabilidad que su homólogo con mancuernas, que es menos difícil. Esfuérzate al máximo para cargar la versión con mancuernas del ejercicio triple y doble. Tu sujeción cederá antes que la parte inferior de tu cuerpo.
@@ -46,7 +24,7 @@ Uno de los mejores ejercicios para desarrollar fuerza, músculo y resistencia en
 
 Prueba con cinco series de cinco repeticiones cada una, o cinco series de tres repeticiones por pierna.
 
-### 2. Curtsy con el Landmine
+## 2. Curtsy con el Landmine
 
 Los ejercicios en el plano frontal son excelentes para el atletismo y la funcionalidad general. Al practicar un deporte, el cuerpo se mueve en todos los planos de movimiento. Debe desarrollarse una verdadera fuerza de lado a lado.
 
@@ -55,7 +33,7 @@ en el lateral de la cadera y el glúteo medio.
 
 Completa 3 arreglos de 10-12 repeticiones para cada lado.
 
-### 3. Glute Ham Raise(GHD) o Curl Nodico
+## 3. Glute Ham Raise(GHD) o Curl Nodico
 
 Si no utilizas la GHD 330 de tu gimnasio, ¡te lo estás perdiendo! Los glúteos y los isquiotibiales se someten a mucha tensión durante el GHD, pero la tensión es mucho más concentrada y de alta tensión. Con levantamientos aislados en máquina, es imposible duplicarlo. Un ejercicio imprescindible es cualquiera que sea difícil de hacer sólo con el peso corporal.
 
@@ -64,7 +42,7 @@ Utiliza la ayuda de la banda para desarrollar fuerza mientras mantienes una buen
 
 En la mayoría de los casos, realice tres series de 8-10 repeticiones.
 
-### 4. Peso muerto con una sola pierna
+## 4. Peso muerto con una sola pierna
 
 Tome al levantador de pesas o culturista promedio que puede levantar 500 libras del suelo y pídale que haga un levantamiento de peso muerto con una sola pierna. Rápidamente se darán cuenta de lo inestables y débiles que son con una sola pierna, a pesar de que son increíblemente fuertes como unidad. El levantamiento de peso muerto con una sola pierna pone de manifiesto cuánta estabilidad se requiere para mantener la pelvis y las caderas en posición, y cuánto más débiles pueden ser ciertos estabilizadores. ¿Un objetivo admirable? Dentro de lo razonable, sentirse tan cómodo a una pierna como a dos.
 
@@ -77,7 +55,7 @@ Refuerce el tronco y lleve las caderas hacia atrás con control, manteniendo la 
 
 Haz 3 series de 6-8 repeticiones por pierna.
 
-### 5. Sentadilla pistola
+## 5. Sentadilla pistola
 
 Este ejercicio me eludió durante algún tiempo, sobre todo porque fallaba. Pensaba que mi tiempo estaba mejor empleado en el rack de sentadillas. Pero sabía que una parte inferior del cuerpo fuerte debe ser capaz de realizar la mayoría, si no todos, los movimientos con control, estabilidad y fuerza, incluyendo la sentadilla pistola.
 

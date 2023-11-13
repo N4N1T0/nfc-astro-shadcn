@@ -33,8 +33,13 @@ const { title, description, ogImage, post, url = Astro.url } = Astro.props
 const jsonLD = jsonLDGenerator({
   type: post ? 'post' : 'website',
   post: post,
-  url,
+  url: url,
 })
+
+// Translation Imports
+import { getLangFromUrl, changeLangFromUrl } from '../../i18n/utils'
+const lang = getLangFromUrl(Astro.url)
+const newLangUrl = changeLangFromUrl(Astro.url, lang)
 ---
 
 <!-- Google tag (gtag.js) -->
@@ -58,12 +63,8 @@ const jsonLD = jsonLDGenerator({
 <meta name="googlebot" content="index, follow" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="generator" content={Astro.generator} />
-<meta
-  name="keywords"
-  content="boxeo en Marbella, boxeo en San Pedro de Alcántara, kickboxing en Marbella, kickboxing en San Pedro de Alcántara, entrenador de boxeo, entrenador de kickboxing, entrenador a domicilio, entrenamiento personalizado, grupos reducidos, escuela cubana de boxeo, entrenamiento en area libre, Gimnasio de boxeo en Marbella, Clases de boxeo para principiantes, Fitness en San Pedro de Alcántara, Clases de artes marciales, Combate deportivo, Entrenamiento de autodefensa, Entrenamiento de alta intensidad, Artes marciales mixtas, Boxeo para principiantes, Clases de defensa personal, Técnica de golpeo, Ejercicios cardiovasculares, Entrenamiento de resistencia, Sparring en Marbella, Condición física en Marbella, Fitness y bienestar, Club de boxeo, Clases de kickboxing para mujeres"
-/>
 <meta name="subject" content="Combat sports training business" />
-<meta name="language" content="ES" />
+<meta name="language" content={lang.toUpperCase()} />
 <meta name="Classification" content="Business" />
 <meta
   name="author"
@@ -82,6 +83,14 @@ const jsonLD = jsonLDGenerator({
   href="rss.xml"
 />
 <title>{title}</title>
+
+<!-- Lenguage -->
+<link rel="alternate" href={Astro.url} hreflang=`${lang}-es` />
+<link
+  rel="alternate"
+  href={`${Astro.site}${newLangUrl}`}
+  hreflang=`${lang === 'es' ? 'en' : 'es'}-es`
+/>
 
 <!-- Favicon -->
 <link

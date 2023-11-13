@@ -5,28 +5,6 @@ slug: 'proteina-vida-real'
 excerpt: '¿Alguien te ha acusado de consumir demasiadas proteínas?'
 author: 'Adrian "Nano" Alvarez'
 categories: ['nutrición', 'fitness', 'sc']
-keywords: [
-  'proteinas',
-  'mito',
-  'daño',
-  'rendimiento',
-  'agua',
-  'calcio',
-  'nutrición de proteínas',
-  'mitos sobre la alimentación',
-  'daño muscular',
-  'rendimiento deportivo',
-  'importancia del agua',
-  'consumo de calcio',
-  'fuentes de proteínas',
-  'mitos nutricionales',
-  'prevención de daño muscular',
-  'mejora del rendimiento físico',
-  'hidratación adecuada',
-  'necesidades de calcio',
-  'proteínas en la dieta',
-  'desmitificación de la nutrición'
-]
 image: '../../../assets/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.jpg'
 imageAlt: 'cortando un filete en corte Nueva York'
 ---
@@ -37,7 +15,7 @@ Nada, nada, nada, nada. Los datos aún no están disponibles.
 
 Entonces, ¿por qué sigue existiendo este mito? Consumir más proteínas hará que tus riñones tengan que trabajar más, lo cual es una de las razones. La TFG (tasa de filtración glomerular) y la creatinina (NO la creatina) pueden aumentar, lo que indica que los riñones trabajan más. Pero, ¿significa eso que hay indicios de daño? Vamos a investigarlo.
 
-### Los riñones y las proteínas: La ciencia 
+## Los riñones y las proteínas: La ciencia 
 
 Para empezar, he aquí una cita:
 
@@ -49,7 +27,7 @@ En 2015, los investigadores descubrieron que el aumento de proteínas sí hacía
 
 Por lo tanto, la afirmación de que la proteína es perjudicial simplemente no está respaldada por los datos disponibles. Pero, ¿qué pasa si usted es un levantador de pesas que entrena duro y come mucha proteína?
 
-### Muéstrame los estudios
+## Muéstrame los estudios
 
 Si eres atleta o culturista, no haces cosas normales. De esta manera, los cuellos de lápiz estándar utilizados en muchos exámenes no marcan la diferencia. Sin embargo, lo hacen.
 
@@ -59,7 +37,7 @@ Poortmans JR y Dellalieux O. realizaron uno de los primeros estudios sobre prote
 
 Brandle y sus colegas llevaron a cabo otro estudio. Aunque no era perfecto, el estudio fue el primero en analizar cómo afectan las proteínas a la función renal. No encontraron ninguna relación entre la tasa de descarga de clara de huevo (al parecer, la clara de huevo urinaria es una variable perjudicial) y el consumo bruto de proteínas (medido por la tasa de descarga de nitrógeno).
 
-### ¿Qué ocurre con el aumento de grasa corporal y la masa corporal?
+## ¿Qué ocurre con el aumento de grasa corporal y la masa corporal?
 
 El Dr. José Antonio y sus colegas llevaron la cuestión al extremo, observando a hombres que hacían pesas y consumían muchas proteínas.
 
@@ -71,7 +49,7 @@ Los participantes consumieron una dieta alta en proteínas durante ocho semanas,
 
 Debido a la alta ingesta de proteínas, sus riñones no lanzaron un ataque para expulsar la espalda baja a pesar de comer muchas proteínas. Los investigadores realizaron un subanálisis en dos de los participantes del estudio que consumieron más proteínas para apoyar su argumento. No vieron como ningún problema renal (riñón) a pesar de que estos dos sujetos consumieron 483-724% por encima de la CDR de proteínas.
 
-### ¿Necesita más pruebas?
+## ¿Necesita más pruebas?
 
 Se podría argumentar que estos datos son todavía de muy corta duración. La mayoría de los levantadores de pesas consumen muchas proteínas durante años o décadas. ¿Y después de seis meses de seguir una dieta rica en proteínas? ¿Qué ocurre con sus riñones? El Dr. José Antonio publicó un estudio de un año. Exactamente un año. Eso es una eternidad para la investigación científica.
 
@@ -81,7 +59,7 @@ Descubrieron que una dieta rica en proteínas (aproximadamente 2,5-3,3 g/kg/d) n
 
 Además, los sujetos no ganaron grasa a pesar del aumento de calorías totales durante la fase de alto contenido proteico. Sí, mucha proteína durante un año en entrenadores de alto nivel que trabajan con humanos que viven de forma natural. Para datos científicos, no hay nada mejor que eso.
 
-### Proteína: Tal vez necesite más
+## Proteína: Tal vez necesite más
 
 Preocuparse por comer demasiada proteína está muy abajo en la lista de cosas que podría hacer para mejorar su salud, rendimiento y composición corporal. De hecho, si usted está preocupado por la proteína, podría tener más sentido preocuparse por no obtener suficiente vitamina 212. La gran mayoría de las personas con las que trabajo mejoran con el consumo de proteína.
 

@@ -16,9 +16,13 @@ interface Props {
 
 // Astro Props
 const { title, description, ogImage, url, post } = Astro.props
+
+// Translation Imports
+import { getLangFromUrl } from '../i18n/utils'
+const lang = getLangFromUrl(Astro.url)
 ---
 
-<html lang="en">
+<html lang={lang}>
   <head>
     <HeadSEO
       title={title}

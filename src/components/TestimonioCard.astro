@@ -24,9 +24,9 @@ const { name, image, review } = Astro.props
   class="col-span-1 rounded-lg border bg-card text-card-foreground shadow-sm"
 >
   <div class="flex items-center justify-between p-6">
-    <h4 class="text-2xl font-semibold leading-none tracking-tight">
+    <h3 class="text-2xl font-semibold leading-none tracking-tight">
       {name}
-    </h4>
+    </h3>
     <Image src={image} alt={`Foto de perfil de ${name}`} />
   </div>
   <p class="p-6 pt-0">{review[lang]}</p>

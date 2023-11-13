@@ -23,7 +23,7 @@ const t = useTranslations(lang)
     {
       stats.map((stat) => (
         <div class="flex w-auto gap-3">
-          <h3 class="text-5xl text-accent">{stat.number}</h3>
+          <p class="text-5xl text-accent">{stat.number}</p>
           <p class="text-text/80 flex-wrap" set:html={stat.text[lang]} />
         </div>
       ))
@@ -45,11 +45,11 @@ const t = useTranslations(lang)
       <p class="text-xs uppercase text-accent md:text-base">
         {t('about-title')}
       </p>
-      <h4
+      <h2
         class="mt-2 text-3xl font-bold leading-tight tracking-tighter md:text-5xl"
       >
         Adrian <span class="text-muted-foreground">"Nano"</span> Alvarez
-      </h4>
+      </h2>
       <p class="text-text/80 mt-2 text-sm md:mt-5 md:text-base">
         {t('about-info')}
       </p>

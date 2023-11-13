@@ -9,7 +9,6 @@ const blogCollection = defineCollection({ type: 'content',
     excerpt: z.string().max(160, "For optimze SEO, please provide a excerpt/description with 160 characters or less"),
     author: z.enum(['Adrian "Nano" Alvarez', 'Dayana "Good Day" Abuin']),
     categories: z.array(z.string()),
-    keywords: z.array(z.string()),
     image: image(),
     imageAlt: z.string()
   }), });

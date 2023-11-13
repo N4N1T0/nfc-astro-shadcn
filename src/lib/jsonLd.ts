@@ -4,23 +4,26 @@ import { type CollectionEntry } from 'astro:content'
 export default function jsonLDGenerator({ type, post, url }: {type: string, post: CollectionEntry<'blog'>, url: URL }) {
   if (type === 'post') {
     return `<script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "${url}"
-        },
-        "headline": "${post.data.title}",
-        "description": "${post.data.excerpt}",
-        "image": "${post.data.image.src}",
-        "author": {
-          "@type": "Person",
-          "name": "${post.data.author}",
-        },
-        "datePublished": "${post.data.date}"
-      }
-    </script>`;
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": ${post.data.excerpt},
+  "image": ${post.data.image.src},  
+  "author": {
+    "@type": "Person",
+    "name": ${post.data.author}
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nano Fighters Club",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.nanofighters.club/favicon.ico"
+    }
+  },
+  "datePublished": ${post.data.date}
+}
+</script>`;
   }
   return `<script type="application/ld+json">
       {
@@ -29,7 +32,7 @@ export default function jsonLDGenerator({ type, post, url }: {type: string, post
         "name": "Nano Fighters Club",
         "image": "/og-image.png",
         "@id": "",
-        "url": "",
+        "url": "https://www.nanofighters.club",
         "telephone": "+34647317214",
         "address": {
           "@type": "PostalAddress",

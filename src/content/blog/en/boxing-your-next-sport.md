@@ -5,28 +5,6 @@ slug: 'boxing-your-next-sport'
 excerpt: 'One of the toughest and most exciting sports in the world is boxing. The metaphor also applies to life.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness']
-keywords: [
-  'boxing',
-  'sport',
-  'challenges',
-  'MMA',
-  'defense',
-  'training',
-  'martial arts',
-  'combat sports',
-  'fighting techniques',
-  'self-defense',
-  'fitness regimen',
-  'sparring',
-  'boxing gym',
-  'mixed martial arts',
-  'fight preparation',
-  'fight strategy',
-  'physical conditioning',
-  'combat training',
-  'combat athletes',
-  'striking techniques'
-]
 image: '../../../assets/johann-walter-bantz-Clv9DfJLwac-unsplash.jpg'
 imageAlt: 'a right hook in a boxing match'
 ---
@@ -35,7 +13,7 @@ imageAlt: 'a right hook in a boxing match'
 
 You probably know expressions like "against the ropes," "throw in the towel," "throw one's hat in the ring," "below the belt," "go the distance," and "roll with the punches." Boxing idioms have become common cultural references for challenges on the playing field, in the boardroom, and in everyday life.
 
-### Benefits of Boxing
+## Benefits of Boxing
 
 But boxing is more than just its memorable slogans and vivid metaphors. **Boxing is a top-notch sport, martial art, and workout.**
 
@@ -59,7 +37,7 @@ Since doing so goes against our inherent fight-or-flight predisposition, it must
 
 - **Boxing improves mental fitness.** "Chessboxing" is one of the strangest sports to have developed recently. What could chess and a neighborhood sport like soccer have in common? In reality, it makes a lot of sense. Success in the ring depends on understanding the opponent and devising a plan, just like in chess. Does your opponent telegraph their punches? Does your opponent's movement in the ring always follow the same path? When your opponent throws their left hand, do they also throw their right? Boxing will enhance both your physical and mental resilience.
 
-### What to Do First
+## What to Do First
 
 Here are some tips to get started before joining your local martial arts or boxing gym:
 
@@ -75,7 +53,7 @@ Additionally, many franchise programs, such as Title Boxing and 9Round, offer ex
 
 You can't learn to box or protect yourself if you don't learn to take hits. That being said, not everyone appreciates or is willing to take punches, so it's your decision if you just want to put on some gloves and exercise.
 
-### Fall in Love with Boxing
+## Fall in Love with Boxing
 
 The sweet science of boxing has many attractive aspects, **including discipline, mental and physical concentration, even ritual and rhythm.**
 
