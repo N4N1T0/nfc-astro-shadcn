@@ -31,7 +31,7 @@ export function SheetNav({ lang }: { lang: 'es' | 'en' }) {
         </SheetHeader>
         <ul className="space-y-10 py-5 text-xl flex justify-center items-center flex-col pt-10">
           {navLinks.map((link) => (
-            <li key={link.label[lang]}><a href={`/${lang}/${link.link}`} onClick={() => setOpen(false)}>{link.label[lang]}</a></li>
+            <li key={link.label[lang]}><a title={`Navlink - ${link.label[lang]}`} href={`/${lang}/${link.link}`} onClick={() => setOpen(false)}>{link.label[lang]}</a></li>
           ))}
         </ul>
       </SheetContent>

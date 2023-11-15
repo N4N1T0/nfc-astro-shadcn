@@ -9,7 +9,7 @@ image: '../../../assets/dan-gold-4_jhDO54BYg-unsplash.jpg'
 imageAlt: 'a table full of healthy food'
 ---
 
-When questions like "What should I eat before exercising?" or "What dietary supplements should I take to perform at my best?" are included, things get even more complicated. Starting from number ten, here are our top 10 nutrition posts of 2012 that were written by professionals in the field:
+## When questions like "What should I eat before exercising?" or "What dietary supplements should I take to perform at my best?" are included, things get even more complicated. Starting from number ten, here are our top 10 nutrition posts of 2012 that were written by professionals in the field: ##
 
 5. [Plant-Based Diets and Long-Term Health](https://www.cambridge.org/core/journals/proceedings-of-the-nutrition-society/article/plantbased-diets-and-longterm-health-findings-from-the-epicoxford-study/771ED5439481A68AD92BF40E8B1EF7E6) (Findings from the EPIC-Oxford Study)
 

@@ -4,7 +4,7 @@ date: 2023-06-21
 slug: 'proteina-vida-real'
 excerpt: '¿Alguien te ha acusado de consumir demasiadas proteínas?'
 author: 'Adrian "Nano" Alvarez'
-categories: ['nutrición', 'fitness', 'sc']
+categories: ['nutricion', 'fitness', 'sc']
 image: '../../../assets/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.jpg'
 imageAlt: 'cortando un filete en corte Nueva York'
 ---

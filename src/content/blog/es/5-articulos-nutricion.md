@@ -4,12 +4,12 @@ date: 2023-06-19
 slug: '5-articulos-nutricion'
 excerpt: 'Estos son los 10 mejores posts sobre nutrición de 2023, seleccionados por profesionales del sector.'
 author: 'Adrian "Nano" Alvarez'
-categories: ['nutrición', 'fitness']
+categories: ['nutricion', 'fitness']
 image: '../../../assets/dan-gold-4_jhDO54BYg-unsplash.jpg'
 imageAlt: 'una mesa llena de comida saludable'
 ---
 
-Cuando se incluyen preguntas como "¿Qué debo comer antes de hacer ejercicio?" o "¿Qué suplementos dietéticos debo tomar para rendir al máximo?". La cosa se complica aún más. Empezando por el número diez, aquí están nuestros 10 mejores posts de nutrición de 2012 que fueron escritos por profesionales en el campo:
+## Cuando se incluyen preguntas como "¿Qué debo comer antes de hacer ejercicio?" o "¿Qué suplementos dietéticos debo tomar para rendir al máximo?". La cosa se complica aún más. Empezando por el número diez, aquí están nuestros 10 mejores posts de nutrición de 2012 que fueron escritos por profesionales en el campo: ##
 
 5. <p><a href="https://www.cambridge.org/core/journals/proceedings-of-the-nutrition-society/article/plantbased-diets-and-longterm-health-findings-from-the-epicoxford-study/771ED5439481A68AD92BF40E8B1EF7E6" target="_blank">Dietas vegetales y salud a largo plazo</a> (resultados del estudio EPIC-Oxford)</p>
 

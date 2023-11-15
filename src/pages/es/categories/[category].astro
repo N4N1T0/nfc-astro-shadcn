@@ -36,9 +36,12 @@ export const prerender = true
 
 <BaseLayout
   title={`NFC Blog - ${capitalizer(category)}`}
-  description="Articulos actualizados sobre bienestar, deportes de combate y mucho mas"
+  description=`Articulos actualizados sobre bienestar, deportes de combate y ${category}`
 >
   <section class="mx-auto max-w-[1680px] px-5">
+    <h1 class="sr-only hidden">
+      Articulos actualizados sobre bienestar, deportes de combate y ${}
+    </h1>
     <BlogHeader title="NFC Blog" subtitle="Deleitate con los articulos de" />
     <!-- Posts Card List -->
     <div

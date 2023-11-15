@@ -38,7 +38,7 @@ export function FormDialog({ text, lang }: { text: string, lang: 'es' | 'en' }) 
             {contacts.map((item) => (
               <div key={item.label[lang]}>
                 <h4>{item.label[lang]}</h4>
-                <a href={item.link} target='_blank' className='text-secondary hover:text-secondary/70 transition-colors duration-200'>{item.linkLabel}</a>
+                <a title={item.label[lang]} href={item.link} target='_blank' className='text-secondary hover:text-secondary/70 transition-colors duration-200'>{item.linkLabel}</a>
               </div>
             ))}
           </div>

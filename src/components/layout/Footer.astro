@@ -67,6 +67,7 @@ const lang = getLangFromUrl(Astro.url)
           return (
             <li>
               <a
+                title={`Link - ${label}`}
                 href={link}
                 target="_blank"
                 rel="noreferrer noopener"
@@ -83,7 +84,8 @@ const lang = getLangFromUrl(Astro.url)
       <!-- RSS Link -->
       <li>
         <a
-          href={`${Astro.site}/rss.xml`}
+          title="RSS Link"
+          href="https://www.nanofighters.club/rss.xml"
           target="_blank"
           rel="noreferrer noopener"
           class={buttonVariants({ variant: 'ghost', size: 'icon' })}

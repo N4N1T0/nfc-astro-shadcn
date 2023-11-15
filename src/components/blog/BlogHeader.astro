@@ -40,6 +40,7 @@ const { category } = Astro.params
         <ul class="flex snap-x snap-mandatory items-center space-x-2 overflow-auto pb-2 lg:space-x-2.5">
           <li class="flex-shrink-0 snap-start">
             <a
+              title={`Category - ${category}`}
               href={`/${lang}/blog`}
               class={cn(
                 !category ? 'select-none' : '',
@@ -55,6 +56,7 @@ const { category } = Astro.params
           {categories.map((item) => (
             <li class="flex-shrink-0 snap-start">
               <a
+                title={`Category - ${item}`}
                 href={`/${lang}/categories/${item}`}
                 class={cn(
                   'capitalize',

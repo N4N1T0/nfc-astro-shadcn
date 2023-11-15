@@ -20,6 +20,7 @@ const lang = getLangFromUrl(Astro.url)
 <article class="group space-y-4">
   <!-- Images -->
   <a
+    title={`link Post-${post.data.title}`}
     href={`/${lang}/blog/${post.slug}/`}
     class="flex h-52 transition duration-300 group-hover:-translate-y-2 group-hover:shadow-xl"
     aria-label={`Post-${post.data.title}`}
@@ -57,7 +58,11 @@ const lang = getLangFromUrl(Astro.url)
 
   <!-- Title -->
   <div>
-    <a href={`/${lang}/blog/${post.slug}/`} class="group-hover:underline">
+    <a
+      title={`link Post-${post.data.title}`}
+      href={`/${lang}/blog/${post.slug}/`}
+      class="group-hover:underline"
+    >
       <h2
         class="font-heading text-balance line-clamp-3 text-xl leading-snug md:text-2xl"
         transition:name={'title-' + post.slug}

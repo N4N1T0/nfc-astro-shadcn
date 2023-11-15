@@ -57,6 +57,7 @@ export const prerender = true
 >
   <div class="container relative max-w-[1020px] py-10 pt-10">
     <a
+      title="Back to the Blog"
       href="/es/blog"
       class="absolute left-[-150px] top-10 hidden items-center justify-center text-muted-foreground transition-colors duration-200 hover:text-secondary xl:flex"
       transition:animate="slide"
@@ -72,6 +73,7 @@ export const prerender = true
       {
         categories.map((category) => (
           <a
+            title={`Category - ${category}`}
             class="mr-3 rounded-lg bg-accent px-3 py-1 text-xs text-white no-underline transition-colors duration-200 hover:bg-accent/50 md:text-sm"
             href={`/es/categories/${category}`}
             aria-label={`Categorie-link-${category}`}
@@ -118,6 +120,7 @@ export const prerender = true
         {
           relatedPosts.slice(0, 2).map((item) => (
             <a
+              title={`Link to ${item.data.title}`}
               class="text-secondary no-underline transition-colors duration-200 hover:text-secondary/70"
               href={`/es/blog/${item.slug}`}
               aria-label={`Related-link-${item.slug}`}
