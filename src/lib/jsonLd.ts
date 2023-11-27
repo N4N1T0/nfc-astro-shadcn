@@ -34,7 +34,7 @@ export default function jsonLDGenerator({ type, post, url }: {type: string, post
         "@id": "",
         "url": "https://www.nanofighters.club",
         "telephone": "+34647317214",
-        "priceRange": "20$-30$"
+        "priceRange": "20$-30$",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Av. Mar Mediterráneo, 1",
