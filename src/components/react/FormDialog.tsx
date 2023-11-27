@@ -9,6 +9,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogFooter
 } from "@/components/ui/dialog"
 
 // Info imports
@@ -42,6 +43,16 @@ export function FormDialog({ text, lang }: { text: string, lang: 'es' | 'en' }) 
               </div>
             ))}
           </div>
+          <DialogFooter>
+            <small>
+              Made with <span className="animate-pulse">❤️</span> and Powered by <a
+                href="https://www.adrian-alvarez.dev/es/"
+                target="_blank"
+                className="text-gray-400 underline transition-colors duration-200 hover:text-gray-50"
+              >Adrian</a
+              >
+            </small>
+          </DialogFooter>
         </DialogContent>
       </Dialog>
     </div>

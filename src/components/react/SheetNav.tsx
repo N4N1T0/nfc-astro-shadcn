@@ -4,7 +4,8 @@ import {
   SheetDescription,
   SheetHeader,
   SheetTitle,
-  SheetTrigger
+  SheetTrigger,
+  SheetFooter
 } from "@/components/ui/sheet";
 import * as React from "react";
 import { Menu } from 'lucide-react'
@@ -34,6 +35,16 @@ export function SheetNav({ lang }: { lang: 'es' | 'en' }) {
             <li key={link.label[lang]}><a title={`Navlink - ${link.label[lang]}`} href={`/${lang}/${link.link}`} onClick={() => setOpen(false)}>{link.label[lang]}</a></li>
           ))}
         </ul>
+        <SheetFooter>
+          <small>
+            Made with <span className="animate-pulse">❤️</span> and Powered by <a
+              href="https://www.adrian-alvarez.dev/es/"
+              target="_blank"
+              className="text-gray-400 underline transition-colors duration-200 hover:text-gray-50"
+            >Adrian</a
+            >
+          </small>
+        </SheetFooter>
       </SheetContent>
     </Sheet>
   )

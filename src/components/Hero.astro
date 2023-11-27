@@ -25,7 +25,7 @@ const t = useTranslations(lang)
     <p class="max-w-[700px] text-lg text-muted-foreground">
       {t('hero-description')}
     </p>
-    <FormDialog client:load text={t('dialog-text')} lang={lang} />
+    <FormDialog client:visible text={t('dialog-text')} lang={lang} />
   </div>
   <div class="gradient hidden aspect-square w-1/2 md:block">
     <Image
