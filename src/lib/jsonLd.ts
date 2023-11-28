@@ -1,17 +1,17 @@
 import { type CollectionEntry } from 'astro:content'
 
 // Function to create a JsonLd acording to the type
-export default function jsonLDGenerator({ type, post, url }: {type: string, post: CollectionEntry<'blog'>, url: URL }) {
+export default function jsonLDGenerator({ type, post }: {type: string, post: CollectionEntry<'blog'> }) {
   if (type === 'post') {
     return `<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": ${post.data.excerpt},
-  "image": ${post.data.image.src},  
+  "headline": "${post.data.excerpt}",
+  "image": "${post.data.image.src}",  
   "author": {
     "@type": "Person",
-    "name": ${post.data.author}
+    "name": '${post.data.author}'
   },  
   "publisher": {
     "@type": "Organization",

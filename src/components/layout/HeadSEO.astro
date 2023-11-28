@@ -33,7 +33,6 @@ const { title, description, ogImage, post, url = Astro.url } = Astro.props
 const jsonLD = jsonLDGenerator({
   type: post ? 'post' : 'website',
   post: post,
-  url: url,
 })
 
 // Translation Imports
@@ -70,8 +69,14 @@ const newLangUrl = changeLangFromUrl(Astro.url, lang)
   name="author"
   content="Adrian 'Nano' Alvarez, adrian.alvarezalonso1991@gmail.com, https://www.adrian-alvarez.dev"
 />
-<meta name="designer" content="Adrian 'Nano' Alvarez, adrian.alvarezalonso1991@gmail.com, https://www.adrian-alvarez.dev" />
-<meta name="owner" content="Adrian 'Nano' Alvarez, adrian.alvarezalonso1991@gmail.com, https://www.adrian-alvarez.dev" />
+<meta
+  name="designer"
+  content="Adrian 'Nano' Alvarez, adrian.alvarezalonso1991@gmail.com, https://www.adrian-alvarez.dev"
+/>
+<meta
+  name="owner"
+  content="Adrian 'Nano' Alvarez, adrian.alvarezalonso1991@gmail.com, https://www.adrian-alvarez.dev"
+/>
 <link rel="canonical" href={canonicalURL} />
 <meta name="title" content={title} />
 <meta name="description" content={description} />
@@ -135,5 +140,5 @@ const newLangUrl = changeLangFromUrl(Astro.url, lang)
 </script>
 <!-- End Google Tag Manager -->
 
-<!-- Astro Page Trasnitions -->
+<!-- Astro Page Transitions -->
 <ViewTransitions />
