@@ -1,4 +1,3 @@
-import { readSync } from 'fs';
 import { languages, defaultLang, ui } from './ui';
 
 export function getLangFromUrl(url: URL) {
