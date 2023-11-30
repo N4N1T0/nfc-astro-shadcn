@@ -8,5 +8,10 @@ import Javier from './Javier.png'
 import Rachel from './Rachel.png'
 import Rodrigo from './Rodrigo.png'
 import Rogelio from './Rogelio.png'
+import RingTraining from './ring-training.png'
+import BagDrills from './bag-drills.png'
+import DefenseForms from './defense-forms.png'
+import PracticClass from './practic-class.png'
+import GirlClass from './girl-class.png'
 
-export { Boxeo, Kickboxing, MuayThai, Mma, Dayana, Rachel, Rodrigo, Rogelio, Pablo, Javier }
+export { Boxeo, Kickboxing, MuayThai, Mma, Dayana, Rachel, Rodrigo, Rogelio, Pablo, Javier, RingTraining, BagDrills, DefenseForms, PracticClass, GirlClass }

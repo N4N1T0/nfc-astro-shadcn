@@ -28,7 +28,9 @@ export const ui = {
     'faq-subtitle': "Descubre algunas de las",
     'dialog-text': 'Contactame',
     'dialog-title': 'Metodos de Contacto',
-    'dialog-description': 'debajo tienes como contactarme elije la que mas comodo te sea!'
+    'dialog-description': 'debajo tienes como contactarme elije la que mas comodo te sea!',
+    'feed-title': 'Nuestros Entrenamientos',
+    'feed-subtitle': 'parte de algunos de'
   },
   en: {
     'hero-description': 'Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training, Designed to Fit Your Pace and Goals, Maximizing Your Potential in Combat Martial Arts.',
@@ -46,6 +48,8 @@ export const ui = {
     'faq-subtitle': 'Discover Some of the',
     'dialog-text': 'Contact me',
     'dialog-title': 'Contact Methods',
-    'dialog-description': 'Below, you have options for how to contact me. Choose the one that is most convenient for you!'
+    'dialog-description': 'Below, you have options for how to contact me. Choose the one that is most convenient for you!',
+    'feed-title': 'Our Trainings',
+    'feed-subtitle': 'part fo some of'
   }
 }

@@ -1,4 +1,4 @@
-import { Boxeo, Kickboxing, Mma, MuayThai, Dayana, Rachel, Rodrigo, Rogelio, Pablo, Javier } from '../assets/index'
+import { Boxeo, Kickboxing, Mma, MuayThai, Dayana, Rachel, Rodrigo, Rogelio, Pablo, Javier, RingTraining, BagDrills, DefenseForms, PracticClass, GirlClass } from '../assets/index'
 
 // Translation Completed
 export const services = [
@@ -313,5 +313,34 @@ export const contacts = [
     },
     link: "http://www.instagram.com/big_nano_coach",
     linkLabel: '@big_nano_coach'
+  }
+]
+
+// No Translation required
+export const feed = [
+  {
+    label: 'ring-training',
+    image: RingTraining,
+    link: 'https://www.instagram.com/p/Cy_xOeJIh9y/'
+  },
+  {
+    label: 'bag-drills',
+    image: BagDrills,
+    link: 'https://www.instagram.com/p/CzcU2Eao3Wd/'
+  },
+  {
+    label: 'defense-forms',
+    image: DefenseForms,
+    link: 'https://www.instagram.com/p/CuXSgnfo924/'
+  },
+  {
+    label: 'practic-class',
+    image: PracticClass,
+    link: 'https://www.instagram.com/p/CrB7R8Dg8uX/'
+  },
+  {
+    label: 'girl-class',
+    image: GirlClass,
+    link: 'https://www.instagram.com/p/CqHBWuzAE_Z/'
   }
 ]
