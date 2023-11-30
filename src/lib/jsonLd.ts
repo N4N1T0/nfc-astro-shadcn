@@ -11,7 +11,7 @@ export default function jsonLDGenerator({ type, post }: {type: string, post: Col
   "image": "${post.data.image.src}",  
   "author": {
     "@type": "Person",
-    "name": '${post.data.author}'
+    "name": "Adrian 'Nano' Alavrez"
   },  
   "publisher": {
     "@type": "Organization",
