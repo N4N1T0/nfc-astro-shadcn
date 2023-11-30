@@ -17,7 +17,7 @@ export const ui = {
     'sheetNav-title': 'En nuestra Pagina',
     'sheetNav-description': 'Links de ayuda',
     'about-title': 'conoce a nuestro entrenador',
-    'about-info': 'Originario de Cuba, mi trayectoria en los deportes de combate comenzó auna edad temprana. Empecé a boxear a los 10 años, a practicar kickboxinga los 18 y finalmente me adentré en las MMA a los 22 años. Como entrenador de alto rendimiento de la Federación de Judo-Kickboxing, he tenido el privilegio de guiar a los atletas hacia el máximo rendimiento. En el camino, competí en varios torneos de nivel junior, alimentando mi pasión por el deporte. Con más de una década de experiencia en entrenamiento personalizado, me dedico a ayudar a las personas a liberar todo su potencial en los deportes de combate y más allá. entrenando a domicilio o en area libre en hermosa Marbella',
+    'about-info': 'Originario de Cuba, mi trayectoria en los deportes de combate comenzó auna edad temprana. Empecé a boxear a los 10 años, a practicar kickboxinga los 18 y finalmente me adentré en las MMA a los 22 años. Como entrenador de alto rendimiento de la Federación de Judo-Kickboxing, he tenido el privilegio de guiar a los atletas hacia el máximo rendimiento. En el camino, competí en varios torneos de nivel junior, alimentando mi pasión por el deporte. Con más de una década de experiencia en entrenamiento personalizado, me dedico a ayudar a las personas a liberar todo su potencial en los deportes de combate y más allá. entrenando a domicilio o en area libre en la hermosa Marbella',
     'services-title': 'Nuestros Servicios',
     'services-subtitle': 'descubre la variedad',
     'training-title': 'los entrenamientos tambien incluyen',
