@@ -13,21 +13,16 @@ import '@/styles/globals.css'
 interface Props {
   title?: string | undefined
   description?: string | undefined
-  ogImage?: URL | undefined
+  ogImage?: string | undefined
   url?: URL | undefined
   post?: CollectionEntry<'blog'>
 }
 
-// Canonical URL for SEO
-const canonicalURL = new URL(Astro.url.pathname, Astro.site)
-
-// Open Graph Image
-if (Astro.props.ogImage === undefined) {
-  Astro.props.ogImage = new URL('og-image.png', canonicalURL)
-}
-
 // Astro Props
 const { title, description, ogImage, post, url = Astro.url } = Astro.props
+
+// Canonical URL for SEO
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
 // JsonLd Genearting acording to the page type
 const jsonLD = jsonLDGenerator({
@@ -39,6 +34,13 @@ const jsonLD = jsonLDGenerator({
 import { getLangFromUrl, changeLangFromUrl } from '../../i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 const newLangUrl = changeLangFromUrl(Astro.url, lang)
+
+// Open Graph Image
+if (Astro.props.ogImage === undefined) {
+  Astro.props.ogImage = `${Astro.site}${lang}/og-image.jpg`
+}
+
+console.log(Astro.props.ogImage)
 ---
 
 <!-- Google tag (gtag.js) -->
@@ -113,14 +115,14 @@ const newLangUrl = changeLangFromUrl(Astro.url, lang)
 <meta property="og:url" content={url ? url : canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={ogImage} />
+<meta property="og:image" content={Astro.props.ogImage} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={url ? url : canonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={ogImage} />
+<meta property="twitter:image" content={Astro.props.ogImage} />
 
 <!-- jsonLD -->
 <Fragment set:html={jsonLD} />

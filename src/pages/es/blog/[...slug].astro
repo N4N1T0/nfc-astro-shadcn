@@ -51,8 +51,8 @@ export const prerender = true
 <BaseLayout
   title={title}
   description={excerpt}
-  ogImage={image}
-  url={`${Astro.site}/${slug}`}
+  ogImage={image.src}
+  url={Astro.url}
   post={post}
 >
   <div class="container relative max-w-[1020px] py-10 pt-10">

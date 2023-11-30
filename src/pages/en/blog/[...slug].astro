@@ -28,7 +28,7 @@ const post = Astro.props
 const { title, date, excerpt, author, categories, image } = post.data
 
 // Astro Params
-const slug = Astro.params.slug
+const slug = Astro.params?.slug
 
 // Special function to render the content of the MD
 const { Content } = await post.render()
@@ -51,8 +51,8 @@ export const prerender = true
 <BaseLayout
   title={title}
   description={excerpt}
-  ogImage={image}
-  url={`${Astro.site}/${slug}`}
+  ogImage={image.src}
+  url={Astro.url}
   post={post}
 >
   <div class="container relative max-w-[1020px] px-5 py-10 pt-10">
