@@ -32,6 +32,7 @@ const lang = getLangFromUrl(Astro.url)
       src={post.data.image}
       alt={post.data.imageAlt}
       transition:name={'img-' + post.slug}
+      loading="eager"
     />
   </a>
 

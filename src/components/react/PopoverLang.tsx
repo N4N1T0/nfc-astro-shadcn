@@ -12,7 +12,7 @@ export function PopoverLang({ lang, url }: { lang: 'es' | 'en', url: URL }) {
         <Button
           variant="outline"
           role="combobox"
-          aria-labelledby="Language toggle"
+          aria-label="Language toggle"
         >
           {lang === 'en' ? 'English' : 'Español'}
         </Button></PopoverTrigger>

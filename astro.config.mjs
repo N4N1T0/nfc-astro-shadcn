@@ -4,8 +4,9 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from "@astrojs/sitemap";
 import vercel from "@astrojs/vercel/serverless";
 import partytown from "@astrojs/partytown";
-
 import robotsTxt from "astro-robots-txt";
+
+import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,7 +21,7 @@ export default defineConfig({
   }), robotsTxt({
     sitemap: 'https://www.nanofighters.club/sitemap-0.xml',
     host: 'nanofighters.club'
-  })],
+  }), compress()],
   output: "server",
   adapter: vercel()
 });
