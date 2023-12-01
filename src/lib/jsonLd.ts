@@ -21,7 +21,7 @@ export default function jsonLDGenerator({ type, post }: {type: string, post: Col
       "url": "https://www.nanofighters.club/favicon.ico"
     }
   },
-  "datePublished": ${post.data.date}
+  "datePublished": "${post.data.date}"
 }
 </script>`;
   }
