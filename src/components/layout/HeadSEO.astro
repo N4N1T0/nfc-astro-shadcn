@@ -89,7 +89,9 @@ console.log(Astro.props.ogImage)
   title="RSS Feed para mi Website"
   href="rss.xml"
 />
-<title>{title}</title>
+<title>
+  {title}
+</title>
 
 <!-- Lenguage -->
 <link rel="alternate" href={Astro.url} hreflang=`${lang}-es` />
@@ -123,6 +125,12 @@ console.log(Astro.props.ogImage)
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={Astro.props.ogImage} />
+
+<!-- GEO Tags -->
+<meta name="geo.region" content="ES-AN" />
+<meta name="geo.placename" content="Marbella" />
+<meta name="geo.position" content="36.473348;-4.98579" />
+<meta name="ICBM" content="36.473348, -4.98579" />
 
 <!-- jsonLD -->
 <Fragment set:html={jsonLD} />
