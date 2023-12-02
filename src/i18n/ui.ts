@@ -30,7 +30,21 @@ export const ui = {
     'dialog-title': 'Metodos de Contacto',
     'dialog-description': 'debajo tienes como contactarme elije la que mas comodo te sea!',
     'feed-title': 'Nuestros Entrenamientos',
-    'feed-subtitle': 'parte de algunos de'
+    'feed-subtitle': 'parte de algunos de',
+    'form-name': 'Nombre',
+    'form-name-placeholder': 'Pepito Perez',
+    'form-time': 'Horario',
+    'form-time-placeholder': '08:00 AM',
+    'form-services': 'Servicios',
+    'form-services-placeholder': 'Boxing',
+    'form-date': 'Fecha',
+    'form-address': 'Direcion',
+    'form-address-placeholder': 'Avenida no. 1',
+    'form-phone': 'Telefono',
+    'form-phone-placeholder': '+11111111',
+    'form-message': 'Mensaje',
+    'form-message-placeholder': 'Quiero una clase de prueba gratis',
+    'form-submit': 'Enviar'
   },
   en: {
     'hero-description': 'Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training, Designed to Fit Your Pace and Goals, Maximizing Your Potential in Combat Martial Arts.',
@@ -50,6 +64,20 @@ export const ui = {
     'dialog-title': 'Contact Methods',
     'dialog-description': 'Below, you have options for how to contact me. Choose the one that is most convenient for you!',
     'feed-title': 'Our Trainings',
-    'feed-subtitle': 'part fo some of'
+    'feed-subtitle': 'part fo some of',
+    'form-name': 'Name',
+    'form-name-placeholder': 'John Doe',
+    'form-time': 'Time',
+    'form-time-placeholder': '08:00 AM',
+    'form-services': 'Services',
+    'form-services-placeholder': 'Boxing',
+    'form-date': 'Date',
+    'form-address': 'Address',
+    'form-address-placeholder': 'Road no. 1',
+    'form-phone': 'Phone',
+    'form-phone-placeholder': '+11111111',
+    'form-message': 'Message',
+    'form-message-placeholder': 'I want a free mock up class',
+    'form-submit': 'Send'
   }
 }
