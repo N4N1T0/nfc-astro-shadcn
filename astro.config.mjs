@@ -5,8 +5,9 @@ import sitemap from "@astrojs/sitemap";
 import vercel from "@astrojs/vercel/serverless";
 import partytown from "@astrojs/partytown";
 import robotsTxt from "astro-robots-txt";
-
 import compress from "astro-compress";
+
+import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,5 +24,7 @@ export default defineConfig({
     host: 'nanofighters.club'
   }), compress()],
   output: "server",
-  adapter: vercel()
+  adapter: node({
+    mode: "standalone"
+  })
 });

@@ -1,0 +1,55 @@
+---
+// Astro Imports - Components
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { BookingForm } from '../../components/react/BookingForm'
+import { contacts } from '../../constants'
+import Header from '../../components/layout/Header.astro'
+
+// Translation Imports
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+// create static page instead of SSR
+export const prerender = true
+---
+
+<BaseLayout
+  title="Nano Fighters Club in Marbella"
+  description="Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training in Marbella"
+>
+  <section
+    class="m-auto mt-10 flex max-w-[1400px] flex-col items-center justify-center gap-5 p-5 md:gap-10 md:p-10"
+  >
+    <div class="w-full">
+      <Header title="Reserve Form" subtitle="Reserve a free class with our" />
+    </div>
+    <div
+      class="flex w-full flex-col-reverse items-center justify-between gap-5 md:flex-row md:gap-0"
+    >
+      <div
+        class="space-y-6 rounded-xl border bg-primary/10 p-14 text-card-foreground shadow-sm"
+      >
+        {
+          contacts.map((item) => (
+            <div>
+              <h4>{item.label[lang]}</h4>
+              <a
+                title={item.label[lang]}
+                href={item.link}
+                target="_blank"
+                class="text-secondary transition-colors duration-200 hover:text-secondary/70"
+              >
+                {item.linkLabel}
+              </a>
+            </div>
+          ))
+        }
+      </div>
+      <BookingForm client:load lang={lang} />
+    </div>
+    <p class='md:px-10 px-5'>
+  Fill in all the required fields of the form with the necessary information to ensure that we can assist you in the best possible way. By completing your reservation through our form, we guarantee you a completely free first class!
+</p>
+  </section>
+</BaseLayout>

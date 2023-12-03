@@ -39,8 +39,6 @@ const newLangUrl = changeLangFromUrl(Astro.url, lang)
 if (Astro.props.ogImage === undefined) {
   Astro.props.ogImage = `${Astro.site}${lang}/og-image.jpg`
 }
-
-console.log(Astro.props.ogImage)
 ---
 
 <!-- Google tag (gtag.js) -->
