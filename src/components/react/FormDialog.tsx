@@ -23,7 +23,7 @@ export function FormDialog({ text, lang }: { text: string, lang: 'es' | 'en' }) 
   const t = useTranslations(lang)
 
   return (
-    <div className='w-[fit-content] mt-3'>
+    <div className='w-[fit-content]'>
       <Dialog>
         <DialogTrigger asChild>
           <button className={`${buttonVariants()} cursor-pointer`} aria-label={text}>{text}</button>

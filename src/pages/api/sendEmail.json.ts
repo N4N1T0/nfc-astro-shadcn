@@ -3,15 +3,25 @@ import { Resend } from "resend"
 
 const resend = new Resend(import.meta.env.RESEND_API_KEY)
 
-// Salidas: /builtwith.json
-export const POST: APIRoute = async ({params, request}) => {
+export const POST: APIRoute = async ({request}) => {
+
+  const body = await request.json()
+  const { values: { username, address, time, services, date, message, phone } } = body
 
   const send = await resend.emails.send({
-    from: 'adrian.alvarezalonso1991@gmail.com',
+    from: 'booking@nanofighters.club',
     to: 'adrian.alvarezalonso1991@gmail.com',
-    subject: 'Testing Resend',
-    html: '<p>Hi<p>',
-    text: 'Hi'
+    subject: 'New Booking Services',
+    html: 
+    `
+    <p> Client: ${username} </p>
+    <p> Service: ${services} </p>
+    <p> Phone: <a href='tel:${phone}' target='_blank'>${phone}</a> </p>
+    <p> Address: <a href='http://maps.google.com/?q=${address}' target='_blank'>${address}</a> </p>
+    <p> Time: ${time} </p>
+    <p> Date: ${date} </p>
+    <p> Message: ${message} </p>
+    `,
   })
 
   if (send.data) {

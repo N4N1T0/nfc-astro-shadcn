@@ -28,7 +28,7 @@ export const ui = {
     'faq-subtitle': "Descubre algunas de las",
     'dialog-text': 'Contactame',
     'dialog-title': 'Metodos de Contacto',
-    'dialog-description': 'debajo tienes como contactarme elije la que mas comodo te sea!',
+    'dialog-description': 'Recuerda que ofrecemos la primera clase de forma gratuita',
     'feed-title': 'Nuestros Entrenamientos',
     'feed-subtitle': 'parte de algunos de',
     'form-name': 'Nombre',
@@ -44,7 +44,11 @@ export const ui = {
     'form-phone-placeholder': '+11111111',
     'form-message': 'Mensaje',
     'form-message-placeholder': 'Quiero una clase de prueba gratis',
-    'form-submit': 'Enviar'
+    'form-submit': 'Enviar',
+    'form-toast-ok': 'Reserva Completada',
+    'form-toast-ok-description': 'Pronto recibira una confirmacion por WhatsAPP!',
+    'form-toast-wrong': 'Hubo un Problema con la Reserva',
+    'form-toast-wrong-description': 'Pruebe mas tarde porfavor!'
   },
   en: {
     'hero-description': 'Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training, Designed to Fit Your Pace and Goals, Maximizing Your Potential in Combat Martial Arts.',
@@ -62,7 +66,7 @@ export const ui = {
     'faq-subtitle': 'Discover Some of the',
     'dialog-text': 'Contact me',
     'dialog-title': 'Contact Methods',
-    'dialog-description': 'Below, you have options for how to contact me. Choose the one that is most convenient for you!',
+    'dialog-description': 'Remember that we offer the first class for free',
     'feed-title': 'Our Trainings',
     'feed-subtitle': 'part fo some of',
     'form-name': 'Name',
@@ -78,6 +82,10 @@ export const ui = {
     'form-phone-placeholder': '+11111111',
     'form-message': 'Message',
     'form-message-placeholder': 'I want a free mock up class',
-    'form-submit': 'Send'
+    'form-submit': 'Send',
+    'form-toast-ok': 'Reserve Completed',
+    'form-toast-ok-description': 'Soon you will recieve a confirmation via WhatsApp',
+    'form-toast-wrong': 'There were a problem with the reserve',
+    'form-toast-wrong-description': 'Try again later please!'
   }
 }

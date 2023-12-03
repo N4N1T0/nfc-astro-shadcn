@@ -10,6 +10,7 @@ import { Image } from 'astro:assets'
 
 // React imports - Components
 import { FormDialog } from '../components/react/FormDialog'
+import { buttonVariants } from './ui/button'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
@@ -25,7 +26,16 @@ const t = useTranslations(lang)
     <p class="max-w-[700px] text-lg text-muted-foreground">
       {t('hero-description')}
     </p>
-    <FormDialog client:visible text={t('dialog-text')} lang={lang} />
+    <div class="mt-3 flex items-center justify-center gap-5">
+      <FormDialog client:visible text={t('dialog-text')} lang={lang} />
+      <a
+        href={`${Astro.url}booking`}
+        class={`${buttonVariants({
+          variant: 'blog',
+        })} cursor-pointer animate-pulse`}
+        >{lang === 'es' ? 'Clase Gratis' : 'Free Class'}</a
+      >
+    </div>
   </div>
   <div class="gradient hidden aspect-square w-1/2 md:block">
     <Image
