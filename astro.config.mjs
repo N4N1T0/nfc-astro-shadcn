@@ -7,8 +7,6 @@ import partytown from "@astrojs/partytown";
 import robotsTxt from "astro-robots-txt";
 import compress from "astro-compress";
 
-import node from "@astrojs/node";
-
 // https://astro.build/config
 export default defineConfig({
   site: process.env.CI ? 'https://www.nanofighters.club' : 'http://localhost:4321',
@@ -24,7 +22,5 @@ export default defineConfig({
     host: 'nanofighters.club'
   }), compress()],
   output: "server",
-  adapter: node({
-    mode: "standalone"
-  })
+  adapter: vercel()
 });
