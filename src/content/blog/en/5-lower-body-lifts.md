@@ -20,7 +20,7 @@ Despite the fact that the trend of glutes has certainly made them popular. Why? 
 
 They require much more stability than their dumbbell counterpart, which is less difficult. Push yourself to the max to load the triple and double exercise version. Your grip will give way before the lower part of your body.
 
-One of the best exercises for developing strength, muscle, and endurance in the lower body is the loaded Bulgarian split squat. When my MMA fighters are in the strength-building phase, this is an essential exercise.
+One of the best exercises for developing strength, muscle, and endurance in the lower body is the loaded Bulgarian split squat. When my [Boxers](https://www.nanofighters.club/en/blog/boxing-your-next-sport/) are in the strength-building phase, this is an essential exercise.
 
 Try five sets of five reps each, or five sets of three reps per leg.
 

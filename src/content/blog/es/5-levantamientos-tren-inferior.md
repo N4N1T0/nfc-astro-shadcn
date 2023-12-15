@@ -20,7 +20,7 @@ a pesar del hecho de que la moda de los glúteos las ha hecho ciertamente popula
 
 Requieren mucha más estabilidad que su homólogo con mancuernas, que es menos difícil. Esfuérzate al máximo para cargar la versión con mancuernas del ejercicio triple y doble. Tu sujeción cederá antes que la parte inferior de tu cuerpo.
 
-Uno de los mejores ejercicios para desarrollar fuerza, músculo y resistencia en la parte inferior del cuerpo es el búlgaro con carga posterior. Cuando mis luchadores de MMA están en la fase de construcción de fuerza, este es un ejercicio esencial.
+Uno de los mejores ejercicios para desarrollar fuerza, músculo y resistencia en la parte inferior del cuerpo es el búlgaro con carga posterior. Cuando mis [Boxeadores](https://www.nanofighters.club/es/blog/boxing-your-next-sport/) están en la fase de construcción de fuerza, este es un ejercicio esencial.
 
 Prueba con cinco series de cinco repeticiones cada una, o cinco series de tres repeticiones por pierna.
 

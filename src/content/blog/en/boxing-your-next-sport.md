@@ -9,7 +9,7 @@ image: '../../../assets/johann-walter-bantz-Clv9DfJLwac-unsplash.jpg'
 imageAlt: 'a right hook in a boxing match'
 ---
 
-**One of the toughest and most exciting sports in the world is boxing.** The metaphor also applies to life. Boxing is the quintessential sport when it comes to evoking words and phrases applicable to both sports and everyday life.
+**One of the toughest and most exciting sports in the world is boxing.** The metaphor also applies to life. Modern Boxing with [more than 200 years](https://www.nanofighters.club/en/blog/history-of-boxing/) is the quintessential sport when it comes to evoking words and phrases applicable to both sports and everyday life.
 
 You probably know expressions like "against the ropes," "throw in the towel," "throw one's hat in the ring," "below the belt," "go the distance," and "roll with the punches." Boxing idioms have become common cultural references for challenges on the playing field, in the boardroom, and in everyday life.
 
