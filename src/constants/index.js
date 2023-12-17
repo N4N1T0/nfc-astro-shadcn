@@ -8,7 +8,7 @@ export const services = [
       es: 'Experimenta la emoción y los beneficios del boxeo con nuestros servicios personalizados a domicilio. Aprende las técnicas fundamentales, mejora tu resistencia cardiovascular y construye fuerza mientras te sumerges en este apasionante deporte de combate.',
       en: 'Experience the excitement and benefits of boxing with our personalized in-home services. Learn the fundamental techniques, improve your cardiovascular endurance, and build strength as you immerse yourself in this thrilling combat sport.'
     },
-    price: '€20',
+    price: '€30',
     image: Boxeo,
 
   },
@@ -18,17 +18,8 @@ export const services = [
       es: 'Descubre el poder y la destreza del kickboxing en la comodidad de tu hogar con nuestros entrenamientos personalizados. Combina el arte del boxeo y las patadas para mejorar tu agilidad, fuerza y coordinación. Nuestro experto te guiarán en el desarrollo de técnicas.',
       en: 'Discover the power and skill of kickboxing in the comfort of your home with our personalized training sessions. Combine the art of boxing and kicks to enhance your agility, strength, and coordination. Our experts will guide you in developing techniques.'
     },
-    price: '€25',
+    price: '€30',
     image: Kickboxing
-  },
-  {
-    title: 'Muay Thai',
-    description: {
-      es: 'Explora el emocionante mundo del Muay Thai con nuestros entrenamientos personalizados. Aprende las técnicas auténticas de esta forma de arte marcial tailandesa, incluyendo golpes, patadas, codos y rodillazos. Mejora tu resistencia, fuerza y agresividad mientras dominas el Muay Thai.',
-      en: 'Explore the exciting world of Muay Thai with our personalized training sessions. Learn the authentic techniques of this Thai martial art form, including punches, kicks, elbows, and knee strikes. Improve your endurance, strength, and aggressiveness as you master Muay Thai.'
-    },
-    price: '€25',
-    image: MuayThai
   },
   {
     title: 'MMA Striking',
@@ -36,9 +27,19 @@ export const services = [
       es: 'Perfecciona tus habilidades de golpeo en las artes marciales mixtas (MMA) con nuestro entrenamiento de MMA Striking. Aprende a golpear con precisión y poder mientras te preparas para enfrentar a tus oponentes en el octágono. Nuestros instructores te guiarán en el arte del striking en MMA.',
       en: 'Hone your striking skills in Mixed Martial Arts (MMA) with our MMA Striking training. Learn to strike with precision and power as you prepare to face your opponents in the octagon. Our instructors will guide you in the art of striking in MMA.'
     },
-    price: '€30',
+    price: '€40',
     image: Mma
   },
+  {
+  title: "Fitness Training",
+  description: {
+    es: "Perfecciona tus habilidades físicas con nuestro entrenamiento de fitness. Mejora tu resistencia, fuerza y flexibilidad mientras te embarcas en un viaje hacia un estilo de vida más saludable. Nuestros instructores expertos te guiarán en cada paso del camino.",
+    en: "Enhance your physical skills with our Fitness Training. Improve your endurance, strength, and flexibility as you embark on a journey towards a healthier lifestyle. Our expert instructors will guide you every step of the way."
+  },
+  price: "€20",
+  image: MuayThai
+}
+
 ]
 
 // Translation Completed
@@ -344,5 +345,192 @@ export const feed = [
     link: 'https://www.instagram.com/p/CqHBWuzAE_Z/'
   }
 ]
+
+export const products = {
+  'Boxing': {
+    description: {
+      es : 'Con una década de experiencia en el deporte y cinco años como instructor, elijo estos productos de boxeo por su calidad excepcional y durabilidad.',
+      en : 'With a decade-long athletic career and five years as a coach, I choose these boxing products for their outstanding quality and durability.'
+    },
+    products: [
+      {
+        label: 'Venum Contender 2.0',
+        link: "https://www.amazon.es/Venum-Contender-Guantes-Unisex-Adulto/dp/B07D4V1V6T/ref=sr_1_1_sspa?crid=1W7HL0IHENU5P&amp;keywords=boxing%252Bgloves&amp;qid=1702726586&amp;refinements=p_72%253A831280031&amp;rnid=831271031&amp;sprefix=boxing%252Bgloves%252Caps%252C90&amp;sr=8-1-spons&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&amp;th=1&amp;psc=1&_encoding=UTF8&tag=nanito-21&linkCode=ur2&linkId=ad7524663fcac2374d900aedbb8b66a6&camp=3638&creative=24630",
+        description: {
+          en: 'Injected foam Boxing Gloves',
+          es: 'Guantes de Boxeo con espuma injectada'
+        }
+      },
+      {
+        label: 'LEONE 1947 Handwraps',
+        link: "https://www.amazon.es/LEONE-1947-Vendajes-Unisex-AB705/dp/B00CYL77WC?crid=28VI6CBCCEFEN&keywords=vendas%2Bboxeo&qid=1702742856&refinements=p_72%3A831280031&rnid=831271031&sprefix=vendas%2Caps%2C94&sr=8-5&th=1&linkCode=ll1&tag=nanito-21&linkId=b302f29ad7e02945a31dda91b8342d59&language=es_ES&ref_=as_li_ss_tl",
+        description: {
+          en: 'Custom fit Handwraps',
+          es: 'Vendas con ajuste personalizado'
+        }
+      },
+      {
+        label: 'Venum Challenger 2.0',
+        link: "https://www.amazon.es/dp/B072M381ZK?_encoding=UTF8&th=1&linkCode=ll1&tag=nanito-21&linkId=5278eba4efa957e5b4cb0cc059e52680&language=es_ES&ref_=as_li_ss_tl",
+        description: {
+          en: 'High density Mouthgards',
+          es: 'Protector bucal de alta densidad'
+        }
+      },
+      {
+        label: 'LEONE 1947 Boxing Shoes',
+        link: "https://www.amazon.es/LEONE-1947-Premium-Adulto-Unisex/dp/B07XLTZTQN?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1NDK8TIGPT743&keywords=boxing+shoes+men&qid=1702743531&s=sports&sprefix=boxing+shoes+man%2Csporting%2C93&sr=1-24&ufe=app_do%3Aamzn1.fos.5e544547-1f8e-4072-8c08-ed563e39fc7d&linkCode=ll1&tag=nanito-21&linkId=d5b245556419dfa44815a0830dbae5d9&language=es_ES&ref_=as_li_ss_tl",
+        description: {
+          en: 'Mesh structure Boxing Shoes',
+          es: 'Zapatos de Boxeo con Estructura de Malla'
+        }
+      },
+      {
+        label: 'Venum Challenger',
+        link: "https://www.amazon.es/dp/B01AUEALAO?_encoding=UTF8&th=1&linkCode=ll1&tag=nanito-21&linkId=6f491aba57903529fc54c124a79bbf0a&language=es_ES&ref_=as_li_ss_tl",
+        description: {
+          en: 'Skinet leather boxing headgear',
+          es: 'Casco de boxeo con cuero Skinet'
+        }
+      }
+    ]
+  },
+  'Kickboxing': {
+    description: {
+      es : 'Como antiguo practicante de kickboxing de las fuerzas especiales cubanas, elijo estos productos de boxeo por su calidad.',
+      en : 'As a former Cuban special forces kickboxer, I choose these boxing products for their quality.'
+    },
+    products: [
+      {
+        label: 'BUDDHA FIGHT WEAR',
+        link: 'https://www.amazon.es/BUDDHA-FIGHT-WEAR-Sint%C3%A9tica-Resistente/dp/B0C2J4LSS9?crid=9TVJEHRT1KD9&keywords=guantes%2Bkick%2Bboxing&qid=1702744117&s=sports&sprefix=kickboxing%2Csporting%2C88&sr=1-6&th=1&linkCode=ll1&tag=nanito-21&linkId=55e10c0781ce15103bd2174f71810c65&language=es_ES&ref_=as_li_ss_tl',
+        description: {
+          en: 'GS-3 Kickboxing Gloves',
+          es: 'Guantes de Kickboxing con tecnología GS-3'
+        }
+      },
+      {
+        label: 'LEONE 1947 Handwraps',
+        link: "https://www.amazon.es/LEONE-1947-Vendajes-Unisex-AB705/dp/B00CYL77WC?crid=28VI6CBCCEFEN&keywords=vendas%2Bboxeo&qid=1702742856&refinements=p_72%3A831280031&rnid=831271031&sprefix=vendas%2Caps%2C94&sr=8-5&th=1&linkCode=ll1&tag=nanito-21&linkId=b302f29ad7e02945a31dda91b8342d59&language=es_ES&ref_=as_li_ss_tl",
+        description: {
+          en: 'Custom fit Handwraps',
+          es: 'Vendas con ajuste personalizado'
+        }
+      },
+      {
+        label: 'Venum Kontact',
+        link: 'https://www.amazon.es/Venum-Kontact-Espinilleras-Unisex-Adulto/dp/B073WJDQPS?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=21BN0FZ372F2L&keywords=canilleras%2Bkick%2Bboxing&qid=1702744364&s=sports&sprefix=canilleras%2Bkick%2Bboxing%2Csporting%2C74&sr=1-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1&linkCode=ll1&tag=nanito-21&linkId=0a00bf4c8df40dc7d2184e38e539d5fc&language=es_ES&ref_=as_li_ss_tl',
+        description: {
+          en: 'Stretch fabric kickboxing shin guards',
+          es: 'Espinilleras de kickboxing con tejido extensible'
+        }
+      },
+      {
+        label: 'Venum Challenger 2.0',
+        link: "https://www.amazon.es/dp/B072M381ZK?_encoding=UTF8&th=1&linkCode=ll1&tag=nanito-21&linkId=5278eba4efa957e5b4cb0cc059e52680&language=es_ES&ref_=as_li_ss_tl",
+        description: {
+          en: 'High density Mouthgards',
+          es: 'Protector bucal de alta densidad'
+        }
+      },
+      {
+        label: 'Venum Challenger',
+        link: "https://www.amazon.es/dp/B01AUEALAO?_encoding=UTF8&th=1&linkCode=ll1&tag=nanito-21&linkId=6f491aba57903529fc54c124a79bbf0a&language=es_ES&ref_=as_li_ss_tl",
+        description: {
+          en: 'Skinet leather boxing headgear',
+          es: 'Casco de boxeo con cuero Skinet'
+        }
+      },
+    ]
+  },
+  'MMA Striking': {
+    description: {
+      es : '10 años como atleta de Lucha y Boxeo, me han dado la habilidad para escojer material de alta calidad para los entrenemientos, estos son los mejores',
+      en : '10 years as a Wrestling and Boxing athlete, have given me the ability to choose high quality training equipment, these are the best.'
+    },
+    products: [
+      {
+        label: 'Venum Challenger 3.0',
+        link: 'https://www.amazon.es/Venum-Challenger-Guantes-Sparring-Unisex/dp/B07D4V2D5K?crid=1K1SN8AKDQEC6&keywords=guantes+mma&qid=1702746448&s=sports&sprefix=mma+%2Csporting%2C101&sr=1-4&linkCode=ll1&tag=nanito-21&linkId=b70c6fdd4dac4b0ab8c73644c10720d3&language=es_ES&ref_=as_li_ss_tl',
+        description: {
+          en: 'Injected foam MMA Gloves',
+          es: 'Guantes de MMA con espuma injectada'
+        }
+      },
+      {
+        label: 'LEONE 1947 Handwraps',
+        link: "https://www.amazon.es/LEONE-1947-Vendajes-Unisex-AB705/dp/B00CYL77WC?crid=28VI6CBCCEFEN&keywords=vendas%2Bboxeo&qid=1702742856&refinements=p_72%3A831280031&rnid=831271031&sprefix=vendas%2Caps%2C94&sr=8-5&th=1&linkCode=ll1&tag=nanito-21&linkId=b302f29ad7e02945a31dda91b8342d59&language=es_ES&ref_=as_li_ss_tl",
+        description: {
+          en: 'Custom fit Handwraps',
+          es: 'Vendas con ajuste personalizado'
+        }
+      },
+      {
+        label: 'Venum Kontact',
+        link: 'https://www.amazon.es/Venum-Kontact-Espinilleras-Unisex-Adulto/dp/B073WJDQPS?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=21BN0FZ372F2L&keywords=canilleras%2Bkick%2Bboxing&qid=1702744364&s=sports&sprefix=canilleras%2Bkick%2Bboxing%2Csporting%2C74&sr=1-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1&linkCode=ll1&tag=nanito-21&linkId=0a00bf4c8df40dc7d2184e38e539d5fc&language=es_ES&ref_=as_li_ss_tl',
+        description: {
+          en: 'Stretch fabric kickboxing shin guards',
+          es: 'Espinilleras de kickboxing con tejido extensible'
+        }
+      },
+      {
+        label: 'Venum Challenger 2.0',
+        link: "https://www.amazon.es/dp/B072M381ZK?_encoding=UTF8&th=1&linkCode=ll1&tag=nanito-21&linkId=5278eba4efa957e5b4cb0cc059e52680&language=es_ES&ref_=as_li_ss_tl",
+        description: {
+          en: 'High density Mouthgards',
+          es: 'Protector bucal de alta densidad'
+        }
+      },
+      {
+        label: 'Venum Challenger',
+        link: "https://www.amazon.es/dp/B01AUEALAO?_encoding=UTF8&th=1&linkCode=ll1&tag=nanito-21&linkId=6f491aba57903529fc54c124a79bbf0a&language=es_ES&ref_=as_li_ss_tl",
+        description: {
+          en: 'Skinet leather boxing headgear',
+          es: 'Casco de boxeo con cuero Skinet'
+        }
+      },
+    ]
+  },
+  'Fitness Training': {
+    description: {
+    es: "como antiguo preparador fisico de la federacion cubana de Judo-Kickboxing, tengo la habilidad de seleccionar equipos de entrenamiento de alta calidad. Estos son los mejores para alcanzar tus metas de acondicionamiento físico.",
+    en: "As a former fitness trainer for the Cuban Federation of Judo-Kickboxing, I bring the expertise to choose high-quality training equipment. These are the best to help you achieve your fitness goals."
+  },
+    products: [
+      {
+        label: 'PicSil Comba Profesional',
+        link: 'https://www.amazon.es/deportiva-PicSil-crossfit-functional-training/dp/B01DPHA1US?crid=3581TWO6UCWLP&keywords=cuerda%2Bsaltar&qid=1702836000&sprefix=cuerda%2B%2Caps%2C101&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=nanito-21&linkId=2892685e740ad7ad741954d10a13e387&language=es_ES&ref_=as_li_ss_tl',
+        description: {
+          en: 'Jump-Rope with double bearing',
+          es: 'Comba con doble rodamiento'
+        }
+      },
+      {
+        label: 'Jateka Bands',
+        link: 'https://www.amazon.es/Resistencia-El%C3%A1sticas-Musculaci%C3%B3n-Diferentes-musculacion/dp/B09BTQ2D1T?crid=2DD1JQDNRQNLO&keywords=bandas%2Belasticas%2Bmusculacion&qid=1702836137&sprefix=bandas%2B%2Caps%2C97&sr=8-5&th=1&linkCode=ll1&tag=nanito-21&linkId=edba79e2dd0df527afa8ffd42d375434&language=es_ES&ref_=as_li_ss_tl',
+        description: {
+          en: 'Elastic bands with 5 different fitness levels',
+          es: 'Bandas elasticas con 5 niveles diferentes de fitness'
+        }
+      },
+      {
+        label: 'Amonax Roll',
+        link: 'https://www.amazon.es/AMONAX-Amonax-Rueda-para-abdominales/dp/B081Z7BBMB?crid=2ZON1JN97DEER&keywords=rodillo%2Babdominales&qid=1702836254&sprefix=rodill%2Caps%2C95&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=nanito-21&linkId=0dc21840dcd7fc5862f5da62e87299b0&language=es_ES&ref_=as_li_ss_tl',
+        description: {
+          en: 'Abdominal roller with dual mode',
+          es: 'Rodillo de abdominales con modo dual'
+        }
+      },
+      {
+        label: 'Wueps Esterilla',
+        link: 'https://www.amazon.es/esterilla-Wueps-transporte-realizar-antideslizante/dp/B08TX47PW6?crid=67K4LKLNF9LY&keywords=esterilla%2Bfitness&qid=1702836386&sprefix=esterilla%2Caps%2C99&sr=8-5&th=1&linkCode=ll1&tag=nanito-21&linkId=1da9f0b91fe57d60217eec2aa61de3f4&language=es_ES&ref_=as_li_ss_tl',
+        description: {
+          en: 'Ergonomic fitness mat made of environmentally friendly materials',
+          es: 'Esterilla fitness ergonómica hecha con materiales ecológicos'
+        }
+      }
+    ]
+  }
+}
 
 export const horas = ['08:00 AM', '08:30 AM', '09:00 AM', '09:30 AM', '10:00 AM', '10:30 AM', '11:00 AM', '11:30 AM', '12:00 PM', '12:30 PM', '01:00 PM', '01:30 PM','02:00 PM', '02:30 PM', '03:00 PM', '03:30 PM', '04:00 PM', '04:30 PM', '05:00 PM', '05:30 PM', '06:00 PM', '06:30 PM', '07:00 PM', '07:30 PM', '08:00 PM', '08:30 PM', '09:00 PM', '09:30 PM', '10:00 PM']

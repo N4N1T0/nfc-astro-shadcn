@@ -2,6 +2,9 @@
 // Astro Imports - Globals
 import { Image } from 'astro:assets'
 
+// React Imports
+import { Essentials } from '../components/react/Essentials'
+
 // Props interface
 interface Props {
   title: string
@@ -11,7 +14,7 @@ interface Props {
   }
   image: ImageMetadata
   info: string[]
-  precio: string
+  price: string
 }
 
 // Translation Imports
@@ -19,7 +22,7 @@ import { getLangFromUrl } from '../i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 
 // Astro Props
-const { title, description, image } = Astro.props
+const { title, description, image, price } = Astro.props
 ---
 
 <div class="flex w-full flex-col items-center justify-center gap-5">
@@ -34,5 +37,18 @@ const { title, description, image } = Astro.props
       {title}
     </h2>
     <p class="text-muted-foreground">{description[lang]}</p>
+    <h3 class="underline">
+      {lang === 'en' ? 'Price ' : 'Precio '}<strong>{price}</strong>{
+        lang === 'en' ? ' * Class' : ' * Clases'
+      }
+    </h3>
+    <small class="text-xs text-secondary"
+      >{
+        lang === 'en'
+          ? 'we can arrange a monthly pay (with discounts)'
+          : 'podemos arreglar un pago mensual (con descuentos)'
+      }</small
+    >
+    <Essentials lang={lang} product={title} client:load />
   </div>
 </div>

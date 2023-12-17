@@ -48,7 +48,8 @@ export const ui = {
     'form-toast-ok': 'Reserva Completada',
     'form-toast-ok-description': 'Pronto recibira una confirmacion por WhatsAPP!',
     'form-toast-wrong': 'Hubo un Problema con la Reserva',
-    'form-toast-wrong-description': 'Pruebe mas tarde porfavor!'
+    'form-toast-wrong-description': 'Pruebe mas tarde porfavor!',
+    'gear-footer': 'No es necesario equipamiento para entrenar conmigo (yo pongo los equipamentos necesarios), pero es una buena idea tener tus propios equipamentos por higiene y seguridad'
   },
   en: {
     'hero-description': 'Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training, Designed to Fit Your Pace and Goals, Maximizing Your Potential in Combat Martial Arts.',
@@ -86,6 +87,7 @@ export const ui = {
     'form-toast-ok': 'Reserve Completed',
     'form-toast-ok-description': 'Soon you will recieve a confirmation via WhatsApp',
     'form-toast-wrong': 'There were a problem with the reserve',
-    'form-toast-wrong-description': 'Try again later please!'
+    'form-toast-wrong-description': 'Try again later please!',
+    'gear-footer': 'No equipment is necessary to train with me (I provide the necessary equipment), but it is a good idea to have your own equipment for hygiene and safety.'
   }
 }

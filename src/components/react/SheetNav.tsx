@@ -35,7 +35,7 @@ export function SheetNav({ lang }: { lang: 'es' | 'en' }) {
             <li key={link.label[lang]}><a title={`Navlink - ${link.label[lang]}`} href={`/${lang}/${link.link}`} onClick={() => setOpen(false)}>{link.label[lang]}</a></li>
           ))}
         </ul>
-        <SheetFooter>
+        <SheetFooter className="self-end">
           <small>
             Made with <span className="animate-pulse">❤️</span> and Powered by <a
               href="https://www.adrian-alvarez.dev/es/"
