@@ -37,10 +37,10 @@ export function Essentials({ lang, product }: { lang: 'es' | 'en', product: stri
           })} cursor-pointer mt-5`}
             aria-label={lang === 'es' ? 'Equipamiento' : 'Basic Gear'}>{lang === 'es' ? 'Equipamiento' : 'Basic Gear'}</button>
         </DialogTrigger>
-        <DialogContent className='w-auto pt-16 md:pt-10'>
+        <DialogContent className='h-[90vh] w-[300px] pt-10 overflow-y-auto'>
           <DialogHeader>
             <DialogTitle>{product}</DialogTitle>
-            <DialogDescription>
+            <DialogDescription className='text-xs'>
               {products[product as keyof typeof products].description[lang]}
             </DialogDescription>
           </DialogHeader>
