@@ -224,7 +224,7 @@ export const navLinks = [
       'es':'Blog',
       'en': 'Blog'
     },      
-    link: '/blog',
+    link: 'blog',
   },
 ]
 
