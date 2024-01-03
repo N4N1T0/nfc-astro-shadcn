@@ -13,5 +13,25 @@ import BagDrills from './bag-drills.png'
 import DefenseForms from './defense-forms.png'
 import PracticClass from './practic-class.png'
 import GirlClass from './girl-class.png'
+import BagWorkout from './bag-workout.png'
+import EmomWorkout from './emom-workout.png'
 
-export { Boxeo, Kickboxing, MuayThai, Mma, Dayana, Rachel, Rodrigo, Rogelio, Pablo, Javier, RingTraining, BagDrills, DefenseForms, PracticClass, GirlClass }
+export { 
+  Boxeo, 
+  Kickboxing, 
+  MuayThai, 
+  Mma, 
+  Dayana, 
+  Rachel, 
+  Rodrigo, 
+  Rogelio, 
+  Pablo, 
+  Javier, 
+  RingTraining, 
+  BagDrills, 
+  DefenseForms, 
+  PracticClass, 
+  GirlClass,
+  BagWorkout,
+  EmomWorkout
+}

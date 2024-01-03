@@ -23,7 +23,7 @@ export function SheetNav({ lang }: { lang: 'es' | 'en' }) {
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon"><Menu /><span className="sr-only">Mobile Navbar</span></Button>
       </SheetTrigger>
-      <SheetContent side="left" className="p-14">
+      <SheetContent side="left" className="p-10 flex flex-col justify-between">
         <SheetHeader>
           <SheetTitle className="text-xl">{t('sheetNav-title')}</SheetTitle>
           <SheetDescription>

@@ -1,4 +1,22 @@
-import { Boxeo, Kickboxing, Mma, MuayThai, Dayana, Rachel, Rodrigo, Rogelio, Pablo, Javier, RingTraining, BagDrills, DefenseForms, PracticClass, GirlClass } from '../assets/index'
+import { 
+  Boxeo, 
+  Kickboxing, 
+  Mma, 
+  MuayThai, 
+  Dayana, 
+  Rachel, 
+  Rodrigo, 
+  Rogelio, 
+  Pablo, 
+  Javier, 
+  RingTraining, 
+  BagDrills, 
+  DefenseForms, 
+  PracticClass, 
+  GirlClass,
+  BagWorkout,
+  EmomWorkout
+} from '../assets/index'
 
 // Translation Completed
 export const services = [
@@ -109,8 +127,8 @@ export const include = [
       en: 'Nutritional Counseling'
     },
     description: {
-      es:'Nuestro expertos en nutrición te ofrece orientación y apoyo continuo para desarrollar hábitos alimenticios saludables.',
-      en: 'Our nutrition experts provide you with ongoing guidance and support to develop healthy eating habits.'
+      es:'Nuestro experto en nutrición te ofrece orientación y apoyo continuo para desarrollar hábitos alimenticios saludables.',
+      en: 'Our nutrition expert provide you with ongoing guidance and support to develop healthy eating habits.'
     }
   },
 ]
@@ -224,7 +242,7 @@ export const navLinks = [
       'es':'Blog',
       'en': 'Blog'
     },      
-    link: 'blog',
+    link: '/blog',
   },
 ]
 
@@ -304,7 +322,7 @@ export const contacts = [
       es: 'Zona',
       en: 'Location'
     },
-    link: "https://maps.app.goo.gl/gGpA3JwSkiR3H8RK6",
+    link: "https://maps.app.goo.gl/aL3t1MJ8gp9Aj6cg9",
     linkLabel: 'San Pedro de Alcantara, Marbella, Nueva Andalucia, Estepona'
   },
   {
@@ -343,6 +361,16 @@ export const feed = [
     label: 'girl-class',
     image: GirlClass,
     link: 'https://www.instagram.com/p/CqHBWuzAE_Z/'
+  },
+  {
+    label: 'bag-workout',
+    image: BagWorkout,
+    link: 'https://www.instagram.com/p/Czi5ztIoqvk/'
+  },
+  {
+    label: 'emom-workout',
+    image: EmomWorkout,
+    link: 'https://www.instagram.com/p/C0r8FWLoz44/'
   }
 ]
 
