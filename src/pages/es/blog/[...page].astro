@@ -13,7 +13,7 @@ export async function getStaticPaths({ paginate }) {
   // Get all Posts
   const posts: CollectionEntry<'blog'> = await getPosts('es')
 
-  return paginate(posts, { pageSize: 6 })
+  return paginate(posts, { pageSize: 9 })
 }
 
 const { page }: { page: Page<CollectionEntry<'blog'>> } = Astro.props
