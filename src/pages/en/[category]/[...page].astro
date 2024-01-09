@@ -1,0 +1,65 @@
+---
+// import Astro - Components
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import BlogCard from '../../../components/blog/BlogCard.astro'
+import BlogHeader from '../../../components/blog/BlogHeader.astro'
+import { type CollectionEntry } from 'astro:content'
+
+// Import Utils
+import { getCategories, getPosts } from '../../../lib/fetchers'
+import { capitalizer } from '../../../lib/utils'
+
+// Function to create the path for all the categories of the blog
+export async function getStaticPaths({ paginate }) {
+  const categories = await getCategories('en')
+  // Get all Posts
+  const posts: CollectionEntry<'blog'> = await getPosts('en')
+
+  return categories.flatMap((category) => {
+    const postByCategories = posts
+      .filter((post) => post.data.categories.includes(category))
+      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+
+    return paginate(postByCategories, {
+      params: { category },
+      pageSize: 9,
+    })
+  })
+}
+
+const { page } = Astro.props
+const params = Astro.params
+
+// Redirect in case the path dosent exits
+if (!params) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not found',
+  })
+}
+
+// create static page instead of SSR
+export const prerender = true
+---
+
+<BaseLayout
+  title={`NFC Blog - ${capitalizer(params.category)}`}
+  description=`Articulos actualizados sobre bienestar, deportes de combate y ${params.category}`
+>
+  <section class="mx-auto max-w-[1680px] px-5">
+    <h1 class="sr-only hidden">
+      Articulos actualizados sobre bienestar, deportes de combate y ${}
+    </h1>
+    <BlogHeader title="NFC Blog" subtitle="Deleitate con los articulos de" />
+    <!-- Posts Card List -->
+    <div
+      class="lg:gap mb-5 grid grid-cols-1 gap-x-6 gap-y-9 px-5 md:grid-cols-2 md:gap-y-11 md:px-0 lg:grid-cols-3 lg:gap-x-8"
+    >
+      {page.data.map((post) => <BlogCard post={post} />)}
+    </div>
+    <div class="flex h-16 w-full items-center justify-center space-x-5">
+      {page.url.prev ? <a href={page.url.prev}>{`< Previous`}</a> : null}
+      {page.url.next ? <a href={page.url.next}>{`Next >`}</a> : null}
+    </div>
+  </section>
+</BaseLayout>

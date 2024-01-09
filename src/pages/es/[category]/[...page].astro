@@ -1,34 +1,57 @@
 ---
-// import Astro - Components & Globals
+// import Astro - Components
 import BaseLayout from '../../../layouts/BaseLayout.astro'
 import BlogCard from '../../../components/blog/BlogCard.astro'
 import BlogHeader from '../../../components/blog/BlogHeader.astro'
 import { type CollectionEntry } from 'astro:content'
-import { type Page } from '../../../types'
 
 // Import Utils
-import { getPosts } from '../../../lib/fetchers'
+import { getCategories, getPosts } from '../../../lib/fetchers'
+import { capitalizer } from '../../../lib/utils'
 
+// Function to create the path for all the categories of the blog
 export async function getStaticPaths({ paginate }) {
+  const categories = await getCategories('es')
   // Get all Posts
   const posts: CollectionEntry<'blog'> = await getPosts('es')
 
-  return paginate(posts, { pageSize: 6 })
+  return categories.flatMap((category) => {
+    const postByCategories = posts
+      .filter((post) => post.data.categories.includes(category))
+      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+
+    return paginate(postByCategories, {
+      params: { category },
+      pageSize: 9,
+    })
+  })
 }
 
-const { page }: { page: Page<CollectionEntry<'blog'>> } = Astro.props
+const { page } = Astro.props
+const params = Astro.params
+
+// Redirect in case the path dosent exits
+if (!params) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not found',
+  })
+}
 
 // create static page instead of SSR
 export const prerender = true
 ---
 
 <BaseLayout
-  title="NFC Blog"
-  description="Articulos actualizados sobre bienestar, deportes de combate y mucho mas"
+  title={`NFC Blog - ${capitalizer(params.category)}`}
+  description=`Articulos actualizados sobre bienestar, deportes de combate y ${params.category}`
 >
   <section class="mx-auto max-w-[1680px] px-5">
+    <h1 class="sr-only hidden">
+      Articulos actualizados sobre bienestar, deportes de combate y ${}
+    </h1>
     <BlogHeader title="NFC Blog" subtitle="Deleitate con los articulos de" />
-    <!-- Posts card Lists -->
+    <!-- Posts Card List -->
     <div
       class="lg:gap mb-5 grid grid-cols-1 gap-x-6 gap-y-9 px-5 md:grid-cols-2 md:gap-y-11 md:px-0 lg:grid-cols-3 lg:gap-x-8"
     >
