@@ -31,7 +31,7 @@ El Método Conjugado Condensado, introducido por el renombrado entrenador de pow
 - <a href='https://www.youtube.com/watch?v=ZndWEwFoU5I&t=204s&pp=ygUaZmlnaHRlciB3YXJtIHVwICBwaGlsIGRhcnU%3D' target='_blank' class='text-white hover:text-muted-foreground duration-200 transition-colors'>Calentamiento Dinámico de Boxeadores</a>
 - Box Jumps 10x40cm 10x50cm 10x60cm / <small>Tómate tu tiempo entre saltos (al 100% de esfuerzo); intenta aterrizar con las piernas lo más rectas posible.</small>
 
-- Speed Deadlift 10x3 60%-70% 1RM 45s Rest / <small>Empuja el suelo con la mayor fuerza posible, apuntando a un movimiento rápido y explosivo en menos de 1 segundo.</small>
+- Speed Deadlift 10x3 60%-70% 1RM 45s Descanso / <small>Empuja el suelo con la mayor fuerza posible, apuntando a un movimiento rápido y explosivo en menos de 1 segundo.</small>
 
 - Floor Press 5x3 / <small>Para el Levantamiento Principal de Máximo Esfuerzo, tómate tu tiempo y aumenta hasta un máximo de 3 repeticiones (3RM).</small>
 

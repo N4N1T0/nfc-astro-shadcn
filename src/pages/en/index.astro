@@ -7,6 +7,7 @@ import Entrenamientos from '../../components/Entrenamientos.astro'
 import Testimonios from '../../components/Testimonios.astro'
 import Faqs from '../../components/Faqs.astro'
 import Feed from '../../components/Feed.astro'
+import ShopToast from '../../components/react/ShopToast'
 
 // create static page instead of SSR
 export const prerender = true
@@ -16,6 +17,7 @@ export const prerender = true
   title="Nano Fighters Club in Marbella"
   description="Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training in Marbella"
 >
+  <ShopToast client:load lang="en" />
   <Hero />
   <About />
   <Entrenamientos />
