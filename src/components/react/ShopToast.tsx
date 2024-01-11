@@ -30,7 +30,7 @@ export default function ShopToast({ lang }: { lang: 'es' | 'en' }) {
 
   return (
     <ToastProvider>
-      <Toast duration={30000} className="p-4 md:pr-3 pr-8">
+      <Toast duration={30000} className="p-4 md:pr-3 pr-8 hidden md:flex">
         <ToastTitle>
           <Carousel
             plugins={[plugin.current]}
