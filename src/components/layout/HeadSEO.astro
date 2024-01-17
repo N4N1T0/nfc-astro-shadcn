@@ -36,7 +36,8 @@ const lang = getLangFromUrl(Astro.url)
 const newLangUrl = changeLangFromUrl(Astro.url, lang)
 
 // Open Graph Image
-if (Astro.props.ogImage === undefined) {
+
+if (ogImage === undefined) {
   Astro.props.ogImage = `${Astro.site}${lang}/og-image.jpg`
 }
 ---
