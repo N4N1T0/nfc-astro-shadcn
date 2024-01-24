@@ -2,7 +2,7 @@
 title: 'Naoya Inoue the Little Godzilla'
 date: 2024-01-03
 slug: 'naoya-inoue-the-little-godzilla'
-excerpt: 'discover the story of Naoya "The monster" Inoue, the second best pound-for-pound boxer of the moment'
+excerpt: 'discover the story of Naoya The monster Inoue, the second best pound-for-pound boxer of the moment'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness']
 image: '../../../assets/r1202003_960x540_16-9.jpg'

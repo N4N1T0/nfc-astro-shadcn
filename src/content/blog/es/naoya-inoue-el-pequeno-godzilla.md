@@ -2,7 +2,7 @@
 title: 'Naoya Inoue, el Pequeño Godzilla'
 date: 2024-01-03
 slug: 'naoya-inoue-el-pequeno-godzilla'
-excerpt: 'descubre la historia de Naoya "El Monstruo" Inoue, el segundo mejor boxeador libra por libra del momento'
+excerpt: 'descubre la historia de Naoya El Monstruo Inoue, el segundo mejor boxeador libra por libra del momento'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness']
 image: '../../../assets/r1202003_960x540_16-9.jpg'
