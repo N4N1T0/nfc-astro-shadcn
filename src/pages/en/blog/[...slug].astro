@@ -119,14 +119,16 @@ export const prerender = true
         class="flex flex-col items-center justify-between gap-5 md:flex-row md:gap-0"
       >
         {
-          relatedPosts.slice(0, 2).map((item) => (
+          relatedPosts.slice(0, 2).map((item, idx) => (
             <a
               title={`Link to ${item.data.title}`}
               class="text-secondary no-underline transition-colors duration-200 hover:text-secondary/70"
               href={`/en/blog/${item.slug}`}
               aria-label={`Related-link-${item.slug}`}
             >
+              {idx === 0 ? '<' : null}
               {item.data.title}
+              {idx === 1 ? '>' : null}
             </a>
           ))
         }

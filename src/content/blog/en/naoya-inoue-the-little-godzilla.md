@@ -45,4 +45,4 @@ Speculations circulating in Japan hint at Naoya Inoue's next bout in May against
 
 ### Naoya Inoue vs Marlon Tapales Full Fight ###
 
-<iframe height="315" src="https://www.youtube.com/embed/SdacGehHesM?si=__ALjvdJli-QEuy1" title="Naoya Inoue vs Marlon Tapales Full Fight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class='w-full'></iframe>
+<iframe src="https://www.youtube.com/embed/SdacGehHesM?si=__ALjvdJli-QEuy1" title="Naoya Inoue vs Marlon Tapales Full Fight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class='w-full aspect-video'></iframe>

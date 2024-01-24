@@ -45,5 +45,5 @@ Rumores que circulan en Japón sugieren que la próxima pelea de Naoya Inoue ser
 
 ### Pelea completa entre Naoya Inoue y Marlon Tapales ###
 
-<iframe height="315" src="https://www.youtube.com/embed/SdacGehHesM?si=__ALjvdJli-QEuy1" title="Pelea completa entre Naoya Inoue y Marlon Tapales" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class='w-full'></iframe>
+<iframe src="https://www.youtube.com/embed/SdacGehHesM?si=__ALjvdJli-QEuy1" title="Pelea completa entre Naoya Inoue y Marlon Tapales" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class='w-full aspect-video'></iframe>
 
