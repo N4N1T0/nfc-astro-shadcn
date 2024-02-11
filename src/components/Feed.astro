@@ -19,6 +19,7 @@ const t = useTranslations(lang)
   <Header title={t('feed-title')} subtitle={t('feed-subtitle')} />
   <ul
     class="flex snap-x snap-mandatory items-center space-x-2 overflow-auto px-10 py-2 lg:space-x-2.5"
+    id="feed"
   >
     {
       feed.map((item) => (
@@ -50,3 +51,9 @@ const t = useTranslations(lang)
   </div>
   <hr class="h-2 w-full" />
 </section>
+
+<style>
+  #feed {
+    scrollbar-width: none;
+  }
+</style>
