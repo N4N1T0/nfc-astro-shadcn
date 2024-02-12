@@ -1,4 +1,8 @@
 ---
+// Vercel Imports
+import { Analytics } from '@vercel/analytics/react'
+import SpeedInsights from '@vercel/speed-insights/astro'
+
 // Astro Imports - Components & Globas
 import HeadSEO from '../components/layout/HeadSEO.astro'
 import Footer from '../components/layout/Footer.astro'
@@ -42,6 +46,9 @@ const lang = getLangFromUrl(Astro.url)
         style="display:none;visibility:hidden"></iframe></noscript
     >
     <!-- End Google Tag Manager (noscript) -->
+    <Analytics client:load />
+    <SpeedInsights client:load />
+
     <div class="relative flex min-h-screen flex-col">
       <Navbar />
       <main class="flex-auto">
