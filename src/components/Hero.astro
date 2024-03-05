@@ -29,7 +29,7 @@ const t = useTranslations(lang)
     <div class="mt-3 flex items-center justify-center gap-5">
       <FormDialog client:visible text={t('dialog-text')} lang={lang} />
       <a
-        onclick="freeClassClick()"
+        id="free-class"
         href={`${Astro.url}booking`}
         class={`${buttonVariants({
           variant: 'blog',
@@ -57,22 +57,3 @@ const t = useTranslations(lang)
     );
   }
 </style>
-
-<script
-  type="text/partytown"
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-FM93CYH0GQ"></script>
-<script type="text/partytown">
-  window.dataLayer = window.dataLayer || []
-  function gtag() {
-    dataLayer.push(arguments)
-  }
-  gtag('js', new Date())
-  gtag('config', 'G-FM93CYH0GQ')
-
-  function freeClassClick() {
-    gtag('event', 'free_class_click', {
-      time: date,
-    })
-  }
-</script>
