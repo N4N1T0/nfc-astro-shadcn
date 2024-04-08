@@ -22,5 +22,9 @@ export default defineConfig({
     host: 'nanofighters.club'
   }), compress()],
   output: "server",
-  adapter: vercel()
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  })
 });
