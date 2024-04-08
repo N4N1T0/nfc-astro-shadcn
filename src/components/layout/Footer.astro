@@ -11,99 +11,83 @@ import { getLangFromUrl } from '../../i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 ---
 
-<footer class="border-t py-6 md:px-8 md:py-0">
+<footer class='border-t py-6 md:px-8 md:py-0'>
   <div
-    class="container flex flex-col items-center justify-between gap-4 md:h-20 md:flex-row"
-  >
+    class='container flex flex-col items-center justify-between gap-4 md:h-20 md:flex-row'>
     <p
-      class="text-center text-sm leading-loose text-muted-foreground md:text-left"
-    >
+      class='text-center text-sm leading-loose text-muted-foreground md:text-left'>
       Copyright © 2022 Nano Fighters
     </p>
 
     <!-- Portfolio Link -->
     <small>
-      Made with <span class="animate-pulse">❤️</span> and Powered by <a
-        href="https://www.adrian-alvarez.dev/es/"
-        target="_blank"
-        class="text-gray-400 underline transition-colors duration-200 hover:text-gray-50"
+      Made with <span class='animate-pulse text-accent'>❤️</span> and Powered by
+      <a
+        href='https://www.adrian-alvarez.dev/es/'
+        target='_blank'
+        class='text-gray-400 underline transition-colors duration-200 hover:text-gray-50'
         >Adrian</a
       >
     </small>
 
     <!-- Contact Link List -->
-    <ul class="flex gap-2">
-      {
-        contacts.map(({ label, link }) => {
-          // Function to get a Lucide Icon acording to the label
-          function getIcon() {
-            switch (label[lang]) {
-              case 'Telefono':
-                return (
-                  <Phone color="hsl(var(--muted-foreground))" client:visible />
-                )
-              case 'Cellphone':
-                return (
-                  <Phone color="hsl(var(--muted-foreground))" client:visible />
-                )
-              case 'Email':
-                return (
-                  <Mail color="hsl(var(--muted-foreground))" client:visible />
-                )
-              case 'Mail':
-                return (
-                  <Mail color="hsl(var(--muted-foreground))" client:visible />
-                )
-              case 'Zona':
-                return (
-                  <MapPin color="hsl(var(--muted-foreground))" client:visible />
-                )
-              case 'Location':
-                return (
-                  <MapPin color="hsl(var(--muted-foreground))" client:visible />
-                )
-              case 'Instagram':
-                return (
-                  <Instagram
-                    color="hsl(var(--muted-foreground))"
-                    client:visible
-                  />
-                )
-              default:
-                return <div />
+    <div class='space-y-1'>
+      <ul class='flex gap-2 border-b'>
+        {
+          contacts.map(({ label, link }) => {
+            // Function to get a Lucide Icon acording to the label
+            function getIcon() {
+              switch (label[lang]) {
+                case 'Telefono':
+                  return <Phone color='#f64646' client:visible />
+                case 'Cellphone':
+                  return <Phone color='#f64646' client:visible />
+                case 'Email':
+                  return <Mail color='#f64646' client:visible />
+                case 'Mail':
+                  return <Mail color='#f64646' client:visible />
+                case 'Zona':
+                  return <MapPin color='#f64646' client:visible />
+                case 'Location':
+                  return <MapPin color='#f64646' client:visible />
+                case 'Instagram':
+                  return <Instagram color='#f64646' client:visible />
+                default:
+                  return <div />
+              }
             }
-          }
-
-          return (
-            <li>
-              <a
-                title={`Link - ${label}`}
-                href={link}
-                target="_blank"
-                rel="noreferrer noopener"
-                class={buttonVariants({ variant: 'ghost', size: 'icon' })}
-              >
-                {getIcon()}
-                <span class="sr-only">{`${label} Link`}</span>
-              </a>
-            </li>
-          )
-        })
-      }
-
-      <!-- RSS Link -->
-      <li>
-        <a
-          title="RSS Link"
-          href="https://www.nanofighters.club/rss.xml"
-          target="_blank"
-          rel="noreferrer noopener"
-          class={buttonVariants({ variant: 'ghost', size: 'icon' })}
-          ><Rss color="hsl(var(--muted-foreground))" client:visible /><span
-            class="sr-only">Rss Link</span
-          ></a
-        >
-      </li>
-    </ul>
+            return (
+              <li>
+                <a
+                  title={`Link - ${label[lang]}`}
+                  href={link}
+                  target='_blank'
+                  rel='noreferrer noopener'
+                  class='inline-flex h-8 w-8 items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50'>
+                  {getIcon()}
+                  <span class='sr-only'>{`${label} Link`}</span>
+                </a>
+              </li>
+            )
+          })
+        }
+        <!-- RSS Link -->
+        <li>
+          <a
+            title='RSS Link'
+            href='https://www.nanofighters.club/rss.xml'
+            target='_blank'
+            rel='noreferrer noopener'
+            class='inline-flex h-9 w-9 items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50'
+            ><Rss color='#f64646' client:visible /><span class='sr-only'
+              >Rss Link</span
+            ></a
+          >
+        </li>
+      </ul>
+      <p class='w-full animate-pulse text-center text-xs uppercase'>
+        {lang === 'en' ? 'Contact' : 'Contacto'}
+      </p>
+    </div>
   </div>
 </footer>
