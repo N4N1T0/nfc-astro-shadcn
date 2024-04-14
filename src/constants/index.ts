@@ -320,8 +320,8 @@ export const contacts = [
       es: 'Email',
       en: 'Mail'
     },
-    link: "mailto:nanofitnessclub@gamil.com",
-    linkLabel: 'nanofitnessclub@gamil.com'
+    link: "mailto:nanofitnessclub@gmail.com",
+    linkLabel: 'nanofitnessclub@gmail.com'
   },
    {
     label: {
