@@ -1,0 +1,68 @@
+---
+// Astro Imports - Layout & Globals
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { getCollection, type CollectionEntry } from 'astro:content'
+
+// Utils Imports
+import { formatDate } from '../../lib/utils'
+
+// Function to create the path for all the blogs
+export async function getStaticPaths() {
+  const posts = await getCollection('clients')
+  return posts.map((post: CollectionEntry<'clients'>) => ({
+    params: { slug: post.slug },
+    props: post,
+  }))
+}
+
+// Props types
+type Props = CollectionEntry<'clients'>
+
+// Astro Props
+const post: CollectionEntry<'clients'> = Astro.props
+const { title, excerpt, date } = post.data
+
+// Astro Params
+const { slug } = Astro.params
+console.log('🚀 ~ slug:', slug)
+
+// Special function to render the content of the MD
+const { Content } = await post.render()
+
+// Redirect in case the path dosent exits
+if (!slug || !post) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not found',
+  })
+}
+
+// create static page instead of SSR
+export const prerender = true
+---
+
+<BaseLayout title={title} description={excerpt} url={Astro.url}>
+  <div class='container relative max-w-[1020px] px-5 py-10 pt-10'>
+    <!-- Category List -->
+    <article
+      class='prose max-w-none prose-headings:text-white prose-p:text-white/70 prose-strong:text-white prose-ul:text-white/50'>
+      <!-- Date and Author -->
+      <div class='flex items-center justify-between'>
+        <span
+          class='font-medium text-muted-foreground'
+          transition:name={'date-' + slug}>
+          {formatDate(date)}
+        </span>
+      </div>
+      <!-- Title and description -->
+      <h1 class='font-heading my-4 text-4xl' transition:name={'title-' + slug}>
+        {title}
+      </h1>
+      <p>{excerpt}</p>
+      <hr class='my-6' />
+      <!-- Content -->
+      <Content />
+      <hr class='my-6' />
+    </article>
+  </div>
+</BaseLayout>
