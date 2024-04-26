@@ -5,7 +5,7 @@ slug: 'women-training-benefits-boxing-kickboxing'
 excerpt: 'Discover the transformative benefits of boxing and kickboxing for women.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'kickboxing', 'fitness']
-image: '../../../assets/dylan-nolte-qxYDhV0rBPk-unsplash.jpg'
+image: '../../../assets/blog/dylan-nolte-qxYDhV0rBPk-unsplash.webp'
 imageAlt: 'A woman wrapping her fists for a fight'
 ---
 

@@ -5,7 +5,7 @@ slug: '5-best-cuban-boxers'
 excerpt: 'The best Cuban boxers of today in the professional boxing scene'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness']
-image: '../../../assets/rigondeaux-boxeo-cubano-deporte-cubano.webp'
+image: '../../../assets/blog/rigondeaux-boxeo-cubano-deporte-cubano.webp'
 imageAlt: 'Rigondeaux celebrating his victory'
 ---
 

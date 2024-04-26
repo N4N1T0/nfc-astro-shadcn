@@ -3,7 +3,7 @@
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 
 // Assets Imports - Images
-import boxingGloves from '../assets/boxingGloves.png'
+import boxingGloves from '../assets/boxingGloves.webp'
 
 // Astro Imports - Globals
 import { Image } from 'astro:assets'
@@ -16,20 +16,19 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
-<section class="container flex items-center gap-6 pb-8 pt-16 md:pt-0">
-  <div class="flex max-w-[980px] flex-col items-start gap-5">
+<section class='container flex items-center gap-6 pb-8 pt-16 md:pt-0'>
+  <div class='flex max-w-[980px] flex-col items-start gap-5'>
     <h1
-      class="text-5xl font-extrabold leading-tight tracking-tighter md:text-9xl"
-    >
-      Nano <span class="text-accent">Fighters</span> Club
+      class='text-5xl font-extrabold leading-tight tracking-tighter md:text-9xl'>
+      Nano <span class='text-accent'>Fighters</span> Club
     </h1>
-    <p class="max-w-[700px] text-lg text-muted-foreground">
+    <p class='max-w-[700px] text-lg text-muted-foreground'>
       {t('hero-description')}
     </p>
-    <div class="mt-3 flex items-center justify-center gap-5">
+    <div class='mt-3 flex items-center justify-center gap-5'>
       <FormDialog client:visible text={t('dialog-text')} lang={lang} />
       <a
-        id="free-class"
+        id='free-class'
         href={`${Astro.url}booking`}
         class={`${buttonVariants({
           variant: 'blog',
@@ -38,11 +37,11 @@ const t = useTranslations(lang)
       >
     </div>
   </div>
-  <div class="gradient hidden aspect-square w-1/2 md:block">
+  <div class='gradient hidden aspect-square w-1/2 md:block'>
     <Image
       src={boxingGloves}
-      alt="Fotografia de unos guantes de boxeo rojos"
-      loading="eager"
+      alt='Fotografia de unos guantes de boxeo rojos'
+      loading='eager'
     />
   </div>
 </section>

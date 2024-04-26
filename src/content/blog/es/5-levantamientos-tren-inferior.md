@@ -5,7 +5,7 @@ slug: '5-levantamientos-tren-inferior'
 excerpt: '¿Qué significa tener piernas y glúteos fuertes? Pues implica algo más que ser capaz de mover mucho peso.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['sc', 'fitness', 'kickboxing']
-image: '../../../assets/sven-mieke-optBC2FxCfc-unsplash.jpg'
+image: '../../../assets/blog/sven-mieke-optBC2FxCfc-unsplash.webp'
 imageAlt: 'una mujer realizando una sentadilla'
 ---
 

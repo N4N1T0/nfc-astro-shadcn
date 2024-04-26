@@ -5,7 +5,7 @@ slug: '5-lower-body-lifts'
 excerpt: 'What does having strong legs and glutes mean? It implies more than just being able to move heavy weights.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['sc', 'fitness', 'kickboxing']
-image: '../../../assets/sven-mieke-optBC2FxCfc-unsplash.jpg'
+image: '../../../assets/blog/sven-mieke-optBC2FxCfc-unsplash.webp'
 imageAlt: 'a woman doing a squat'
 ---
 

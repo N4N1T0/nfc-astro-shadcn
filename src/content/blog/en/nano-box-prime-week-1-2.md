@@ -5,7 +5,7 @@ slug: 'nano-box-prime-week-1-2'
 excerpt: 'A sneak peek at my new strength and conditioning program for boxers! tailored for beginners or anyone who wants to add a little boxing to their workout'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness', 'sc']
-image: '../../../assets/victor-freitas-hOuJYX2K5DA-unsplash.jpg'
+image: '../../../assets/blog/victor-freitas-hOuJYX2K5DA-unsplash.webp'
 imageAlt: 'Athlete lifting weight in week 1 program'
 ---
 

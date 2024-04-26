@@ -5,7 +5,7 @@ slug: 'benefits-of-beach-training'
 excerpt: 'The Benefits of Beach Training for Combat Sports in Marbella'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness', 'kickboxing']
-image: '../../../assets/jason-briscoe-HN_4K2diUWs-unsplash.webp'
+image: '../../../assets/blog/jason-briscoe-HN_4K2diUWs-unsplash.webp'
 imageAlt: 'Rigondeaux celebrating his victory'
 ---
 
@@ -17,7 +17,7 @@ Are you tired of the same old gym routines? Are you seeking a fresh, invigoratin
 
 Imagine standing on the shoreline, the gentle waves lapping at your feet as you prepare to embark on a training session like no other. The soothing sound of the ocean, coupled with the soft sand beneath your toes, creates an atmosphere of tranquility that enhances focus and concentration. Here, amidst the beauty of nature, you can fully immerse yourself in your training, leaving behind the distractions of everyday life.
 
-![Beach Training](../../../assets/lets-take-this-outside-boxing-training-style.webp)
+![Beach Training](../../../assets/blog/lets-take-this-outside-boxing-training-style.webp)
 
 ## Escape the Conventional Gym Setting
 
@@ -27,7 +27,7 @@ Bid farewell to the monotonous walls of the gym and **embrace** the vast expanse
 
 There's something truly magical about training amidst the elements. Feel the warmth of the sun on your skin, breathe in the salty sea air, and let the rhythm of the waves inspire and energize you. Training on the beach not only benefits your physical health but also nourishes your soul, allowing you to reconnect with the natural world and find balance in the midst of your busy life.
 
-![Nature Connection](../../../assets/db63c0_51bda1d465e349d08ad68d705921f5ae~mv2_d_3648_2736_s_4_2.webp)
+![Nature Connection](../../../assets/blog/db63c0_51bda1d465e349d08ad68d705921f5ae~mv2_d_3648_2736_s_4_2.webp)
 
 ## Experience Versatile Training Opportunities
 

@@ -5,7 +5,7 @@ slug: 'nano-box-prime-week-1'
 excerpt: 'A sneak peek at my new strength and conditioning program for boxers! tailored for beginners or anyone who wants to add a little boxing to their workout'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness', 'sc']
-image: '../../../assets/meghan-holmes-buWcS7G1_28-unsplash.jpg'
+image: '../../../assets/blog/meghan-holmes-buWcS7G1_28-unsplash.webp'
 imageAlt: 'two boxing athletes training with battle ropes in week 1 program'
 ---
 

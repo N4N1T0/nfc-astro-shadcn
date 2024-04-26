@@ -5,7 +5,7 @@ slug: '5-everlast-mejores-ventas'
 excerpt: 'Descubre los 5 mejores productos de Everlast para deportes y fitness. Equípate con lo mejor en guantes de boxeo, accesorios y más. ¡Logra tu máximo rendimiento!'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness', 'kickboxing']
-image: '../../../assets/sylwester-walczak-XFhaYR1kbCc-unsplash.jpg'
+image: '../../../assets/blog/sylwester-walczak-XFhaYR1kbCc-unsplash.webp'
 imageAlt: 'Guantes Everlast en el ring con un reflejo de la bandera cubana'
 ---
 

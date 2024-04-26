@@ -5,7 +5,7 @@ slug: 'boxing-your-next-sport'
 excerpt: 'One of the toughest and most exciting sports in the world is boxing. The metaphor also applies to life.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness']
-image: '../../../assets/johann-walter-bantz-Clv9DfJLwac-unsplash.jpg'
+image: '../../../assets/blog/johann-walter-bantz-Clv9DfJLwac-unsplash.webp'
 imageAlt: 'a right hook in a boxing match'
 ---
 

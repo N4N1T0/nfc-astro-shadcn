@@ -5,7 +5,7 @@ slug: 'historia-del-boxeo'
 excerpt: 'Descubra la cautivadora historia del boxeo, desde sus orígenes ancestrales hasta sus legendarios púgiles'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness']
-image: '../../../assets/boxer-lede-superJumbo.jpg'
+image: '../../../assets/blog/boxer-lede-superJumbo.webp'
 imageAlt: 'Muhhamad Ali iconica fotografia sobre en el rival'
 ---
 

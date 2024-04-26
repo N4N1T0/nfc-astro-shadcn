@@ -5,7 +5,7 @@ slug: 'nano-box-prime-semana-1-2'
 excerpt: 'Un vistazo exclusivo a mi nuevo programa de fuerza y acondicionamiento para boxeadores, diseñado para principiantes o cualquier persona que quiera probar.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness', 'sc']
-image: '../../../assets/victor-freitas-hOuJYX2K5DA-unsplash.jpg'
+image: '../../../assets/blog/victor-freitas-hOuJYX2K5DA-unsplash.webp'
 imageAlt: 'Atleta levantando pesas en la semana 1 del programa'
 ---
 

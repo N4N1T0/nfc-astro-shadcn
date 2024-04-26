@@ -5,7 +5,7 @@ slug: '5-everlast-best-seller'
 excerpt: 'Discover the top 5 Everlast products for sports and fitness. Equip yourself with the best in boxing gloves, accessories, and more'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness', 'kickboxing']
-image: '../../../assets/sylwester-walczak-XFhaYR1kbCc-unsplash.jpg'
+image: '../../../assets/blog/sylwester-walczak-XFhaYR1kbCc-unsplash.webp'
 imageAlt: 'Everlast gloves in the ring with a reflection of the Cuban flag'
 ---
 

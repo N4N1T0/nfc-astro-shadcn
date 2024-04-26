@@ -5,7 +5,7 @@ slug: 'beneficios-del-entrenamiento-en-la-playa'
 excerpt: 'Los Beneficios del Entrenamiento en la Playa para Deportes de Combate en Marbella'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness', 'kickboxing']
-image: '../../../assets/jason-briscoe-HN_4K2diUWs-unsplash.webp'
+image: '../../../assets/blog/jason-briscoe-HN_4K2diUWs-unsplash.webp'
 imageAlt: 'Rigondeaux celebrando su victoria'
 ---
 
@@ -17,7 +17,7 @@ imageAlt: 'Rigondeaux celebrando su victoria'
 
 Imagina estar de pie en la orilla, las suaves olas acariciando tus pies mientras te preparas para embarcarte en una sesión de entrenamiento como ninguna otra. El relajante sonido del océano, junto con la suave arena bajo tus pies, crea una atmósfera de tranquilidad que mejora el enfoque y la concentración. Aquí, en medio de la belleza de la naturaleza, puedes sumergirte por completo en tu entrenamiento, dejando atrás las distracciones de la vida cotidiana.
 
-![Entrenamiento en la playa](../../../assets/lets-take-this-outside-boxing-training-style.webp)
+![Entrenamiento en la playa](../../../assets/blog/lets-take-this-outside-boxing-training-style.webp)
 
 ## Escapa del entorno convencional del gimnasio
 
@@ -27,7 +27,7 @@ Despídete de las monótonas paredes del gimnasio y **abrázate** a la vasta ext
 
 Hay algo verdaderamente mágico en entrenar en medio de los elementos. Siente el calor del sol en tu piel, respira el aire salado del mar y deja que el ritmo de las olas te inspire y te energice. Entrenar en la playa no solo beneficia tu salud física, sino que también nutre tu alma, permitiéndote reconectar con el mundo natural y encontrar equilibrio en medio de tu vida ocupada.
 
-![Conexión con la naturaleza](../../../assets/db63c0_51bda1d465e349d08ad68d705921f5ae~mv2_d_3648_2736_s_4_2.webp)
+![Conexión con la naturaleza](../../../assets/blog/db63c0_51bda1d465e349d08ad68d705921f5ae~mv2_d_3648_2736_s_4_2.webp)
 
 ## Experimenta oportunidades de entrenamiento versátiles
 

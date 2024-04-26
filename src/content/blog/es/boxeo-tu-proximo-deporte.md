@@ -5,7 +5,7 @@ slug: 'boxeo-tu-proximo-deporte'
 excerpt: 'Uno de los deportes más duros y emocionantes del mundo es el boxeo. La metáfora también se aplica a la vida.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness']
-image: '../../../assets/johann-walter-bantz-Clv9DfJLwac-unsplash.jpg'
+image: '../../../assets/blog/johann-walter-bantz-Clv9DfJLwac-unsplash.webp'
 imageAlt: 'un derechazo en un combate de boxeo'
 ---
 

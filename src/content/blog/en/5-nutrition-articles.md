@@ -5,7 +5,7 @@ slug: '5-nutrition-articles'
 excerpt: 'These are the top 10 nutrition posts of 2023, selected by industry professionals.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['nutrition', 'fitness']
-image: '../../../assets/dan-gold-4_jhDO54BYg-unsplash.jpg'
+image: '../../../assets/blog/dan-gold-4_jhDO54BYg-unsplash.webp'
 imageAlt: 'a table full of healthy food'
 ---
 

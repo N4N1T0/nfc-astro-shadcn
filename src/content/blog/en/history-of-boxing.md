@@ -5,7 +5,7 @@ slug: 'history-of-boxing'
 excerpt: 'Discover the captivating history of boxing, from its ancient origins to its legendary pugilists.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness']
-image: '../../../assets/boxer-lede-superJumbo.jpg'
+image: '../../../assets/blog/boxer-lede-superJumbo.webp'
 imageAlt: 'Iconic picture of Muhammad Ali towering over a rival'
 ---
 

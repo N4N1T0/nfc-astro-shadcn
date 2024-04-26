@@ -5,7 +5,7 @@ slug: 'protein-in-real-life'
 excerpt: 'Have you been accused of consuming too much protein? Lets debunk the myth.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['nutrition', 'fitness', 'sc']
-image: '../../../assets/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.jpg'
+image: '../../../assets/blog/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.webp'
 imageAlt: 'Slicing a New York strip steak'
 ---
 

@@ -5,7 +5,7 @@ slug: 'nano-box-prime-semana-1'
 excerpt: 'Un vistazo exclusivo a mi nuevo programa de fuerza y acondicionamiento para boxeadores, diseñado para principiantes o cualquier persona que quiera probar.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness', 'sc']
-image: '../../../assets/meghan-holmes-buWcS7G1_28-unsplash.jpg'
+image: '../../../assets/blog/meghan-holmes-buWcS7G1_28-unsplash.webp'
 imageAlt: 'dos atletas de boxeo entrenando con cuerdas de batalla en el programa de la semana 1'
 ---
 

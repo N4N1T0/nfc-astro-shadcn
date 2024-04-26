@@ -1,6 +1,6 @@
 ---
 // Assets Imports - Info
-import nano from '../assets/nano.jpg'
+import nano from '../assets/nano.webp'
 import { stats } from '../constants/index'
 
 // Astro Imports - Globals
@@ -13,47 +13,43 @@ const t = useTranslations(lang)
 ---
 
 <section
-  class="flex flex-col items-center gap-10 overflow-x-hidden bg-gradient-to-b from-background to-primary/10 pt-10 dark:to-primary/5 md:pt-10"
-  id="acerca"
->
+  class='flex flex-col items-center gap-10 overflow-x-hidden bg-gradient-to-b from-background to-primary/10 pt-10 dark:to-primary/5 md:pt-10'
+  id='acerca'>
   <div
-    class="flex w-full max-w-[1680px] animate-marquee items-center justify-between gap-3 px-5 md:animate-none md:gap-0"
-  >
+    class='flex w-full max-w-[1680px] animate-marquee items-center justify-between gap-3 px-5 md:animate-none md:gap-0'>
     <!-- Stats List marque in mobile -->
     {
       stats.map((stat) => (
-        <div class="flex w-auto gap-3">
-          <p class="text-5xl text-accent">{stat.number}</p>
-          <p class="text-text/80 flex-wrap" set:html={stat.text[lang]} />
+        <div class='flex w-auto gap-3'>
+          <p class='text-5xl text-accent'>{stat.number}</p>
+          <p class='text-text/80 flex-wrap' set:html={stat.text[lang]} />
         </div>
       ))
     }
   </div>
-  <hr class="h-2 w-full" />
+  <hr class='h-2 w-full' />
   <div
-    class="flex max-w-[1280px] flex-col items-center justify-center gap-10 px-5 py-10 md:flex-row md:px-0"
-  >
+    class='flex max-w-[1280px] flex-col items-center justify-center gap-10 px-5 py-10 md:flex-row md:px-0'>
     <!-- Image and Info -->
     <Image
       src={nano}
-      alt="Foto de perfil de Big Nano Coach"
-      class="rounded-xl"
+      alt='Foto de perfil de Big Nano Coach'
+      class='rounded-xl'
       height={400}
       width={400}
     />
-    <div class="px-5 md:p-0">
-      <p class="text-xs uppercase text-accent md:text-base">
+    <div class='px-5 md:p-0'>
+      <p class='text-xs uppercase text-accent md:text-base'>
         {t('about-title')}
       </p>
       <h2
-        class="mt-2 text-3xl font-bold leading-tight tracking-tighter md:text-5xl"
-      >
-        Adrian <span class="text-muted-foreground">"Nano"</span> Alvarez
+        class='mt-2 text-3xl font-bold leading-tight tracking-tighter md:text-5xl'>
+        Adrian <span class='text-muted-foreground'>"Nano"</span> Alvarez
       </h2>
-      <p class="text-text/80 mt-2 text-sm md:mt-5 md:text-base">
+      <p class='text-text/80 mt-2 text-sm md:mt-5 md:text-base'>
         {t('about-info')}
       </p>
     </div>
   </div>
-  <hr class="h-2 w-full" />
+  <hr class='h-2 w-full' />
 </section>

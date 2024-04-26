@@ -5,7 +5,7 @@ slug: 'mujeres-training-beneficios-boxeo-kickboxing'
 excerpt: 'Descubre los beneficios transformadores del boxeo y el kickboxing para las mujeres'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'kickboxing', 'fitness']
-image: '../../../assets/dylan-nolte-qxYDhV0rBPk-unsplash.jpg'
+image: '../../../assets/blog/dylan-nolte-qxYDhV0rBPk-unsplash.webp'
 imageAlt: 'una mujer vendandose los puños para un combate'
 ---
 

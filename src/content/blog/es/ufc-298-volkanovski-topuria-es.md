@@ -5,7 +5,7 @@ slug: 'ufc-298-volkanovski-topuria'
 excerpt: 'Experimenta el choque de titanes mientras Volkanovski se enfrenta a Topuria en un emocionante enfrentamiento en UFC 298 con sabor español.'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'kickboxing']
-image: '../../../assets/021824-ufc-298-volkanovski-vs-topuria-EVENT-ART.jpg'
+image: '../../../assets/blog/021824-ufc-298-volkanovski-vs-topuria-EVENT-ART.webp'
 imageAlt: 'Volkanovski y Topuria en el cartel de UFC 298'
 ---
 

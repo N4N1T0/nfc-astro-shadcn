@@ -5,7 +5,7 @@ slug: 'naoya-inoue-el-pequeno-godzilla'
 excerpt: 'descubre la historia de Naoya El Monstruo Inoue, el segundo mejor boxeador libra por libra del momento'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness']
-image: '../../../assets/r1202003_960x540_16-9.jpg'
+image: '../../../assets/blog/r1202003_960x540_16-9.webp'
 imageAlt: 'Naoya con sus 4 cinturones'
 ---
 
