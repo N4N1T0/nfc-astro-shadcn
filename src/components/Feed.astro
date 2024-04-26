@@ -4,52 +4,49 @@ import { Image } from 'astro:assets'
 import Header from './layout/Header.astro'
 
 // Assets Imports - info & Icons
-import { feed } from '../constants'
+import { feed } from '@/constants'
 
 // Translation Imports
-import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
 <section
-  class="flex flex-col items-center gap-10 overflow-x-hidden bg-primary/10 pt-8 md:pt-10"
-  id="feeds"
->
+  class='flex flex-col items-center gap-10 overflow-x-hidden bg-primary/10 pt-8 md:pt-10'
+  id='feeds'>
   <Header title={t('feed-title')} subtitle={t('feed-subtitle')} />
   <ul
-    class="flex snap-x snap-mandatory items-center space-x-2 overflow-auto px-10 py-2 lg:space-x-2.5"
-    id="feed"
-  >
+    class='flex snap-x snap-mandatory items-center space-x-2 overflow-auto px-10 py-2 lg:space-x-2.5'
+    id='feed'>
     {
       feed.map((item) => (
-        <li class="group flex-shrink-0 snap-start pl-4">
+        <li class='group flex-shrink-0 snap-start pl-4'>
           <a
             href={item.link}
-            class=""
-            target="_blank"
-            aria-label={`Inatgram link to the post ${item.label}`}
-          >
+            class=''
+            target='_blank'
+            aria-label={`Inatgram link to the post ${item.label}`}>
             <Image
               src={item.image}
               alt={item.label}
-              class="h-[400px] w-[250px] overflow-hidden rounded-xl object-cover transition duration-300 group-hover:-translate-y-2 group-hover:shadow-xl"
+              class='h-[400px] w-[250px] overflow-hidden rounded-xl object-cover transition duration-300 group-hover:-translate-y-2 group-hover:shadow-xl'
             />
           </a>
         </li>
       ))
     }
   </ul>
-  <div class="mt-5 flex w-full animate-pulse justify-end px-10 text-accent">
+  <div class='mt-5 flex w-full animate-pulse justify-end px-10 text-accent'>
     <a
-      title="Instagram-Feeds-links"
-      class="transition-colors duration-200 hover:text-accent/80"
-      href="https://www.instagram.com/big_nano_coach"
-      rel="noreferrer noopener"
-      target="_blank">{t('testimonial-link')}</a
+      title='Instagram-Feeds-links'
+      class='transition-colors duration-200 hover:text-accent/80'
+      href='https://www.instagram.com/big_nano_coach'
+      rel='noreferrer noopener'
+      target='_blank'>{t('testimonial-link')}</a
     >
   </div>
-  <hr class="h-2 w-full" />
+  <hr class='h-2 w-full' />
 </section>
 
 <style>

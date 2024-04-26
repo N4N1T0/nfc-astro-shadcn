@@ -1,14 +1,14 @@
 import { type CollectionEntry } from 'astro:content'
 
 // Function to create a JsonLd acording to the type
-export default function jsonLDGenerator({ type, post }: {type: string, post: CollectionEntry<'blog'> }) {
+export default function jsonLDGenerator({ type, post }: {type: string, post: CollectionEntry<'blog'> | undefined }) {
   if (type === 'post') {
     return `<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "${post.data.excerpt}",
-  "image": "${post.data.image.src}",  
+  "headline": "${post?.data.excerpt}",
+  "image": "${post?.data.image.src}",  
   "author": {
     "@type": "Person",
     "name": "Adrian 'Nano' Alavrez"
@@ -21,7 +21,7 @@ export default function jsonLDGenerator({ type, post }: {type: string, post: Col
       "url": "https://www.nanofighters.club/favicon.ico"
     }
   },
-  "datePublished": "${post.data.date}"
+  "datePublished": "${post?.data.date}"
 }
 </script>`;
   }

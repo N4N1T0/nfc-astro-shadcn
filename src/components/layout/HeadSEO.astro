@@ -4,7 +4,7 @@ import { ViewTransitions } from 'astro:transitions'
 import { type CollectionEntry } from 'astro:content'
 
 // Lib Imports
-import jsonLDGenerator from '../../lib/jsonLd'
+import jsonLDGenerator from '@/lib/jsonLd'
 
 // Style Imports
 import '@/styles/globals.css'
@@ -15,7 +15,7 @@ interface Props {
   description?: string | undefined
   ogImage?: string | undefined
   url?: URL | undefined
-  post?: CollectionEntry<'blog'>
+  post?: CollectionEntry<'blog'> | undefined
 }
 
 // Astro Props
@@ -27,11 +27,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 // JsonLd Genearting acording to the page type
 const jsonLD = jsonLDGenerator({
   type: post ? 'post' : 'website',
-  post: post,
+  post: post ? post : undefined,
 })
 
 // Translation Imports
-import { getLangFromUrl, changeLangFromUrl } from '../../i18n/utils'
+import { getLangFromUrl, changeLangFromUrl } from '@/i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 const newLangUrl = changeLangFromUrl(Astro.url, lang)
 
@@ -44,10 +44,10 @@ if (ogImage === undefined) {
 
 <!-- Google tag (gtag.js) -->
 <script
-  type="text/partytown"
+  type='text/partytown'
   async
-  src="https://www.googletagmanager.com/gtag/js?id=G-FM93CYH0GQ"></script>
-<script type="text/partytown">
+  src='https://www.googletagmanager.com/gtag/js?id=G-FM93CYH0GQ'></script>
+<script type='text/partytown'>
   window.dataLayer = window.dataLayer || []
   function gtag() {
     dataLayer.push(arguments)
@@ -57,96 +57,81 @@ if (ogImage === undefined) {
 </script>
 
 <!-- Basic HTML Meta Tags -->
-<meta charset="utf-8" />
-<meta name="robots" content="index, follow" />
-<meta name="googlebot" content="index, follow" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="generator" content={Astro.generator} />
-<meta name="subject" content="Combat sports training business" />
-<meta name="language" content={lang.toUpperCase()} />
-<meta name="Classification" content="Business" />
+<meta charset='utf-8' />
+<meta name='robots' content='index, follow' />
+<meta name='googlebot' content='index, follow' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<meta name='generator' content={Astro.generator} />
+<meta name='subject' content='Combat sports training business' />
+<meta name='language' content={lang.toUpperCase()} />
+<meta name='Classification' content='Business' />
 <meta
-  name="author"
+  name='author'
   content="Adrian 'Nano' Alvarez, adrian.alvarezalonso1991@gmail.com, https://www.adrian-alvarez.dev"
 />
 <meta
-  name="designer"
+  name='designer'
   content="Adrian 'Nano' Alvarez, adrian.alvarezalonso1991@gmail.com, https://www.adrian-alvarez.dev"
 />
 <meta
-  name="owner"
+  name='owner'
   content="Adrian 'Nano' Alvarez, adrian.alvarezalonso1991@gmail.com, https://www.adrian-alvarez.dev"
 />
-<link rel="canonical" href={canonicalURL} />
-<meta name="title" content={title} />
-<meta name="description" content={description} />
-<link rel="sitemap" href={`${Astro.site}sitemap-0.xml`} />
+<link rel='canonical' href={canonicalURL} />
+<meta name='title' content={title} />
+<meta name='description' content={description} />
+<link rel='sitemap' href={`${Astro.site}sitemap-0.xml`} />
 <link
-  rel="alternate"
-  type="application/rss+xml"
-  title="RSS Feed para mi Website"
-  href="rss.xml"
+  rel='alternate'
+  type='application/rss+xml'
+  title='RSS Feed para mi Website'
+  href='rss.xml'
 />
 <title>
   {title}
 </title>
 
 <!-- Lenguage -->
-<link rel="alternate" href={Astro.url} hreflang=`${lang}-es` />
+<link rel='alternate' href={Astro.url} hreflang=`${lang}-es` />
 <link
-  rel="alternate"
+  rel='alternate'
   href={`${Astro.site}${newLangUrl}`}
   hreflang=`${lang === 'es' ? 'en' : 'es'}-es`
 />
 
 <!-- Favicon -->
 <link
-  rel="apple-touch-icon-precomposed"
+  rel='apple-touch-icon-precomposed'
   href={`${Astro.site}apple-touch-icon.png`}
 /><!-- iPhone, iPod e Android 2.2+ -->
 <link
-  rel="shortcut icon"
-  type="image/x-icon"
+  rel='shortcut icon'
+  type='image/x-icon'
   href={`${Astro.site}favicon.ico`}
 />
 
 <!-- Open Graph -->
-<meta property="og:type" content={post ? 'blog.articule' : 'website'} />
-<meta property="og:url" content={url ? url : canonicalURL} />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
-<meta property="og:image" content={Astro.props.ogImage} />
+<meta property='og:type' content={post ? 'blog.articule' : 'website'} />
+<meta property='og:url' content={url ? url : canonicalURL} />
+<meta property='og:title' content={title} />
+<meta property='og:description' content={description} />
+<meta property='og:image' content={Astro.props.ogImage} />
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={url ? url : canonicalURL} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={Astro.props.ogImage} />
+<meta property='twitter:card' content='summary_large_image' />
+<meta property='twitter:url' content={url ? url : canonicalURL} />
+<meta property='twitter:title' content={title} />
+<meta property='twitter:description' content={description} />
+<meta property='twitter:image' content={Astro.props.ogImage} />
 
 <!-- GEO Tags -->
-<meta name="geo.region" content="ES-AN" />
-<meta name="geo.placename" content="Marbella" />
-<meta name="geo.position" content="36.473348;-4.98579" />
-<meta name="ICBM" content="36.473348, -4.98579" />
+<meta name='geo.region' content='ES-AN' />
+<meta name='geo.placename' content='Marbella' />
+<meta name='geo.position' content='36.473348;-4.98579' />
+<meta name='ICBM' content='36.473348, -4.98579' />
 
 <!-- jsonLD -->
 <Fragment set:html={jsonLD} />
-
-<!-- Google Tag Manager -->
-<script>
-  ;(function (w, d, s, l, i) {
-    w[l] = w[l] || []
-    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != 'dataLayer' ? '&l=' + l : ''
-    j.async = true
-    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
-    f.parentNode.insertBefore(j, f)
-  })(window, document, 'script', 'dataLayer', 'GTM-WVVRPDML')
-</script>
-<!-- End Google Tag Manager -->
 
 <!-- Astro Page Transitions -->
 <ViewTransitions />

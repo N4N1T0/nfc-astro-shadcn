@@ -1,6 +1,6 @@
 ---
 // Props Types
-type Props = {
+interface Props {
   title: string
   subtitle: string
 }
@@ -12,14 +12,13 @@ const { title, subtitle } = Astro.props
 const sliceTitle = title.split(' ')
 ---
 
-<div class="w-fit px-10">
-  <p class="text-xs uppercase text-accent md:text-base">
+<div class='w-fit px-10'>
+  <p class='text-xs uppercase text-accent md:text-base'>
     {subtitle}
   </p>
   <h2
-    class="mt-2 text-3xl font-bold leading-tight tracking-tighter md:text-5xl"
-  >
+    class='mt-2 text-3xl font-bold leading-tight tracking-tighter md:text-5xl'>
     {sliceTitle[0]}{' '}
-    <span class="text-muted-foreground">{sliceTitle[1]}</span>
+    <span class='text-muted-foreground'>{sliceTitle[1]}</span>
   </h2>
 </div>

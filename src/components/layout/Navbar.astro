@@ -1,48 +1,45 @@
 ---
 // Translation Imports
-import { getLangFromUrl } from '../../i18n/utils'
+import { getLangFromUrl } from '@/i18n/utils'
 
 // Assets Imports - Info
-import { navLinks } from '../../constants/index'
+import { navLinks } from '@/constants/index'
 
 // React Imports - Components
-import { SheetNav } from '../react/SheetNav'
-import { PopoverLang } from '../react/PopoverLang'
+import { SheetNav } from '@/components/react/SheetNav'
+import { PopoverLang } from '@/components/react/PopoverLang'
 
 const lang: 'es' | 'en' = getLangFromUrl(Astro.url)
 ---
 
-<header class="sticky top-0 z-40 w-full border-b bg-background">
+<header class='sticky top-0 z-40 w-full border-b bg-background'>
   <div
-    class="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0"
-  >
+    class='container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0'>
     <!-- Logo -->
-    <div class="flex gap-6 md:gap-10">
-      <a href="/" class="flex items-center space-x-2" title="Home Link">
-        <span class="inline-block text-2xl font-bold">NFC</span>
+    <div class='flex gap-6 md:gap-10'>
+      <a href='/' class='flex items-center space-x-2' title='Home Link'>
+        <span class='inline-block text-2xl font-bold'>NFC</span>
       </a>
     </div>
-    <div class="flex flex-1 items-center justify-end space-x-4">
+    <div class='flex flex-1 items-center justify-end space-x-4'>
       <!-- Navlinks Lists -->
-      <nav class="flex items-center space-x-3">
+      <nav class='flex items-center space-x-3'>
         <ul
-          class="text-text/90 hidden items-center justify-between gap-5 md:flex"
-        >
+          class='text-text/90 hidden items-center justify-between gap-5 md:flex'>
           {
             navLinks.map((link) => (
               <li>
                 <a
                   title={`Link to ${link.label}`}
-                  class="transition-colors duration-200 hover:text-secondary"
-                  href={`/${lang}${link.link}`}
-                >
+                  class='transition-colors duration-200 hover:text-secondary'
+                  href={`/${lang}${link.link}`}>
                   {link.label[lang]}
                 </a>
               </li>
             ))
           }
         </ul>
-        <div class="block md:hidden">
+        <div class='block md:hidden'>
           <!-- Mobile Navbar -->
           <SheetNav client:visible lang={lang} />
         </div>

@@ -1,15 +1,15 @@
 ---
 // Astro Imports - Components & Globas
-import HeadSEO from '../components/layout/HeadSEO.astro'
-import Footer from '../components/layout/Footer.astro'
-import Navbar from '../components/layout/Navbar.astro'
+import HeadSEO from '@/components/layout/HeadSEO.astro'
+import Footer from '@/components/layout/Footer.astro'
+import Navbar from '@/components/layout/Navbar.astro'
 import { type CollectionEntry } from 'astro:content'
 
 // Props imterface
 interface Props {
   title?: string | undefined
   description?: string | undefined
-  ogImage?: URL | undefined
+  ogImage?: string | undefined
   url?: URL | undefined
   post?: CollectionEntry<'blog'>
 }

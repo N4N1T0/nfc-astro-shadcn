@@ -1,27 +1,26 @@
 ---
 // Astro imports - Components
-import BaseLayout from '../../layouts/BaseLayout.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
 
 // Style Imports
-import { buttonVariants } from '../../components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
 
 // create static page instead of SSR
 export const prerender = true
 ---
 
 <BaseLayout
-  title="404 - Not Found"
-  description="404 Error — this page was not found"
->
-  <div class="mt-32 flex flex-col items-center justify-center gap-2 px-8">
-    <p class="mb-5 text-6xl text-muted-foreground md:text-9xl">Ups!</p>
-    <h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+  title='404 - Not Found'
+  description='404 Error — this page was not found'>
+  <div class='mt-32 flex flex-col items-center justify-center gap-2 px-8'>
+    <p class='mb-5 text-6xl text-muted-foreground md:text-9xl'>Ups!</p>
+    <h1 class='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
       Pagina no encontrada!
     </h1>
-    <p class="mb-4 leading-7 [&:not(:first-child)]:mt-6">
+    <p class='mb-4 leading-7 [&:not(:first-child)]:mt-6'>
       Lo Sentimos, no pudimos encontrar la pagina que esta buscando!
     </p>
-    <a href="/" rel="noreferrer" class={buttonVariants()}>
+    <a href='/' rel='noreferrer' class={buttonVariants()}>
       Volver a la Paginna Principal</a
     >
   </div>

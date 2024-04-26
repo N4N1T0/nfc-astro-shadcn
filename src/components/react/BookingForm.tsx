@@ -28,10 +28,10 @@ import { cn } from "@/lib/utils"
 import { Calendar } from "@/components/ui/calendar"
 import { format } from "date-fns"
 import { CalendarIcon } from "lucide-react"
-import { useToast } from '../../components/ui/use-toast'
+import { useToast } from '@/components/ui/use-toast'
 
 // Translation Imports
-import { useTranslations } from '../../i18n/utils'
+import { useTranslations } from '@/i18n/utils'
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -52,7 +52,7 @@ const formSchema = z.object({
 })
 
 
-export function BookingForm({ lang }: { lang: 'es' | 'en' }) {
+export function BookingForm ({ lang }: { lang: 'es' | 'en' }) {
 
   const t = useTranslations(lang)
   const { toast } = useToast()
@@ -71,7 +71,7 @@ export function BookingForm({ lang }: { lang: 'es' | 'en' }) {
   })
 
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit (values: z.infer<typeof formSchema>) {
     const res = await fetch('/api/sendEmail.json', {
       method: 'POST',
       headers: {

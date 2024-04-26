@@ -1,5 +1,5 @@
 // Shadcn Button Import
-import { buttonVariants } from '../ui/button'
+import { buttonVariants } from '@/components/ui/button'
 
 // Shadcn Dialog Import
 import {
@@ -16,7 +16,7 @@ import {
 import { products } from '@/constants'
 
 // Translation Imports
-import { useTranslations } from '../../i18n/utils'
+import { useTranslations } from '@/i18n/utils'
 
 interface Product {
   label: string
@@ -25,7 +25,7 @@ interface Product {
 }
 
 
-export function Essentials({ lang, product }: { lang: 'es' | 'en', product: string }) {
+export function Essentials ({ lang, product }: { lang: 'es' | 'en', product: string }) {
   const t = useTranslations(lang)
 
   return (

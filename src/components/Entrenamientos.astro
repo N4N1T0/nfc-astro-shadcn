@@ -1,7 +1,7 @@
 ---
 // Assets Imports - info & Icons
-import { include } from '../constants/index'
-import { services } from '../constants/index'
+import { include } from '@/constants/index'
+import { services } from '@/constants/index'
 import { Home, Pizza, Dumbbell } from 'lucide-react'
 
 // Astro Imports - Components
@@ -9,69 +9,66 @@ import TrainingCard from './TrainingCard.astro'
 import Header from './layout/Header.astro'
 
 // Translation Imports
-import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
 <section
-  class="flex flex-col items-center justify-center gap-10 bg-primary/10 pt-8"
-  id="entrenamientos"
->
+  class='flex flex-col items-center justify-center gap-10 bg-primary/10 pt-8'
+  id='entrenamientos'>
   <Header title={t('services-title')} subtitle={t('services-subtitle')} />
   <div
-    class="flex max-w-[1680px] flex-col items-center justify-center gap-10 p-10 md:flex-row md:gap-14"
-  >
+    class='flex max-w-[1680px] flex-col items-center justify-center gap-10 p-10 md:flex-row md:gap-14'>
     <!-- Services List -->
     {
-      services.map(({ title, description, image, info, price }) => (
-        <TrainingCard {title} {description} {image} {info} {price} />
+      services.map(({ title, description, image, price }) => (
+        <TrainingCard {title} {description} {image} {price} />
       ))
     }
   </div>
-  <hr class="h-2 w-2/3" />
-  <div class="w-full max-w-[1680px] space-y-10 p-10">
-    <h2 class="text-center text-sm uppercase text-accent md:text-lg">
+  <hr class='h-2 w-2/3' />
+  <div class='w-full max-w-[1680px] space-y-10 p-10'>
+    <h2 class='text-center text-sm uppercase text-accent md:text-lg'>
       {t('training-title')}
     </h2>
     <div
-      class="flex w-full flex-col items-center justify-center gap-10 md:flex-row"
-    >
+      class='flex w-full flex-col items-center justify-center gap-10 md:flex-row'>
       <!-- Include List -->
       {
         include.map(({ title, description }) => {
           // Function to get an icon with the title
-          function getIcon(training) {
+          function getIcon(training: string) {
             switch (training) {
               case 'A Domicilio':
-                return <Home width="30px" height="30px" />
+                return <Home width='30px' height='30px' />
               case 'At Home':
-                return <Home width="30px" height="30px" />
+                return <Home width='30px' height='30px' />
               case 'Personalizado':
-                return <Dumbbell width="30px" height="30px" />
+                return <Dumbbell width='30px' height='30px' />
               case 'Personalized':
-                return <Dumbbell width="30px" height="30px" />
+                return <Dumbbell width='30px' height='30px' />
               case 'Asesoría Nutricional':
-                return <Pizza width="30px" height="30px" />
+                return <Pizza width='30px' height='30px' />
               case 'Nutritional Counseling':
-                return <Pizza width="30px" height="30px" />
+                return <Pizza width='30px' height='30px' />
               default:
                 return <div />
             }
           }
 
           return (
-            <div class="flex flex-col items-start gap-3">
-              <div class="flex items-center justify-center gap-3">
+            <div class='flex flex-col items-start gap-3'>
+              <div class='flex items-center justify-center gap-3'>
                 {getIcon(title[lang])}
-                <h3 class="text-lg font-bold">{title[lang]}</h3>
+                <h3 class='text-lg font-bold'>{title[lang]}</h3>
               </div>
-              <p class="text-sm text-muted-foreground">{description[lang]}</p>
+              <p class='text-sm text-muted-foreground'>{description[lang]}</p>
             </div>
           )
         })
       }
     </div>
   </div>
-  <hr class="h-2 w-full" />
+  <hr class='h-2 w-full' />
 </section>

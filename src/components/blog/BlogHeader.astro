@@ -1,23 +1,23 @@
 ---
 // Translation Imports
-import { getLangFromUrl } from '../../i18n/utils'
+import { getLangFromUrl } from '@/i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 
 // Assets Imports - styles
-import { buttonVariants } from '../ui/button'
+import { buttonVariants } from '@/components/ui/button'
 
 // Imports Astro - Components
-import Header from '../layout/Header.astro'
+import Header from '@/components/layout/Header.astro'
 
 // Import Utils
-import { getCategories } from '../../lib/fetchers'
-import { cn } from '../../lib/utils'
+import { getCategories } from '@/lib/fetchers'
+import { cn } from '@/lib/utils'
 
 // Categories Fetch
 const categories = await getCategories(lang)
 
 // Props Types
-type Props = {
+interface Props {
   title: string
   subtitle: string
 }
@@ -28,17 +28,16 @@ const { category } = Astro.params
 ---
 
 <header
-  class="flex flex-col items-center justify-between gap-5 py-10 md:flex-row"
->
+  class='flex flex-col items-center justify-between gap-5 py-10 md:flex-row'>
   <!-- Header -->
   <Header title={title} subtitle={subtitle} />
 
   <!-- Categories List -->
-  <div class="mx-auto mt-3 w-full px-3 md:mx-0 md:mt-0 md:w-fit md:px-0">
+  <div class='mx-auto mt-3 w-full px-3 md:mx-0 md:mt-0 md:w-fit md:px-0'>
     {
       categories?.length ? (
-        <ul class="flex snap-x snap-mandatory items-center space-x-2 overflow-auto pb-2 lg:space-x-2.5">
-          <li class="flex-shrink-0 snap-start">
+        <ul class='flex snap-x snap-mandatory items-center space-x-2 overflow-auto pb-2 lg:space-x-2.5'>
+          <li class='flex-shrink-0 snap-start'>
             <a
               title={`Category - ${category}`}
               href={`/${lang}/blog`}
@@ -46,15 +45,14 @@ const { category } = Astro.params
                 !category ? 'select-none' : '',
                 buttonVariants({
                   variant: !category ? 'blog' : 'outline',
-                }),
+                })
               )}
-              aria-label="All Posts Link"
-            >
+              aria-label='All Posts Link'>
               All posts
             </a>
           </li>
           {categories.map((item) => (
-            <li class="flex-shrink-0 snap-start">
+            <li class='flex-shrink-0 snap-start'>
               <a
                 title={`Category - ${item}`}
                 href={`/${lang}/${item}`}
@@ -63,10 +61,9 @@ const { category } = Astro.params
                   item === category ? 'select-none' : '',
                   buttonVariants({
                     variant: item === category ? 'blog' : 'outline',
-                  }),
+                  })
                 )}
-                aria-label={`Categorie-${item}`}
-              >
+                aria-label={`Categorie-${item}`}>
                 {item}
               </a>
             </li>

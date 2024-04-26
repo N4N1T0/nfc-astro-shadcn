@@ -1,15 +1,15 @@
 ---
 // Translation Imports
-import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
 
 // Assets Imports - Images
-import boxingGloves from '../assets/boxingGloves.webp'
+import boxingGloves from '@/assets/boxingGloves.webp'
 
 // Astro Imports - Globals
 import { Image } from 'astro:assets'
 
 // React imports - Components
-import { FormDialog } from '../components/react/FormDialog'
+import { FormDialog } from '@/components/react/FormDialog'
 import { buttonVariants } from './ui/button'
 
 const lang = getLangFromUrl(Astro.url)

@@ -4,71 +4,73 @@ import { Image } from 'astro:assets'
 import type { CollectionEntry } from 'astro:content'
 
 // Utils Imports
-import { formatDate } from '../../lib/utils'
+import { formatDate } from '@/lib/utils'
 
 // Props Types
-type Props = CollectionEntry<'blog'>
+interface Props {
+  post: CollectionEntry<'blog'>
+}
 
 // Astro Props
 const { post } = Astro.props
+const {
+  slug,
+  data: { title, image, imageAlt, categories, date },
+} = post
 
 // Translation Imports
-import { getLangFromUrl } from '../../i18n/utils'
+import { getLangFromUrl } from '@/i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 ---
 
-<article class="group space-y-4">
+<article class='group space-y-4'>
   <!-- Images -->
   <a
-    title={`link Post-${post.data.title}`}
-    href={`/${lang}/blog/${post.slug}/`}
-    class="flex h-52 transition duration-300 group-hover:-translate-y-2 group-hover:shadow-xl"
-    aria-label={`Post-${post.data.title}`}
-  >
+    title={`link Post-${title}`}
+    href={`/${lang}/blog/${slug}/`}
+    class='flex h-52 transition duration-300 group-hover:-translate-y-2 group-hover:shadow-xl'
+    aria-label={`Post-${title}`}>
     <Image
-      class="h-full w-full overflow-hidden rounded-xl object-cover"
+      class='h-full w-full overflow-hidden rounded-xl object-cover'
       width={400}
       height={200}
-      src={post.data.image}
-      alt={post.data.imageAlt}
-      transition:name={'img-' + post.slug}
-      loading="eager"
+      src={image}
+      alt={imageAlt}
+      transition:name={'img-' + slug}
+      loading='eager'
     />
   </a>
 
   <!-- Ctegories and Date -->
-  <div class="flex items-center justify-between">
-    <div class="space-x-3">
+  <div class='flex items-center justify-between'>
+    <div class='space-x-3'>
       {
-        post.data.categories
+        categories
           .slice(0, 2)
           .map((category) => (
-            <p class="inline-block rounded-lg bg-accent px-3 py-1 text-xs text-white md:text-sm">
+            <p class='inline-block rounded-lg bg-accent px-3 py-1 text-xs text-white md:text-sm'>
               {category}
             </p>
           ))
       }
     </div>
     <span
-      class="text-sm font-medium text-muted-foreground"
-      transition:name={'date-' + post.slug}
-    >
-      {formatDate(post.data.date)}
+      class='text-sm font-medium text-muted-foreground'
+      transition:name={'date-' + slug}>
+      {formatDate(date)}
     </span>
   </div>
 
   <!-- Title -->
   <div>
     <a
-      title={`link Post-${post.data.title}`}
-      href={`/${lang}/blog/${post.slug}/`}
-      class="group-hover:underline"
-    >
+      title={`link Post-${title}`}
+      href={`/${lang}/blog/${slug}/`}
+      class='group-hover:underline'>
       <h2
-        class="font-heading text-balance line-clamp-3 text-xl leading-snug md:text-2xl"
-        transition:name={'title-' + post.slug}
-      >
-        {post.data.title}
+        class='font-heading line-clamp-3 text-balance text-xl leading-snug md:text-2xl'
+        transition:name={'title-' + slug}>
+        {title}
       </h2>
     </a>
   </div>

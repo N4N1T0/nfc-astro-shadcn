@@ -1,12 +1,12 @@
 ---
 // Astro Imports - Layout & Globals
 import { Image } from 'astro:assets'
-import BaseLayout from '../../../layouts/BaseLayout.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
 import { getCollection, type CollectionEntry } from 'astro:content'
 
 // Utils Imports
-import { formatDate, capitalizer } from '../../../lib/utils'
-import { getRelatedPosts } from '../../../lib/fetchers'
+import { formatDate, capitalizer } from '@/lib/utils'
+import { getRelatedPosts } from '@/lib/fetchers'
 import { ChevronLeft } from 'lucide-react'
 
 // Function to create the path for all the blogs

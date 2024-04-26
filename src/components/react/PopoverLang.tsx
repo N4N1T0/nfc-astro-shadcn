@@ -3,9 +3,9 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import { Button } from "../ui/button"
+import { Button } from "@/components/ui/button"
 
-export function PopoverLang({ lang, url }: { lang: 'es' | 'en', url: URL }) {
+export function PopoverLang ({ lang, url }: { lang: 'es' | 'en', url: URL }) {
   return (
     <Popover>
       <PopoverTrigger asChild>

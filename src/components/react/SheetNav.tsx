@@ -9,12 +9,12 @@ import {
 } from "@/components/ui/sheet";
 import * as React from "react";
 import { Menu } from 'lucide-react'
-import { Button } from '../ui/button'
-import { navLinks } from '../../constants/index'
-import { useTranslations } from '../../i18n/utils'
+import { Button } from '@/components/ui/button'
+import { navLinks } from '@/constants/index'
+import { useTranslations } from '@/i18n/utils'
 
 
-export function SheetNav({ lang }: { lang: 'es' | 'en' }) {
+export function SheetNav ({ lang }: { lang: 'es' | 'en' }) {
   const [open, setOpen] = React.useState(false);
   const t = useTranslations(lang)
 

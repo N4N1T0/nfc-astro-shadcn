@@ -1,5 +1,5 @@
 // Shadcn Button Import
-import { buttonVariants } from '../ui/button'
+import { buttonVariants } from '@/components/ui/button'
 
 // Shadcn Dialog Import
 import {
@@ -16,10 +16,10 @@ import {
 import { contacts } from '@/constants'
 
 // Translation Imports
-import { useTranslations } from '../../i18n/utils'
+import { useTranslations } from '@/i18n/utils'
 
 
-export function FormDialog({ text, lang }: { text: string, lang: 'es' | 'en' }) {
+export function FormDialog ({ text, lang }: { text: string, lang: 'es' | 'en' }) {
   const t = useTranslations(lang)
 
   return (

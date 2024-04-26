@@ -7,7 +7,7 @@ import {
   ToastDescription,
   ToastAction,
   ToastClose
-} from '../ui/toast'
+} from '@/components/ui/toast'
 import {
   Carousel,
   CarouselContent,
@@ -16,12 +16,12 @@ import {
 import Autoplay from "embla-carousel-autoplay"
 
 // Translation Imports
-import { useTranslations } from '../../i18n/utils'
+import { useTranslations } from '@/i18n/utils'
 
 // Assets Imports
-import { tShirtsDesign } from '../../constants'
+import { tShirtsDesign } from '@/constants'
 
-export default function ShopToast({ lang }: { lang: 'es' | 'en' }) {
+export default function ShopToast ({ lang }: { lang: 'es' | 'en' }) {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
@@ -37,7 +37,6 @@ export default function ShopToast({ lang }: { lang: 'es' | 'en' }) {
             className="w-20 h-20"
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
-            loop
           >
             <CarouselContent>
               {tShirtsDesign.map((shirt) => (
@@ -61,7 +60,7 @@ export default function ShopToast({ lang }: { lang: 'es' | 'en' }) {
               {t('toast-shop-cta')}
             </a>
           </ToastAction>
-          <ToastClose altText="Close" className="w-6 flex justify-center items-center" />
+          <ToastClose className="w-6 flex justify-center items-center" />
         </div>
       </Toast>
       <ToastViewport />

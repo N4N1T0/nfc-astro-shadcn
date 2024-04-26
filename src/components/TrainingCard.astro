@@ -13,7 +13,6 @@ interface Props {
     en: string
   }
   image: ImageMetadata
-  info: string[]
   price: string
 }
 
@@ -25,24 +24,24 @@ const lang = getLangFromUrl(Astro.url)
 const { title, description, image, price } = Astro.props
 ---
 
-<div class="flex w-full flex-col items-center justify-center gap-5">
+<div class='flex w-full flex-col items-center justify-center gap-5'>
   <Image
     src={image}
     alt={`una fotografia de un entrenamiento de ${title}`}
-    class="object-fill"
+    class='object-fill'
     height={250}
   />
-  <div class="space-y-5">
-    <h2 class="text-bold text-2xl font-semibold leading-none tracking-tight">
+  <div class='space-y-5'>
+    <h2 class='text-bold text-2xl font-semibold leading-none tracking-tight'>
       {title}
     </h2>
-    <p class="text-muted-foreground">{description[lang]}</p>
-    <h3 class="underline">
+    <p class='text-muted-foreground'>{description[lang]}</p>
+    <h3 class='underline'>
       {lang === 'en' ? 'Price ' : 'Precio '}<strong>{price}</strong>{
         lang === 'en' ? ' * Class' : ' * Clases'
       }
     </h3>
-    <small class="text-xs text-secondary"
+    <small class='text-xs text-secondary'
       >{
         lang === 'en'
           ? 'we can arrange a monthly pay (with discounts)'

@@ -1,13 +1,13 @@
 ---
 // Assets Imports - Info
-import nano from '../assets/nano.webp'
-import { stats } from '../constants/index'
+import nano from '@/assets/nano.webp'
+import { stats } from '@/constants/index'
 
 // Astro Imports - Globals
 import { Image } from 'astro:assets'
 
 // Translation Imports
-import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---

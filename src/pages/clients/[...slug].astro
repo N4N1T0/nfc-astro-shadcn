@@ -1,10 +1,10 @@
 ---
 // Astro Imports - Layout & Globals
-import BaseLayout from '../../layouts/BaseLayout.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
 import { getCollection, type CollectionEntry } from 'astro:content'
 
 // Utils Imports
-import { formatDate } from '../../lib/utils'
+import { formatDate } from '@/lib/utils'
 
 // Function to create the path for all the blogs
 export async function getStaticPaths() {

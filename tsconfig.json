@@ -22,6 +22,6 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react"
   },
-  "include": ["./src/env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["./src/env.d.ts", "**/*.ts", "**/*.tsx", "**/*.astro"],
   "exclude": ["node_modules"]
 }

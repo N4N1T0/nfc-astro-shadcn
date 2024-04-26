@@ -1,14 +1,14 @@
 ---
 // Astro Imports - Components
-import BaseLayout from '../../layouts/BaseLayout.astro'
-import { BookingForm } from '../../components/react/BookingForm'
-import { contacts } from '../../constants'
-import Header from '../../components/layout/Header.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { BookingForm } from '@/components/react/BookingForm'
+import { contacts } from '@/constants'
+import Header from '@/components/layout/Header.astro'
 
-import { Toaster } from '../../components/ui/toaster'
+import { Toaster } from '@/components/ui/toaster'
 
 // Translation Imports
-import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
@@ -17,25 +17,21 @@ export const prerender = true
 ---
 
 <BaseLayout
-  title="Nano Fighters Club in Marbella"
-  description="Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training in Marbella"
->
+  title='Nano Fighters Club in Marbella'
+  description='Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training in Marbella'>
   <Toaster client:load />
   <section
-    class="m-auto mt-10 flex max-w-[1400px] flex-col items-center justify-center gap-5 p-5 md:gap-10 md:p-10"
-  >
-    <div class="w-full">
+    class='m-auto mt-10 flex max-w-[1400px] flex-col items-center justify-center gap-5 p-5 md:gap-10 md:p-10'>
+    <div class='w-full'>
       <Header
-        title="Formulario Reserva"
-        subtitle="Puedes reservar una clase en el"
-      />   
+        title='Formulario Reserva'
+        subtitle='Puedes reservar una clase en el'
+      />
     </div>
     <div
-      class="flex w-full flex-col-reverse items-center justify-between gap-5 md:flex-row md:gap-0"
-    >
+      class='flex w-full flex-col-reverse items-center justify-between gap-5 md:flex-row md:gap-0'>
       <div
-        class="space-y-6 rounded-xl border bg-primary/10 p-14 text-card-foreground shadow-sm"
-      >
+        class='space-y-6 rounded-xl border bg-primary/10 p-14 text-card-foreground shadow-sm'>
         {
           contacts.map((item) => (
             <div>
@@ -43,9 +39,8 @@ export const prerender = true
               <a
                 title={item.label[lang]}
                 href={item.link}
-                target="_blank"
-                class="text-secondary transition-colors duration-200 hover:text-secondary/70"
-              >
+                target='_blank'
+                class='text-secondary transition-colors duration-200 hover:text-secondary/70'>
                 {item.linkLabel}
               </a>
             </div>
@@ -54,11 +49,11 @@ export const prerender = true
       </div>
       <BookingForm client:load lang={lang} />
     </div>
-    <p class='md:px-10 px-5'>
-        Llena todos los campos obligatorios del formulario con la información
-        necesaria para asegurarnos de que podamos atenderte de la mejor manera
-        posible. al completar tu reserva a través de nuestro formulario, te
-        garantizamos una primera clase ¡totalmente gratis!
-      </p>
+    <p class='px-5 md:px-10'>
+      Llena todos los campos obligatorios del formulario con la información
+      necesaria para asegurarnos de que podamos atenderte de la mejor manera
+      posible. al completar tu reserva a través de nuestro formulario, te
+      garantizamos una primera clase ¡totalmente gratis!
+    </p>
   </section>
 </BaseLayout>
