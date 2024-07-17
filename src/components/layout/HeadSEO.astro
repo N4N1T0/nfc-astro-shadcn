@@ -1,44 +1,44 @@
 ---
 // Atro Imports - Globals
-import { ViewTransitions } from 'astro:transitions'
-import { type CollectionEntry } from 'astro:content'
+import { ViewTransitions } from "astro:transitions";
+import type { CollectionEntry } from "astro:content";
 
 // Lib Imports
-import jsonLDGenerator from '@/lib/jsonLd'
+import jsonLDGenerator from "@/lib/jsonLd";
 
 // Style Imports
-import '@/styles/globals.css'
+import "@/styles/globals.css";
 
 // Props Types
 interface Props {
-  title?: string | undefined
-  description?: string | undefined
-  ogImage?: string | undefined
-  url?: URL | undefined
-  post?: CollectionEntry<'blog'> | undefined
+	title?: string | undefined;
+	description?: string | undefined;
+	ogImage?: string | undefined;
+	url?: URL | undefined;
+	post?: CollectionEntry<"blog"> | undefined;
 }
 
 // Astro Props
-const { title, description, ogImage, post, url = Astro.url } = Astro.props
+const { title, description, ogImage, post, url = Astro.url } = Astro.props;
 
 // Canonical URL for SEO
-const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // JsonLd Genearting acording to the page type
 const jsonLD = jsonLDGenerator({
-  type: post ? 'post' : 'website',
-  post: post ? post : undefined,
-})
+	type: post ? "post" : "website",
+	post: post ? post : undefined,
+});
 
 // Translation Imports
-import { getLangFromUrl, changeLangFromUrl } from '@/i18n/utils'
-const lang = getLangFromUrl(Astro.url)
-const newLangUrl = changeLangFromUrl(Astro.url, lang)
+import { getLangFromUrl, changeLangFromUrl } from "@/i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const newLangUrl = changeLangFromUrl(Astro.url, lang);
 
 // Open Graph Image
 
 if (ogImage === undefined) {
-  Astro.props.ogImage = `${Astro.site}${lang}/og-image.jpg`
+	Astro.props.ogImage = `${Astro.site}${lang}/og-image.jpg`;
 }
 ---
 
@@ -125,10 +125,10 @@ if (ogImage === undefined) {
 <meta property='twitter:image' content={Astro.props.ogImage} />
 
 <!-- GEO Tags -->
-<meta name='geo.region' content='ES-AN' />
-<meta name='geo.placename' content='Marbella' />
-<meta name='geo.position' content='36.473348;-4.98579' />
-<meta name='ICBM' content='36.473348, -4.98579' />
+<meta name="geo.region" content="ES-AN" />
+<meta name="geo.placename" content="M&aacute;laga" />
+<meta name="geo.position" content="36.700632;-4.434995" />
+<meta name="ICBM" content="36.700632, -4.434995" />
 
 <!-- jsonLD -->
 <Fragment set:html={jsonLD} />

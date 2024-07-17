@@ -1,24 +1,24 @@
 ---
 // Astro Imports - Components
-import BaseLayout from '@/layouts/BaseLayout.astro'
-import { BookingForm } from '@/components/react/BookingForm'
-import { contacts } from '@/constants'
-import Header from '@/components/layout/Header.astro'
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { BookingForm } from "@/components/react/BookingForm";
+import { contacts } from "@/constants";
+import Header from "@/components/layout/Header.astro";
 
-import { Toaster } from '@/components/ui/toaster'
+import { Toaster } from "@/components/ui/toaster";
 
 // Translation Imports
-import { getLangFromUrl, useTranslations } from '@/i18n/utils'
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 // create static page instead of SSR
-export const prerender = true
+export const prerender = true;
 ---
 
 <BaseLayout
-  title='Nano Fighters Club in Marbella'
-  description='Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training in Marbella'>
+  title='Nano Fighters Club in Málaga Capital'
+  description='Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training in Málaga Capital'>
   <Toaster client:load />
   <section
     class='m-auto mt-10 flex max-w-[1400px] flex-col items-center justify-center gap-5 p-5 md:gap-10 md:p-10'>

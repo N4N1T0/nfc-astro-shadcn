@@ -1,9 +1,12 @@
-import { type CollectionEntry } from 'astro:content'
+import type { CollectionEntry } from "astro:content";
 
 // Function to create a JsonLd acording to the type
-export default function jsonLDGenerator({ type, post }: {type: string, post: CollectionEntry<'blog'> | undefined }) {
-  if (type === 'post') {
-    return `<script type="application/ld+json">
+export default function jsonLDGenerator({
+	type,
+	post,
+}: { type: string; post: CollectionEntry<"blog"> | undefined }) {
+	if (type === "post") {
+		return `<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -24,8 +27,8 @@ export default function jsonLDGenerator({ type, post }: {type: string, post: Col
   "datePublished": "${post?.data.date}"
 }
 </script>`;
-  }
-  return `<script type="application/ld+json">
+	}
+	return `<script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SportsClub",
@@ -37,11 +40,11 @@ export default function jsonLDGenerator({ type, post }: {type: string, post: Col
         "priceRange": "20$-30$",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Av. Mar Mediterráneo, 1",
-          "addressLocality": "Marbella, Málaga",
-          "postalCode": "29670",
+          "streetAddress": "Huelin, Carretera de Cádiz, Málaga",
+          "addressLocality": "Malaga Capital, Málaga",
+          "postalCode": "29002",
           "addressCountry": "España"
         }  
       }
       </script>`;
-      }
+}

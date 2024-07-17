@@ -1,21 +1,21 @@
 ---
 // Astro Imports - Components
-import BaseLayout from '@/layouts/BaseLayout.astro'
-import Hero from '@/components/Hero.astro'
-import About from '@/components/About.astro'
-import Entrenamientos from '@/components/Entrenamientos.astro'
-import Testimonios from '@/components/Testimonios.astro'
-import Faqs from '@/components/Faqs.astro'
-import Feed from '@/components/Feed.astro'
-import ShopToast from '@/components/react/ShopToast'
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Hero from "@/components/Hero.astro";
+import About from "@/components/About.astro";
+import Entrenamientos from "@/components/Entrenamientos.astro";
+import Testimonios from "@/components/Testimonios.astro";
+import Faqs from "@/components/Faqs.astro";
+import Feed from "@/components/Feed.astro";
+import ShopToast from "@/components/react/ShopToast";
 
 // create static page instead of SSR
-export const prerender = true
+export const prerender = true;
 ---
 
 <BaseLayout
-  title="Nano Fighters Club en Marbella"
-  description="Experimenta la Excelencia en Boxeo y Kickboxing con Entrenamiento Personalizado a Domicilio en Marbella"
+  title="Nano Fighters Club en Málaga Capital"
+  description="Experimenta la Excelencia en Boxeo y Kickboxing con Entrenamiento Personalizado a Domicilio en Málaga Capital"
 >
   <ShopToast client:load lang="es" />
   <Hero />
