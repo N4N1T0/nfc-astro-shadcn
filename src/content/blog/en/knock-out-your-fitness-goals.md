@@ -2,7 +2,7 @@
 title: 'Knock Out Your Fitness Goals'
 date: 2024-04-26
 slug: 'knock-out-your-fitness-goals'
-excerpt: 'Why Hiring a Private Boxing Coach in Malaga is Your Best Move'
+excerpt: 'Why Hiring a Private Boxing Coach in Aviles is Your Best Move'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness']
 image: '../../../assets/blog/mark-adriane-FH6JcaCrYJ0-unsplash.webp'
@@ -11,7 +11,7 @@ imageAlt: 'Boxing coach and client working out with pads'
 
 ## Knock Out Your Fitness Goals
 
-Are you tired of the same old gym routine? Looking to spice up your fitness regimen while getting results? If you're in Malaga and seeking a fresh approach to fitness, look no further than boxing!
+Are you tired of the same old gym routine? Looking to spice up your fitness regimen while getting results? If you're in Aviles and seeking a fresh approach to fitness, look no further than boxing!
 
 ### The Power of Personalised Coaching
 

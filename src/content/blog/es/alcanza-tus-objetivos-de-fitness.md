@@ -2,7 +2,7 @@
 title: 'Alcanza tus objetivos de fitness'
 date: 2024-04-26
 slug: 'alcanza-tus-objetivos-de-fitness'
-excerpt: 'Por qué contratar a un entrenador privado de boxeo en Malaga es tu mejor opción'
+excerpt: 'Por qué contratar a un entrenador privado de boxeo en Aviles es tu mejor opción'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxeo', 'fitness', 'kickboxing']
 image: '../../../assets/blog/mark-adriane-FH6JcaCrYJ0-unsplash.webp'
@@ -11,7 +11,7 @@ imageAlt: 'Entrenador de boxeo y cliente haciendo ejercicio con guantes'
 
 ## Alcanza tus objetivos de fitness
 
-¿Estás cansado de la misma rutina de gimnasio? ¿Buscas darle un toque diferente a tu régimen de fitness mientras obtienes resultados? ¡Si estás en Malaga y buscas un enfoque fresco para el fitness, no busques más allá del boxeo!
+¿Estás cansado de la misma rutina de gimnasio? ¿Buscas darle un toque diferente a tu régimen de fitness mientras obtienes resultados? ¡Si estás en Aviles y buscas un enfoque fresco para el fitness, no busques más allá del boxeo!
 
 ### El poder del coaching personalizado
 

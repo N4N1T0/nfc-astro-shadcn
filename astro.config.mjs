@@ -7,6 +7,8 @@ import partytown from "@astrojs/partytown";
 import robotsTxt from "astro-robots-txt";
 import compress from "astro-compress";
 
+import playformCompress from "@playform/compress";
+
 // https://astro.build/config
 export default defineConfig({
   site: process.env.CI ? 'https://www.nanofighters.club' : 'http://localhost:4321',
@@ -20,11 +22,11 @@ export default defineConfig({
   }), robotsTxt({
     sitemap: 'https://www.nanofighters.club/sitemap-0.xml',
     host: 'nanofighters.club'
-  }), compress()],
+  }), compress(), playformCompress()],
   output: "server",
   adapter: vercel({
     webAnalytics: {
-      enabled: true,
-    },
+      enabled: true
+    }
   })
 });

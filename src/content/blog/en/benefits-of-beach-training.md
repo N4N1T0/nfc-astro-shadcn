@@ -2,7 +2,7 @@
 title: 'Elevate Your Fitness Game'
 date: 2024-04-11
 slug: 'benefits-of-beach-training'
-excerpt: 'The Benefits of Beach Training for Combat Sports in Malaga'
+excerpt: 'The Benefits of Beach Training for Combat Sports in Aviles'
 author: 'Adrian "Nano" Alvarez'
 categories: ['boxing', 'fitness', 'kickboxing']
 image: '../../../assets/blog/jason-briscoe-HN_4K2diUWs-unsplash.webp'
@@ -11,7 +11,7 @@ imageAlt: 'Rigondeaux celebrating his victory'
 
 ## Introduction
 
-Are you tired of the same old gym routines? Are you seeking a fresh, invigorating approach to your fitness journey? Look no further than the picturesque beaches of Malaga, where the sun, sand, and sea meet the art of combat sports. In this article, we'll delve deeper into why training boxing, kickboxing, MMA, and more on the beach is not just a workout but an experience that can transform your fitness journey.
+Are you tired of the same old gym routines? Are you seeking a fresh, invigorating approach to your fitness journey? Look no further than the picturesque beaches of Aviles, where the sun, sand, and sea meet the art of combat sports. In this article, we'll delve deeper into why training boxing, kickboxing, MMA, and more on the beach is not just a workout but an experience that can transform your fitness journey.
 
 ## Embrace the Serenity of the Seaside
 
@@ -39,4 +39,4 @@ Imagine having a dedicated coach by your side, guiding you through each session 
 
 ## Conclusion
 
-Training combat sports on the beach in Malaga is more than just a workout—it's an experience that can transform your fitness journey and elevate your overall well-being. From the serene surroundings to the versatile training opportunities, every aspect of beach training contributes to your physical, mental, and emotional health. So why settle for the ordinary when you can embrace the extraordinary and embark on a fitness adventure like no other? Join us on the beach and discover the power of training amidst the beauty of nature.
+Training combat sports on the beach in Aviles is more than just a workout—it's an experience that can transform your fitness journey and elevate your overall well-being. From the serene surroundings to the versatile training opportunities, every aspect of beach training contributes to your physical, mental, and emotional health. So why settle for the ordinary when you can embrace the extraordinary and embark on a fitness adventure like no other? Join us on the beach and discover the power of training amidst the beauty of nature.
